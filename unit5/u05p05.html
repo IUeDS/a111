@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+
+	    <div class="image_right">
+            <img class="image_border" src="../img/unit05/figure5-7.png" width="300" alt="" />
+        </div>
+        
+        <p>The circuit for a full wave rectifier is shown in Figure 5-1. A center-tapped transformer is used to provide opposite polarity signals to the two anodes. You can think of a center-tapped transformer as a transformer with two secondaries that are connected in series. Each half of that secondary then gets half the total voltage of the secondary. One anode is given a positive voltage during the first half of the waveform and the other is positive during the second half, as shown in Figure 5-2. Current is flowing through each diode for half of the waveform. Typically, the anode voltages are 200-700V.</p>
+        
+		<div class="line_break"></div>
+        
+        
+        <div class="image_left">
+            <img class="image_border" src="../img/unit05/figure5-8.png" width="300" alt="" />
+        </div>
+        
+        <h2>Alternating Anodes</h2>
+        
+        <p>This alternating of which anode is more positive than the cathode means that each anode is only passing current (or electrons) during half of the cycle. Figure 5-2 shows electron flow during the two halves (positive and negative) of the waveform.</p>
+        
+        <p>Note that the electron flow through the resistor (our load for this example) always flows from ground up through the top of the load. If electrons are moving from ground to a point (like the top of the load resistor), that point must be more positive than ground. <em>Remember that electrons always move from a more negative to a more positive.</em> The top of the load resistor, then, has to be at a positive voltage. This circuit has taken an AC sine wave and converted it to a positive voltage. It is not quite the flat voltage that we would call DC, but we can fix that quite easily</p>
+        
+        
+        <div class="line_break"></div>
+        
+        
+        <h2>Filtering</h2>
+        
+        <div class="image_right">
+            <img class="image_border" src="../img/unit05/figure5-9.png" width="300" alt="" />
+        </div>
+                
+        <p>Figure 5-3 shows the same full wave rectifier circuit with the addition of a capacitor across the load resistor. The rectified waveform shown earlier in Figure 4-1 (and shown in gray in Figure 3-1) is all moving in the same direction, but the voltage changes cyclically. You may remember something similar to this in the Chapter 1 investigation. We called that AC + DC.</p>
+        
+        <p>We can think of both AC and DC being present. The capacitor in parallel with the load resistor in figure 5-3 would present a low reactance path for AC (the changing voltage) but for DC it would represent an open switch. If we make the capacitor value large enough (a few hundred µF would work) then the capacitor looks like a closed circuit to the AC and an open circuit to the DC. That means that the AC would be gone and the DC would be present across the load. When we add a capacitor in this way we call it a <span class="term">filter capacitor</span>. The varying voltage that is filtered is called <span class="term">ripple</span>.</p>
+        
+        <p><em>An inductor in series between the rectifier and the load would also have the same effect. Often in tube circuits both an inductor and a number of capacitors are used.</em></p>
+       
+       
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+
+       <p>Because reactance changes with frequency it is often necessary to analyze a circuit for multiple frequencies. You can do this by creating <span class="term">equivalent circuits</span> at multiple frequencies. Once you have equivalent circuits, you can use Ohms law to find voltage drop or current flow.</br></br>
+For simple series or parallel inductor circuits you can typically find reactance for three frequencies (such as: $ 100Hz, 1kHz,$ and $10kHz $, for easy math). Use the reactance value you get to replace each inductor in the circuit with a resistor for that specific frequency. You then end up with three  voltage divider circuits (one for each frequency) to analyze. From those you find the voltage across the load for each of them and you can plot the frequency response on a graph.</p>
+
+       <div class="image_right">
+        	<img src="../img/unit03/figure7-1.png" class="image_border" width="250" height="156">
+        </div>
+       
+       <p>Let’s try that with the circuit in figure 8-1. <br>
+          First we solve for inductive reactance at $10kHz, 1kHz,$ and $100Hz$. 
+                	<p>$10kHz$:</p> 
+                    <div class="tab">
+                        <p>$X_L = 2 \times \pi \times 10,000 \times .159 = 9990.2\Omega $ <br>
+                        <span class="tab">or</span> <br>
+                        $X_L = 2 \times 3.14 \times 10,000 \times .159 = 9985.2\Omega $ </p>
+                        <p><em>For this sort of analysis we can round both of these up to $10K\Omega $.</em></p>
+                    </div>
+                    <br>
+                	<p>$1kHz$:</p> 
+                    <div class="tab">
+                        <p>$X_L = 2 \times \pi \times 1000 \times .159 = 999\Omega $ <br>
+                        <span class="tab">or</span> <br>
+                        $X_L = 2 \times 3.14 \times 1000 \times .159 = 998.5\Omega $</p>
+                        <p><em>Again we can round both of these up to $1KΩ$.</em></p>
+                        <br>
+                    </div>
+                	<p>$100Hz$:</p> 
+                    <div class="tab">
+                        <p>$X_L = 2 \times \pi \times 100 \times .159 = 99.9\Omega $ <br>
+                        <span class="tab">or </span> <br>
+                        $X_L = 2 \times 3.14 \times 100 \times .159 = 99.85\Omega $</p>
+                        <p><em>Again we can round both of these up to $100\Omega $.</em></p>
+                        <br>
+                    </div>
+       </p>
+       <div class="aside_wide">
+       		A common mistake is to forget that the formula for reactance uses: henries, and hertz. In this example we have:
+            <ul>
+            	<li>$159mH$ so we have to convert to $0.159H$</li>
+                <li>$10kHz$ and $1kHz$ which we have to covert to $10000Hz$ and $1000Hz$.</li>
+            </ul>
+However, we can use $ mH $ as long as we use $ k\Omega $
+       </div> <!-- end of aside_RightWrap div -->
+
+	   <div class="line_break"></div>
+
+       <p>Next you can solve for the voltage drop of each circuit. RL is our load for this circuit so we are concerned with the voltage that it drops.</p>
+       
+       <div class="image_right">
+        	<img src="../img/unit03/figure7-2.png" class="image_border" width="250" height="156">
+        </div>
+   
+       <h2>Using Amperes</h2>
+       <p>For $10kHz$ the inductor becomes a $10k\Omega $ resistor.</p>
+       <div class="tab">
+            <p>$11 V_{RMS} = 11,000\Omega \times ?A $</p> 
+            <p class="tab">so</p> 
+            <p>$A = .001A$ </p>
+            <p>$R_L$ is $1k\Omega $</p> 
+            <p class="tab">so</p> 
+            <p>$V_{RL} = 1,000\Omega \times .001A $</p> 
+            <p class="tab">so</p> 
+            <p>$V_{RL} = 1V_{RMS}$</p>
+       </div>
+       
+       <h2>Using Milliamperes</h2>
+       <p>For $10kHz$ the inductor becomes a $10k\Omega $ resistor.</p>
+       <div class="tab">
+            <p>$11 V_{RMS} = 11k\Omega \times ?mA $</p>
+            <p class="tab">so</p>
+            <p>$A = 1mA$ </p>
+            <p>$R_L$ is $1k\Omega $</p> 
+            <p class="tab">so</p>
+            <p>$V_{RL} = 1k\Omega \times 1mA$</p>
+            <p class="tab">so</p> 
+            <p>$V_{RL} = 1V_{RMS}$</p>
+       </div>
+       
+        <div class="line_break"></div>
+
+        <p>For $10kHz$ the inductor becomes a $10k\Omega $ resistor.</p>
+        <p>$11 V_{RMS} = 11,000\Omega \times ?A $</p> 
+        <p class="tab">so</p> 
+        <p>$A = .001A$ </p>
+        <p class="tab">or </p>
+        <p>$11 V_{RMS} = 11k\Omega \times ?mA $</p>
+        <p class="tab">so</p>
+        <p>$A = 1mA$ </p>
+        <p>$R_L$ is $1k\Omega $</p> 
+        <p class="tab">so</p> 
+        <p>$V_{RL} = 1,000\Omega \times .001A $</p> 
+        <p class="tab">so</p> 
+        <p>$V_{RL} = 1V_{RMS}$</p>
+        <p class="tab">or (<em>preferred</em>)</p>
+          
+        <p>$R_L$ is $1k\Omega$</p>
+        <p class="tab">so</p>
+        <p>$V_{RL} = 1k\Omega \times 1mA$</p>
+        <p class="tab">so</p> 
+        <p>$V_{RL} = 1V_{RMS}$</p>
+       
+       <!--
+       <div class="line_break"></div>
+       
+       <div class="image_right">
+        	<img src="../img/unit03/figure7-3.png" class="image_border" width="250" height="156">
+        </div>
+       
+       <p>
+       		  For $1kHz$ the inductor becomes a $1k\Omega $ resistor.  <br>
+              $11 V_{RMS} = 2,000\Omega \times ?A$ so $A = .0055A$ <br>
+              or <br>
+              $11 V_{RMS} = 2k\Omega \times ?mA$ so $A = 5.5mA$ <br>
+              $R_L$ is $1k\Omega $ so $V_{RL} = 1,000\Omega \times .0055A$ so $V_{RL} = 5.5V_{RMS}$<br>
+              <br>
+         or (<em>preferred</em>)<br>
+              
+              $R_L$ is $1k\Omega$ so<font size="+2"> $V_{RL} = 1k\Omega \times 5.5mA$ so $V_{RL} = 5.5V_{RMS}$</font>
+       </p>
+       
+       <div class="aside_wide">
+       		Equal resistance values mean equal voltage drops in a series circuit so $\frac {11}{2} = 5.5V$
+       </div> 
+       
+       <div class="line_break"></div>
+       
+       <div class="image_right">
+        	<img src="../img/unit03/figure7-4.png" class="image_border" width="250" height="156">
+        </div>
+       
+       <p>
+       		  For $100Hz$ the inductor becomes a $100\Omega $ resistor. <br>
+              $11 V_{RMS} = 1,100\Omega \times ?A$ so $A = .01A$<br>
+              or <br>
+              $11 V_{RMS} = 1.1k\Omega \times ?mA$ so $A = 10mA$ <br>
+              $R_L$ is $1k\Omega$ so $V_{RL} = 1,000\Omega \times .01A$ so $V_{RL} = 10V_{RMS}$ <br>
+              <br>
+         or (<em>preferred</em>)<br>
+         $R_L$ is $1k\Omega$ so<font size="+2">$V_{RL} = 1k\Omega \times 10mA$ so $V_{RL} = 10V_{RMS}$ </font><br>
+       </p>
+       
+       -->
+ 
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

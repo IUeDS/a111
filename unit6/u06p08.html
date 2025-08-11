@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+         
+         <div class="image_right ipad_center">
+        	<img src="../img/unit06/figure6-12.png" width="468" height="232" class="image_border">
+       </div>
+       
+       <p>Figure 8-1 shows the last section of our circuit, the power amplifier. This tube and sub-circuit create the power to drive the speaker. Once again we have a common cathode circuit that is very close to typical. </p>
+       
+       
+       <div class="line_break"></div>
+       
+       <h2>What’s the same as a Typical common cathode amplifier?</h2>
+             
+       <ul>
+       		<li><b>$470\Omega$ resistor</b> connected to cathode at one end.</li><br>
+            	<ul>
+                	<li>Purpose = set $0V$ at grid halfway between saturation and cutoff.</li><br>
+                </ul>
+            <li><b>$2µF$ capacitor</b> connected in parallel with the $1500\Omega$ resistor.</li><br>
+            	<ul>
+                	<li>Purpose = provide low reactance path for $AC$ so that cathode voltage remains stable.</li><br>
+                </ul>
+       </ul>
+        
+        
+		<div class="line_break"></div>
+
+
+		<h2>What’s different?</h2>
+      
+       <ul>
+       		<li><b>No resistor from anode to $V+$</b></li><br>
+            	<ul>
+                	<li>The purpose of that resistor was to convert changing current into changing voltage for the next tube. In this case the tube is feeding a transformer instead of a tube. Since the transformer works based on current, no conversion to changing voltage is needed.</li>
+                	<br>
+                </ul>
+            <li><b>$220k\Omega$ resistor connected from control grid to ground</b></li><br>   
+            	<ul>
+                	<li>This resistor is typically called a grid leak resistor.</li><br>
+                    <li>Purposes = </li><br>
+                    	<ul>
+                        	<li>Provide load for previous tube stage.</li><br>
+                            <li>Create high pass filter with $0.02µF$ cap</li><br>
+                            <li>Provide ground reference for control grid.</li><br>
+                        </ul>
+                </ul> 
+       </ul>
+       <div class="line_break"></div>
+       <h2>Wrap-up</h2>
+<p>By first identifying the sub-circuits that we already knew we were able to understand this circuit without too much effort. A method for circuit analysis will be presented later in the text in more detail. Most guitar amplifiers available are either based on this design or an extension of it, so feel free to find schematics and work to understand them.</p>
+
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

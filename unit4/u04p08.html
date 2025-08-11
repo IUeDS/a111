@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        <p>Just as inductors had RL filters, capacitors have RC filters as shown in Figure 8-1.</p><!-- end of basicconcept div --><br><!-- end of interactive_FRC div -->
+         
+        <div class="image_left"> <img class="image_border" src="../img/unit04/figure4-14.png" width="330"></div>
+        <p>As with the inductor formula, the cutoff frequency is the point at which the signal has changed by 3dB. The formula for cutoff frequency in a passive first order capacitor filter is $f_C = \frac{1}{2\pi RC}$. This same formula is used for either high pass or low pass. Resistance must be in Ohms and capacitance in Farads, using $k\Omega$ and/or $µF$ will not work.</p>
+         
+         <div class="image_right">
+                    <img class="image_border" src="../img/unit04/figure4-21.png" width="300">
+               </div>
+         
+         <div class="basicconcept">
+           <div class="basicconcept_header">Passive Capacitor Cutoff Frequency</div>
+           <div class="basicconcept_body">$f_C = \frac{1}{2\pi RC}$</div>
+         </div>
+         <p>Now let’s work through finding the cutoff frequency. For this example, we will set R1 to $159\Omega$ and C1 to $1µF$.</p><br><br>
+         
+         <div class="content_table_title" style="clear:both">Figure 8-1: Cutoff Frequency Solution</div>
+       			<table class="content_table table_striped middle_border_table">
+           			<tr>
+            			<td>Step 1:</td>
+                		<td>Choose the correct formula.</td>
+                		<td>$f_C = \frac{1}{2\pi RC}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 2:</td>
+                        <td>Convert $µF$</td>
+                        <td>$1µF = 0.000001F$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 3:</td>
+                        <td>Enter known values.</td>
+                        <td>$f_C = \frac{1}{2 \times \pi \times 159 \times 0.000001}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 4:</td>
+                        <td>Solve the denominator.</td>
+                        <td>$ f_C = \frac{1}{0.000999} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 5:</td>
+                        <td><b>Solve it!</b></td>
+                        <td><b>$ f_C = 1,000Hz $ </b></td>
+                    </tr>
+               </table>
+               
+               <p>Now let’s see what happens if we increase the capacitance. We know that it should shift the curve to the left, making the cutoff frequency lower. Let’s see if the math agrees. We will increase the capacitance by 10x to $10µF$ $(0.00001F)$.</p>
+               
+               <div class="content_table_title">Increased Capacitance Cutoff Frequency Solution</div>
+       			<table class="content_table table_striped middle_border_table">
+           			<tr>
+                		<td>Step 1: Choose the correct formula.</td>
+                		<td>$f_C = \frac{1}{2\pi RC}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 2: Convert $µF$</td>
+                        <td>$10µF = 0.00001F$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 3: Enter known values.</td>
+                        <td>$f_C = \frac{1}{2 \times \pi \times 159 \times 0.00001}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 4: Solve the denominator.</td>
+                        <td>$ f_C = \frac{1}{0.00999} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 5: <b>Solve it!</b></td>
+                        <td><b>$ f_C = 100Hz $ </b></td>
+                    </tr>
+               </table>
+               
+               <p>Nice to see that the math agrees! Now let’s try reducing the capacitance from the original $1µF$ to $0.1µF$. Since we are reducing the capacitance the curve should move to the right making the cutoff frequency higher.</p>
+               
+               <div class="content_table_title">Reduced Capacitance Cutoff Frequency Solution</div>
+       			<table class="content_table table_striped middle_border_table">
+           			<tr>
+                		<td>Step 1: Choose the correct formula.</td>
+                		<td>$f_C = \frac{1}{2\pi RC}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 2: Convert $µF$</td>
+                        <td>$0.1µF = 0.0000001F$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 3: Enter known values.</td>
+                        <td>$f_C = \frac{1}{2 \times \pi \times 159 \times 0.0000001}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 4: Solve the denominator.</td>
+                        <td>$ f_C = \frac{1}{0.0000999} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 5: <b>Solve it!</b></td>
+                        <td><b>$ f_C = 10,010Hz $ </b></td>
+                    </tr>
+               </table>
+               
+               <p>To review, our cutoff frequencies(rounded) are:	
+               		<ul>
+                    	<li>$0.1µF$: $f_C=10kHz$</li><br>
+                        <li>$1µ$F: $f_C=1kHz$</li><br>
+                        <li>$10µF$: $f_C=100Hz$</li>
+                    </ul>
+               </p>
+               
+               
+               <div class="line_break"></div>
+               
+               
+               <h2>Relationships</h2>
+       
+               <div class="image_right">
+                    <img class="image_border" src="../img/unit04/figure4-22.png" width="200">
+               </div>
+               
+               <p>Notice that $f_C$ and capacitance have an inverse relationship, as shown in Figure 8-3. As capacitance is increased, $f_C$ is decreased. This is the same inverse relationship between capacitance value and $f_C$ that we saw between inductance and $f_C$ in Chapter 3.</p>
+               
+               
+               <div class="line_break"></div>
+               
+               
+               <h2>Change that Resistor</h2>
+       
+               <div class="image_right">
+                    <img class="image_border" src="../img/unit04/figure4-23.png" width="200">
+               </div>
+               
+               <p>As with inductor RL filters, we can change the resistor in an RC filter to change $f_C$. With inductors, resistance had a direct relationship with $f_C$, as $R$ increased so did $f_C$. For capacitors resistance has an inverse relationship with $f_C$, as shown in Figure 8-4. Mathematically this is because $R$ is on the bottom of the equation for RC filters while it was on the top for RL filters.</p>
+               
+               <p>Now let’s try decreasing the value of our $159\Omega$ resistor to $15.9\Omega$ in our original circuit that had a $1µF$ capacitor. Since we are decreasing the resistance we should see $f_C$ increase. Originally with the $159\Omega$ resistor $f_C$ was $1kHz$. We are decreasing $R$ by 10x so we should see a 10x increase in $f_C$, which should make it $10kHz$ ($10.01kHz$ before rounding).</p>
+               
+               <div class="content_table_title">Decreased Resistance Cutoff Frequency Solution</div>
+       			<table class="content_table table_striped middle_border_table">
+           			<tr>
+                		<td>Step 1: Choose the correct formula.</td>
+                		<td>$f_C = \frac{1}{2\pi RC}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 2: Convert $µF$</td>
+                        <td>$1µF = 0.000001F$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 3: Enter known values.</td>
+                        <td>$f_C = \frac{1}{2 \times \pi \times 15.9 \times 0.000001}$</td>
+                    </tr>
+                    <tr>
+                        <td>SStep 4: olve the denominator.</td>
+                        <td>$ f_C = \frac{1}{0.00999} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 5: <b>Invert to solve it!</b></td>
+                        <td><b>$ f_C = 10,010Hz $ </b></td>
+                    </tr>
+               </table>
+               
+               <p>As with inductors it is much easier to change resistance than capacitance, so this can be very valuable.</p>
+
+       
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

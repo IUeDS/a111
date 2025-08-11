@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        
+        <p>With a triode we can take a very small voltage at the control grid and use it to control a much larger current through the tube. This is why the triode was so important to the transatlantic phone call. It allowed a signal to be amplified after crossing the ocean. Traveling through that long wire made the signal much lower in voltage when it arrived. </p>
+        
+        <p>This is because even the best wire acts as a resistor and causes a voltage drop. Most of the time that resistance is small, but with over 2000 miles of cable it adds up to make a difference. The triode was used as an amplifier to amplify the signal so that it would still have enough voltage when it reached the end of the wire.</p>
+        
+        <div class="line_break"></div>
+        
+        <h2>Common Cathode Amplifier</h2>
+        
+       <div class="image_right"> <a href="../img/unit05/figure5-13.png" target="new"><img src="../img/unit05/figure5-13.png" alt="simplified Common cathode scheamtic"  width="388" height="355" class="image_border" /></a>
+       </div>
+       
+       <p>There are two main ways to connect a triode for an audio amplifier. A triode connected as a <span class="term">common cathode amplifier</span> is shown in Figure 9-1:</p> 
+       <ol>
+         	<li>The input connects to the control grid.</li><br>
+         	<li>The output connects to the anode through a capacitor.</li><br>
+         	<li>The anode also connects to a positive voltage through a resistor.</li><br>
+            <li>The cathode is connected to ground.</li><br>
+       </ol>
+       
+       <p>Since current can only flow in one direction through a tube the signal at the anode is AC riding on DC. For the output we need to separate the AC from the DC portion so we connect a capacitor between the anode and the output of our amplifier. </p>
+       
+       
+       <div class="line_break"></div>
+       
+       
+       <h2>How It Works</h2>
+       
+       <p>Vacuum tubes are <span class="term">transconductance</span> devices, meaning that a voltage (on the control grid) is used to control a current (through the tube). So a voltage change on the control grid of a common cathode amplifier creates a change in current through the tube. If we need the amplification to be more than we get from one tube, then we need a changing voltage for the input of the second tube. We have a changing current within the tube, how do we get a changing voltage?
+We know that resistors will have a changing voltage drop with a changing current. The changing current is flowing from the +V down through the Anode to cathode of the tube and then to ground. We want the changing voltage to be at the anode. </p>
+
+		<p>Placing a resistor in the current path, between anode and +V would convert that changing current into a changing voltage for our output. Here is how this happens: </p>
+        
+        <ul>
+        	<li>There is a resistor connected from anode to V+. </li><br>
+            	<ul>
+                	<li>This resistor is there to convert changing current into changing voltage.</li><br>
+                    <li>One side of this resistor (top in our image) is connected to V+ which is a fixed voltage.</li><br>
+                </ul>
+            <li>Current through the tube is changing as control grid voltage changes. </li><br>
+            <li>Current through the tube moves: </li><br>
+            	<ul>
+                	<li>From V+ through the resistor</li><br>
+                    <li>Out of the resistor and into the anode</li><br>
+                    <li>Out of the anode, through the control grid, and into the cathode</li><br>
+                    <li>Out of the cathode to ground</li><br>
+                </ul>
+            <li>The varying current through the tube causes a varying current through the resistor. </li><br>
+            	<ul>
+                	<li>Varying current through a resistor causes a varying voltage drop.</li><br>
+                    <li>More current = more voltage dropped by resistor</li><br>
+                    <li>More voltage dropped by resistor = two ends of resistor farther apart in voltage.</li><br>
+                </ul>
+            <li>Since the top of the resistor is connected to a fixed voltage (V+), the voltage at the bottom of the resistor must change as current changes through the tube.</li><br>
+        </ul>
+        
+        <p>Notice that in Figure 9-1 the output sine wave is upside-down compared to the input. This is said to be an <span class="term">opposite polarity</span> output. This is a side effect of the common cathode circuit. Let’s look at how this would happen with the first half of a sine wave as it moves more positive at the control grid:</p>
+        
+        <ul>
+        	<li>As the voltage at the control grid is made more positive, current through the tube increases.</li><br>
+            <li>As current through the tube increases, current through the resistor (from anode to V+) also increases.  This causes the voltage drop of this resistor to increase.</li><br>
+            <li>The increased voltage drop of the resistor causes the anode voltage (bottom of the resistor in our image) to become more negative (less positive).</li><br>
+            <li><b>More positive control grid voltage = more negative anode (and output) voltage.</b></li><br>
+        </ul>
+        
+        <p>The opposite happens for the negative half of the waveform:</p> 
+        
+        <ul>
+         	<li>As the voltage at the control grid is made more negative, current through the tube decreases.</li><br>
+         	<li>As current through the tube decreases, current through the resistor (from anode to V+) also decreases.  This causes the voltage drop of this resistor to decrease.</li><br>
+         	<li>The decreased voltage drop of the resistor causes the anode voltage (bottom of the resistor in our image) to become more positive.</li><br>
+            <li><b>More negative control grid voltage = more positive anode (and output) voltage.</b></li><br>
+        </ul>
+        
+        
+        <div class="line_break"></div>
+        
+        
+        <h2>Common Anode Amplifier</h2>
+        
+        <p>In Figure 9-2 you can see the other common way to connect a triode as an amplifier. With a <span class="term">common anode amplifier</span>:</p>
+        
+        <ol>
+         	<li>1The control grid is again the input.</li><br>
+         	<li>The anode is connected directly to a positive DC voltage source.</li><br>
+         	<li>The output is connected to the cathode.</li><br>
+            <li>The cathode is connected to ground through a resistor.</li><br>
+       </ol>
+       
+       <div class="image_right"> <a href="../img/unit05/figure5-14.png" target="new"><img src="../img/unit05/figure5-14.png" alt="Common anode schematic"  width="388" height="355" class="image_border" /></a>
+       </div>
+       
+       <p>We still need our resistor to convert changing current into changing voltage, but in this case it is connected from cathode to ground. This creates an output that is the same polarity as the input. Let’s look at how that happens for the first (positive) half of the input waveform: </p>
+       
+       <ul>
+         	<li>As the voltage at the control grid is made more positive, current through the tube increases.</li><br>
+         	<li>As current through the tube increases, current through the resistor (from ground to cathode also increases.  This causes the voltage drop of this resistor to increase.</li><br>
+         	<li>The increased voltage drop of the resistor causes the cathode voltage (top of the resistor in our image) to become more positive.</li><br>
+            <li><b>More positive control grid voltage = more positive cathode (and output) voltage.</b></li><br>
+        </ul>
+        
+        <p>The opposite will happen during the negative half of the input waveform.</p>
+        
+        <ul>
+        	<li><b>More negative control grid voltage = more negative cathode (and output) voltage.</b></li><br>
+        </ul>
+        
+        <p>The output is connected in parallel with the cathode and parallel branches of a circuit must have the same voltage across them. Because the output has the same voltage as the cathode, this amplifier type is also called a <span class="term">cathode follower</span>.</p>
+        <p>In this circuit we use a resistor from cathode to ground to convert the changing current into changing voltage.
+</p>
+     
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

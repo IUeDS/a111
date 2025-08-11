@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+
+	   <div class="slideshow_prev"></div>
+       <div class="slideshow">
+       	  <div class="slideshow_title"></div>
+          <div class="slideshow_text"></div>
+          <div class="slideshow_animation no_caption"></div>
+          <div class="slideshow_images no_caption"></div>
+          <div class="slideshow_audio"></div>
+       </div> <!-- end of slideshow class -->
+       <div class="slideshow_next"></div>
+       
+       <script>
+			 	var $slideshow_title = $(".slideshow_title");
+				var $slideshow_text = $(".slideshow_text");
+				var $slideshow_animation = $(".slideshow_animation");
+				var $slideshow_audio = $(".slideshow_audio");
+				var $slideshow_images = $(".slideshow_images");
+				var $next_button = $(".slideshow_next");
+				var $prev_button = $(".slideshow_prev");
+
+			 	function clear_slide() {
+					$slideshow_title.empty();
+					$slideshow_text.empty();
+					$slideshow_animation.empty();
+					$slideshow_images.empty();
+					$slideshow_audio.empty();
+				}
+				
+			 	var Slideshow_Slide = function(args) {
+					this.title = args.title;
+					this.text = args.text;
+					if (args.animations) {
+						this.animations = "";
+						for (anim_index = 0; anim_index < args.animations.length; anim_index++) {
+							this.animations += "<img src='../media/unit5/slideshow/" 
+							+ args.animations[anim_index].name + ".gif'" + 
+							"height=" + args.animations[anim_index].height + 
+							"width=" + args.animations[anim_index].width + ">";
+						}
+					}
+					if (args.images) {
+						this.images = "";
+						for (image_index = 0; image_index < args.images.length; image_index++) {
+							this.images += "<img src='../media/unit5/slideshow/" + 
+							args.images[image_index].name + ".png'" + 
+							"height=" + args.images[image_index].height + 
+							"width=" + args.images[image_index].width + ">";
+						}
+					}
+					this.audio = "<audio controls='controls' autoplay='true' src='../media/unit5/slideshow/" + args.audio + ".mp3'>";
+					this.next = args.next;
+					this.prev = args.prev;
+					this.visible = args.visible;
+					
+					this.next_slide = function(all_slides) {
+							if (this.next != false) {
+								this.next.setup(all_slides);
+							}
+					}
+					
+					this.prev_slide = function(all_slides) {
+							if (this.prev != false) {
+								this.prev.setup(all_slides);
+							}
+					}
+					
+					this.make_visible = function(all_slides) {
+						for (i = 0; i < all_slides.length; i++) {
+							all_slides[i].make_invisible();
+						}
+						this.visible = true;
+					}
+					
+					this.make_invisible = function() {
+						this.visible = false;
+					}
+					
+					this.setup = function(all_slides) {
+						clear_slide();
+						$slideshow_title.html(this.title);
+						$slideshow_text.html(this.text);
+						if (this.animations) {
+							$slideshow_animation.html(this.animations);
+						}
+						if (this.images) {
+							$slideshow_images.html(this.images);
+						}
+						$slideshow_audio.html(this.audio);
+						this.make_visible(all_slides);
+						if (this.prev == false) {
+							$prev_button.css("visibility", "hidden");
+						} else {
+							$prev_button.css("visibility", "visible");
+						}
+						if (this.next == false) {
+							$next_button.css("visibility", "hidden");
+						} else {
+							$next_button.css("visibility", "visible");
+						}
+					}
+
+				}
+				
+				var slide1 = new Slideshow_Slide({
+												title: "Full Wave Rectifier",
+												text: "Where would you connect the output to use this as a positive voltage source?",
+												animations: [{name: "fullwaverectifier", height: 400, width: 400}],
+												audio: "slide1",
+												prev: false,
+												visible: false
+										});
+				
+				var slide2 = new Slideshow_Slide({
+												title: "Full Wave Rectifier",
+												text: "First, let's look at what a positive voltage source does." +
+													  " Draw electron flow in the circuit displayed.",
+												images: [{name: "PositiveVoltageSourceWithElectronFlow", height: 400, width: 400}],
+												audio: "slide2",
+												prev: slide1,
+												visible: false
+										});
+				
+				var slide3 = new Slideshow_Slide({
+												title: "Full Wave Rectifier",
+												text: "Electrons flow from ground to the <span class='red'>positive</span> voltage." + 
+													  " That means that our voltage source <span class='red'>positive</span>" + 
+													  " output has to take electrons into it.",
+												animations: [{name: "PositiveVoltageSourceWithElectronFlow", height: 400, width: 400}],
+												audio: "slide3",
+												prev: slide2,
+												visible: false
+										});
+				var slide4 = new Slideshow_Slide({
+												title: "Full Wave Rectifier",
+												text: "Where would you connect the output to use this as a positive voltage source?",
+												animations: [{name: "fullwaverectifier", height: 400, width: 400}],
+												audio: "slide4",
+												prev: slide3,
+												visible: false
+										});
+				var slide5 = new Slideshow_Slide({
+												title: "Full Wave Rectifier as V+ Source",
+												text: "",
+												animations: [{name: "fullwaverectifierWithOutput", height: 400, width: 400}],
+												audio: "slide5",
+												next: false,
+												prev: slide4,
+												visible: false
+										});
+										
+				slide1.next = slide2;
+				slide2.next = slide3;
+				slide3.next = slide4;
+				slide4.next = slide5;
+										
+				var all_slides = [slide1, slide2, slide3, slide4, slide5];
+				
+				var left_arrow = "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='50' height='50' viewBox='0 0 32 32'><g id='icomoon-ignore'></g><path d='M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16-16-7.163-16-16 7.163-16 16-16zM16 29c7.18 0 13-5.82 13-13s-5.82-13-13-13-13 5.82-13 13 5.82 13 13 13zM6.586 14.586l8-8c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-4.586 4.586h11.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-11.172l4.586 4.586c0.781 0.781 0.781 2.047 0 2.829-0.391 0.39-0.902 0.586-1.414 0.586s-1.024-0.195-1.414-0.586l-8-8c-0.781-0.781-0.781-2.047 0-2.828z' fill='#000000'></path></svg>";
+				
+				var right_arrow = "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='50' height='50' viewBox='0 0 32 32'><g id='icomoon-ignore'></g><path d='M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13zM25.414 14.586l-8-8c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l4.586 4.586h-11.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h11.172l-4.586 4.586c-0.781 0.781-0.781 2.047 0 2.829 0.391 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586l8-8c0.781-0.781 0.781-2.047 0-2.828z' fill='#000000'></path></svg>";
+
+					$(document).ready(function() {
+						$prev_button.html(left_arrow);
+						$next_button.html(right_arrow);
+						slide1.setup(all_slides);	
+					});
+					
+					$prev_button.click(function() {
+						for (k = 0; k < all_slides.length; k++) {
+							if (all_slides[k].visible == true) {
+								all_slides[k].prev_slide(all_slides);
+							}
+						}
+					});
+					
+					$next_button.click(function() {
+						for (k = all_slides.length - 1; k >= 0; k--) {
+							if (all_slides[k].visible == true) {
+								all_slides[k].next_slide(all_slides);
+							}
+						}
+					});
+					
+					$next_button.hover(
+						function() {
+							$(".slideshow_next path").css("fill", "#F7B26E");
+						}, function(){
+							$(".slideshow_next path").css("fill", "#000");
+						});
+						
+					$prev_button.hover(
+						function() {
+							$(".slideshow_prev path").css("fill", "#F7B26E");
+						}, function(){
+							$(".slideshow_prev path").css("fill", "#000");
+						});
+				
+			 </script>
+       
+       <style>
+			 		.slideshow_title {
+						font-family: "open_sanscondensed_light";
+						font-size: 2.5em;
+						text-transform: uppercase;
+						background: black;
+						color: #30A4A1;
+						width: 400px;
+						padding: 10px;
+					}
+
+					.slideshow_prev, .slideshow_next {
+						margin-top: 250px;
+						padding: 20px;
+					}
+					
+					.slideshow_prev, .slideshow, .slideshow_next {
+						float: left;
+					}
+					
+					.slideshow_prev:hover, .slideshow_next:hover {
+						cursor: pointer;
+					}
+
+					.slideshow_animation, .slideshow_images {
+						background: black;
+						width: 400px;
+					}
+					
+					.slideshow_animation img, .slideshow_images img {
+						margin: 0 auto;
+					}
+					
+					.slideshow_text {
+						margin: 0;
+						background: black;
+						color: white;
+						width: 400px;
+						padding: 10px;
+						font-size: 1.25em;
+					}
+					
+					.slideshow_audio audio {
+						width: 300px;
+					}
+					
+					.slideshow_audio {
+						width: 350px;
+						margin: 20px auto;
+						background: black;
+					}
+					
+					.slideshow {
+						border: solid #4B306A 5px;
+						background: black;
+					}
+
+			 </style>
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

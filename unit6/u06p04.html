@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+                
+        <div class="image_right">
+            <img src="../img/unit06/figure6-4.png" class="image_border" width="350">
+        </div>
+         
+         <p>Starting with the power supply makes sense as it is required for all other sections of the circuit. After that a good method is to follow the audio. The audio starts at the input and finished at the output so we will go in that same order. </p>
+         
+         <p>Figure 4-1 shows a re-drawn close up of the input section. This amplifier has two input connections or &quot;jacks&quot;. You can either use them at the same time with two different instruments or choose which to use for a single instrument. In the case of this amplifier, the two inputs will create two different outputs if used separately.</p>
+         
+         <p>You may notice that the schematic symbols next to 1 and 2 on the schematic are not something we have seen before. These are symbols for ¼” jacks. These are used for electric guitars. Figure 4-2 shows these schematic symbols. 
+</p>
+         <p>&nbsp;</p>
+
+		 <div class="image_left">
+            <img src="../img/unit06/figure6-5.png" class="image_border" width="350">
+        </div>
+        
+        <p>There are two connections shown for this schematic symbol. The &quot;positive&quot; connection is where our audio comes in when a plug is inserted into the jack. The &quot;switched&quot; connection changes depending on whether something is plugged in or not. When something is not plugged in to this jack the &quot;switched&quot; connection is connected to the &quot;positive&quot; connection. When something is plugged in, this connection is broken. More on how this is used coming up next. There is also a ground connection for this jack that is not shown; it must be connected to ground in the circuit to function properly. </p>	
+        
+        
+        <div class="line_break"></div>
+
+
+		<h2>Plugged into #1 only</h2>
+
+		<div class="image_right">
+        	<img src="../img/unit06/figure6-6.png" width="350" class="image_border">
+       </div>
+       
+       <p>If something is plugged into input #1 but nothing is plugged into input #2 the circuit can be re-drawn as shown in Figure 4-3. </p>
+       
+       <p>Since nothing is plugged in to input #2, the switched connection connects the two $68k\Omega$ resistors in parallel. This could be simplified into a single $34k\Omega$ resistor and is in series with the audio signal. There is also a $1M\Omega$ resistor from input #1 to ground. Since there it very little current into the control grid of a tube, the $34k\Omega$ resistor will drop very little voltage. Almost all of the voltage from the instrument will get to the control grid. </p>
+       
+       <p>Let’s see how different it would be with something plugged into #2 instead. </p>
+       
+       
+       <div class="line_break"></div>
+
+
+		<h2>Plugged into #2 only</h2>
+
+		<div class="image_right">
+        	<img src="../img/unit06/figure6-7.png" width="350" class="image_border">
+       </div>
+       
+       <p>Figure 4-4 shows the circuit re-drawn if something was plugged into only input #2. With nothing plugged in to input #2, the $1M\Omega$ resistor is shorted out and we have another voltage divider. This time the two resistors are both $68k\Omega$. that means that half of the input voltage will get to the control grid. We now know that plugging into input #1 by itself will create a louder sound than plugging into input #2 by itself. </p>
+       
+       
+       <div class="line_break"></div>
+
+
+		<h2>Playing with a Friend?</h2>
+
+		<div class="image_right">
+        	<img src="../img/unit06/figure6-8.png" width="350" class="image_border">
+       </div>
+       
+       <p>What about plugging into both inputs with different instruments? Figure 4-5 shows this option. In this case the signal from both inputs must path through a $68k\Omega$ resistor before getting to the input. In the case of input #1 there is also a $1M\Omega$ resistor to ground. We know that there will be next to no current flowing into the control grid of the triode; that means that the $68k\Omega$ resistors will drop next to no voltage. The entire voltage from both input #1 and input #2 will get to the control grid.</p>
+       <div class="line_break"></div>
+
+
+		<h2>A note about this process</h2>
+        
+        <p>This may have seemed like a long drawn out process to figure out what we did. The idea of re-drawing the circuit for different situations is a very important one to learn and practice, so it is worth taking the time. We will explore this more in Chapter 15.</p>
+        
+
+       
+       
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

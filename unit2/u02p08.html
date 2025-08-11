@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        
+        <div class="image_right">
+        	<img src="../img/unit02/figure2-22.png" class="image_border" width="550">
+        </div> <!-- end of image_right div -->
+       
+       <p>Back in 2-5 we discussed a few tricks for making parallel circuits easier to solve. Now we are going to take that approach to more complex circuits. Let’s take the example circuit in Figure 8-1. This circuit has a combination of series and parallel connections between components.</p>
+        
+        <div class="line_break"></div>
+        
+        <h2>Step 1:</h2>
+        
+        <p>The first step is to make certain you understand how all the components are connected. In this circuit it is not necessarily obvious as it is drawn. You will often find this to be true as schematics are drawn to fit on the page more often than to be easy to read. To make it easier to understand it is very often a good idea to re-draw a schematic so that it is clear how everything is connected. </p>
+        
+        <p>Figure 8-2 shows the circuit re-drawn so that it is clearer how the resistors are connected. </p>
+        
+        <div class="image_center ipad_center">
+        	<img src="../img/unit02/figure2-23.png" class="image_border">
+        </div> <!-- end of image_right div -->        
+        
+        <div style="clear: both">
+        	<ul>
+        		<li>The series combination of R5 and R6 are in parallel with R7 so how they are drawn was slightly changed to make it look like we are used to seeing parallel components.</li><br>
+                <li>R4 is in series with R5/R6/R7 so it was turned vertical so it is clearer that it is in series with that sub-circuit of three resistors.</li><br>
+                <li>R1, R2, and, R3 were left as they were.</li><br>
+        	</ul>
+        
+        <p><em>In the next steps we will combine resistors in easily combined sub-circuits. It is important that you start this process of simplifying parallel sub-circuits at the opposite side from where you are measuring. If not your results will be wrong.</em></p>
+        </div>
+        
+        <div class="line_break"></div>
+        
+        <h2>Step 2:</h2>
+        
+        <div class="image_center ipad_center">
+        	<img src="../img/unit02/figure2-24.png" class="image_border">
+        </div> <!-- end of image_right div -->
+        
+        <div style="clear: both">
+        <p>First R5 and R6 are added to become a $2K\Omega$ resistor to get the simplification shown in Figure 8-3.</p>
+        
+         <table class="content_table table_striped middle_border_table">
+            <tr>
+            	<td>Choose the correct formula.</td>
+                <td>$Rsum5, 6 = R5 + R6$</td>
+            </tr>
+            <tr>
+            	<td>Insert the known values.</td>
+                <td>$Rsum5, 6 = 2K\Omega + 2K\Omega$</td>
+            </tr>
+            <tr>
+            	<td><b>Solve it!</b></td>
+                <td><b>$ Rsum5, 6 = 4K\Omega $ </b></td>
+            </tr>
+         </table>
+         </div>
+         
+         <div class="line_break"></div>
+         
+         <h2>Step 3:</h2>
+         
+         <p>Next we combine the $2K\Omega$ resistor that is the sum of R5 and R6 from Step 2 with R7. They are both $2K\Omega$ and in parallel so they become a $1k\Omega$ resistor shown in Figure 8-4.</p>
+         
+         <div class="image_center ipad_center">
+        	<img src="../img/unit02/figure2-25.png" class="image_border">
+        </div> <!-- end of image_right div -->
+        
+         <div style="clear: both">
+         <p>We use the inverse rule to sum R5, R6, and R7 into a resistor we will call $Rsum5,6,7$.</p>
+         
+         <table class="content_table table_striped middle_border_table">
+            <tr>
+            	<td>Choose the correct formula.</td>
+                <td>$\frac {1}{Rsum5,6,7} = \frac {1}{Rsum5,6} + \frac {1}{R7}$</td>
+            </tr>
+            <tr>
+            	<td>Insert the known values.</td>
+                <td>$\frac {1}{2K} + \frac {1}{2K} = \frac {1}{1K}$</td>
+            </tr>
+            <tr>
+            	<td><em>Or use the shortcut.</em></td>
+                <td>$2K\Omega ÷ 2 = 1K\Omega$</td>
+            </tr>
+            <tr>
+            	<td><b>Solve it!</b></td>
+                <td><b>$Rsum5,6,7 = 1K\Omega$</b></td>
+            </tr>
+         </table>
+         </div>
+        
+        <div class="line_break"></div>
+         
+         <h2>Step 4:</h2>
+         
+         <p>Next we combine R4 with R5-6-7 as shown in Figure 8-5. </p>
+         
+         <div class="image_center ipad_center">
+        	<img src="../img/unit02/figure2-26.png" class="image_border">
+        </div> <!-- end of image_right div -->
+         
+         <div style="clear: both">
+         <table class="content_table table_striped middle_border_table">
+            <tr>
+            	<td>Choose the correct formula.</td>
+                <td>$Rsum4,5,6,7 = Rsum5,6,7 + R4$</td>
+            </tr>
+            <tr>
+            	<td>Insert the known values.</td>
+                <td>$Rsum4,5,6,7 = 1K\Omega + 1K\Omega$</td>
+            </tr>
+            <tr>
+            	<td><b>Solve it!</b></td>
+                <td><b>$Rsum4,5,6,7 = 2K\Omega$</b></td>
+            </tr>
+         </table>
+         </div>
+         
+         <div class="line_break"></div>
+         
+         <h2>Step 5:</h2>
+         
+         <p>Next we combine R1 and R2 into a $4k\Omega$ resistor as shown in Figure 8-6. </p>
+         
+         <div class="image_center ipad_center">
+        	<img src="../img/unit02/figure2-27.png" class="image_border">
+        </div> <!-- end of image_right div -->
+         
+         <div style="clear: both">
+         <table class="content_table table_striped middle_border_table">
+            <tr>
+            	<td>Choose the correct formula.</td>
+                <td>$Rsum1,2 = R1 + R2$</td>
+            </tr>
+            <tr>
+            	<td>Insert the known values.</td>
+                <td>$Rsum1,2 = 2K\Omega + 2K\Omega$</td>
+            </tr>
+            <tr>
+            	<td><b>Solve it!</b></td>
+                <td><b>$Rsum1,2 = 4K\Omega$</b></td>
+            </tr>
+         </table>
+         </div>
+         
+         <div class="line_break"></div>
+         
+         <h2>Step 6:</h2>
+         
+         <p>The sum of R1 and R2 can now be easily combined with R3 since they are the same value. That gives us an $Rsum1,2,3$ value of $2k\Omega$ as shown in Figure 8-7.</p>
+         
+         <div class="image_center ipad_center">
+        	<img src="../img/unit02/figure2-28.png" class="image_border">
+        </div> <!-- end of image_right div -->
+         
+         <div style="clear: both">
+         <table class="content_table table_striped middle_border_table">
+            <tr>
+            	<td>Choose the correct formula.</td>
+                <td>$\frac {1}{Rsum1,2,3} = \frac {1}{Rsum1,2} + \frac {1}{R3}$</td>
+            </tr>
+            <tr>
+            	<td>Insert the known values.</td>
+                <td>$\frac {1}{Rsum1,2,3} = \frac {1}{4K\Omega} + \frac {1}{4K\Omega}$</td>
+            </tr>
+            <tr>
+            	<td><em>Or use the shortcut.</em></td>
+                <td>$Rsum1,2,3 = 4K\Omega ÷ 2$</td>
+            </tr>
+            <tr>
+            	<td><b>Solve it!</b></td>
+                <td><b>$Rsum1,2,3 = 2K\Omega$</b></td>
+            </tr>
+         </table>
+         </div>
+         
+         <div class="line_break"></div>
+         
+         <h2>Step 7:</h2>
+         
+         <p>We can now easily combine the remaining two resistors, two $2kΩ$ in parallel, into a single $1kΩ$ resistance as shown in Figure 8-8.</p>
+         
+         <div class="image_center ipad_center">
+        	<img src="../img/unit02/figure2-29.png" class="image_border">
+        </div> <!-- end of image_right div -->
+         
+         <div style="clear: both">
+         <table class="content_table table_striped middle_border_table">
+            <tr>
+            	<td>Choose the correct formula.</td>
+                <td>$\frac {1}{Rsum1,2,3,4,5,6,7} = \frac {1}{Rsum1,2,3} + \frac {1}{Rsum4,5,6,7}$</td>
+            </tr>
+            <tr>
+            	<td>Insert the known values.</td>
+                <td>$\frac {1}{Rsum1,2,3,4,5,6,7} = \frac {1}{2K\Omega} + \frac {1}{2K\Omega}$</td>
+            </tr>
+            <tr>
+            	<td><em>Or use the shortcut.</em></td>
+                <td>$Rsum1,2,3,4,5,6,7 = 2k\Omega ÷ 2$</td>
+            </tr>
+            <tr>
+            	<td><b>Solve it!</b></td>
+                <td><b>$Rsum1,2,3,4,5,6,7 = 1K\Omega$</b></td>
+            </tr>
+         </table>
+         </div>
+         
+         <h2>Video step-by-step</h2>
+         <div class="walkthrough">
+       		<div class="media_holder">
+       			<div class="step_header"></div> <!-- end of step_header div -->
+  				<div class="video_holder"></div> <!-- end of image_holder div -->
+            	<div class="audio_holder"></div> <!-- end of audio_holder div -->
+            </div> <!-- end of media_holder div -->
+            <div class="step_buttons_holder">
+            	<div id="previous" class="step_button">Previous</div>
+                <div id="step1" class="step_button">Step 1</div>
+                <div id="step2" class="step_button">Step 2</div>
+                <div id="step3" class="step_button">Step 3</div>
+                <div id="step4" class="step_button">Step 4</div>
+                <div id="step5" class="step_button">Step 5</div>
+                <div id="step6" class="step_button">Step 6</div>
+                <div id="next" class="step_button">Next</div>
+            </div> <!-- end of step_buttons_holder div -->
+       </div> <!-- end of walkthrough div -->
+        
+       <!-- 
+       <p>Our next sub-circuit is a <span class="term">current divider</span>. When resistors are connected in parallel we know that the voltage across each resistor is the same. However, the current through each parallel resistor adds up to make the total current from the voltage source. In figure 7-1 you see four $4k\Omega$ resistors in parallel. From the discussion on page 4 you know that the total resistance of figure 7-1 is $ 1K\Omega (\frac {1}{4000\Omega} + \frac {1}{4000\Omega} + \frac {1}{4000\Omega} + \frac {1}{4000\Omega} = \frac {1}{R_{total}} $ so $ R_{total} = 1000\Omega $ or $ 1K\Omega) $.</p>
+       
+       <p>From that we can use Ohm’s law to find total current of the circuit. In the case of Figure 7-1 we have $ 40V = 1K\Omega \times A ( $or $ 40V = 1000\Omega \times A) $. That means that $ A = \frac {40}{1000} = 0.04A. $</p>
+       
+       <p>We can make the equation a little easier by using a trick you hopefully remember from algebra. It would be easier to divide 40 by 1 instead of 1000.</p>
+       
+       <p>If we want to use $ 1K\Omega $ instead of $ 1000\Omega $ we simply need to divide $ A $ by $ 1000 $. </p>
+       
+       <ul>
+       		<li>That gives us $ 0.001A $ which is $ 1mA $ </li>
+            <li>Our equation becomes $ 40V = 1K\Omega \times mA. $ </li>
+            <li>Now we can easily divide $ 40V $ by $ 1K\Omega $ and get $ A = 40mA $. </li>
+       </ul>
+       
+       <p>You can see in figure 7-2 that meters connected to the circuit show that same value. </p>
+       
+       <div class="image_left">
+        	<img src="../img/unit02/figure7-2.png" class="image_border" width="375" height="223">
+        </div> <!-- end of image_left div -->
+        
+       <!--
+       <p>You may think that trick didn’t make much difference here but it will really aid you on more complex problems. It also turns out that, in audio electronics at least, we are usually working with KΩ and mA.</p>
+       
+       <p>Each branch of a parallel circuit can be seen as a circuit on its own. In the case of Figure 7-2 the four branches are the same, each has a $ 4K\Omega $ resistor with $ 40V $. Ohm’s law tells us that the current through the resistor, in any of the four branches, is $ 10mA (40V = 4K\Omega \times 10mA) $.</p>
+       
+       <p>Since we also know that the current in the branches of a parallel circuit add up to the total current for the circuit we can calculate that the total current for the circuit is $ 10mA + 10mA +10mA + 10mA = 40mA $. Notice that we got the same total current adding each branch up as we did finding total resistance and finding current from that. Either way yields a correct result so you can stick with one strategy or double check your results by figuring the total with both methods.</p>
+       -->
+       
+       
+       <!--<div class="line_break"></div>
+       <h2>Example Problems</h2>
+       <p>This first video finds total current and current  for each resistor in a simple current divider circuit..</p>
+       <iframe src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player_1466450645&entry_id=1_7ja19hth&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+       <br>
+       <a href="http://www.kaltura.com/tiny/ijlkz" target="_blank">View video in a new tab (option for full screen)</a>
+       <p>&nbsp;</p>
+       <p>This second video finds total current and current for each resistor in a more complex circuit.</p>
+    	<iframe src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player_1466450677&entry_id=1_z756519n&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+        <br>
+        <a href="http://www.kaltura.com/tiny/o9rg9" target="_blank">View video in a new tab (option for full screen)</a>-->
+        <script>
+	   
+	   		var current_number = 0;
+			
+			$(document).ready(function() {
+				swap_out_walkthrough(1);
+			});
+	   
+	   		$("#step1").click(function() {
+				swap_out_walkthrough(1);
+			});
+			
+			$("#step2").click(function() {
+				swap_out_walkthrough(2);
+			});
+			
+			$("#step3").click(function() {
+				swap_out_walkthrough(3);
+			});
+			
+			$("#step4").click(function() {
+				swap_out_walkthrough(4);
+			});
+			
+			$("#step5").click(function() {
+				swap_out_walkthrough(5);
+			});
+			
+			$("#step6").click(function() {
+				swap_out_walkthrough(6);
+			});
+			
+			
+			$("#previous").click(function() {
+				if (current_number <= 1) {
+					//do nothing
+				}
+				else {
+					swap_out_walkthrough(current_number - 1)
+				};
+			});
+			
+			$("#next").click(function() {
+				if (current_number >= 6) {
+					//do nothing
+				}
+				else {
+					swap_out_walkthrough(current_number + 1);
+				}
+				
+			});
+			
+			function swap_out_walkthrough(number) {
+				/* get ensemble video codes based on number */
+				var video_code = "";
+				if (number == 1) {
+					video_code = "1_3fraxvsi";
+				}
+				else if (number == 2) {
+					video_code = "1_0ssrraxt";
+				}
+				else if (number == 3) {
+					video_code = "1_ryytj7vv";
+				}
+				else if (number == 4) {
+					video_code = "1_aalzon4l";
+				}
+				else if (number == 5) {
+					video_code = "1_0k96sy6d";
+				}
+				else if (number == 6) {
+					video_code = "1_s8qxbfgw";
+				}				
+				
+				$(".video_holder").empty();
+				//html5 version
+				$(".video_holder").append('<iframe src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player_1466450677&entry_id=' + video_code + '&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>');
+				$(".step_header").empty();
+				$(".step_header").append("Step " + number);
+				current_number = number;
+			}
+       </script>
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

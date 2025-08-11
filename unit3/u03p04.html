@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        
+       <div class="interactive_FRC_right">
+       		<div class="media_holder">
+  				<div class="image_schematic_holder">
+                	<img src='../img/unit03/figure3-6.png' width='300'>
+                </div> <!-- end of image_schematic_holder div -->
+            	<div class="audio_holder">
+                	<audio controls loop> <source src='../media/unit3/interactive_audio/LP_filter.mp3' type='audio/mp3'>
+                </div> <!-- end of audio_holder div -->
+            </div> <!-- end of media_holder div --> 
+            <div id="LP_filter" class="audio_button">Filter</div>
+            <div id="LP_flat" class="audio_button">Flat</div>
+         </div> <!-- end of interactive_FRC div -->
+       
+       <p>Figure 4-1 shows the schematic of an AC signal source connected first through an inductor and then into a speaker. The speaker schematic symbol is on the far right of the schematic and is the load for this circuit. Speakers are electrical devices that convert electrical current into sound.</p>
+       
+       <p>If we place an inductor in series between an audio source and the load, as shown in Figure 4-1, we create a <span class="term">low pass filter</span>. Low pass filters are also known as high cut filters. They pass the low frequencies and cut the high frequencies. The low pass filter in Figure 4-1, as well as all the filters we will be discussing in chapters 3 and 4 are all <span class="term">passive filters</span>. Passive filters can reduce voltage, but not increase it. In later chapters we will discuss active filters. </p>
+         
+       <p>With an inductor, the reactance is higher for higher frequencies and lower for lower frequencies. In other words, low frequencies get through easier than high frequencies. For these examples we will use a speaker as the load in our schematics. </p>
+       
+       <p>To represent frequency response, we will use a graph that has a vertical (y) axis that represents output voltage (or volume). The horizontal (x) axis represents frequency from low (left) to high (right). This graph is referred to as the frequency response curve. </p>
+       
+       <p>Figure 4-1 shows the frequency response drawn for the low pass filter created by an inductor in series as well as the schematic. </p>
+       
+       <p><em>This is just a very simple representation of the frequency response of the filter, more detailed representations that will include numeric frequency values will come later in the chapter.</em></p>
+       
+       <div class="line_break"></div>
+
+       <div class="interactive_FRC_left">
+       		<div class="media_holder">
+  				<div class="image_holder">
+                	<img src='../img/unit03/figure3-7.png' width='300'>
+                </div> <!-- end of image_holder div -->
+            	<div class="audio_holder"></div> <!-- end of audio_holder div -->
+            </div> <!-- end of media_holder div --> 
+            <div id="LP_inc" class="audio_button">Inductance Increased</div>
+            <div id="LP_inc_orig" class="audio_button">Original Low Pass</div>
+         </div> <!-- end of interactive_FRC div -->
+        
+       <p>If we increase the value of the inductance, either by adding more inductors in series or swapping for a larger inductor, the graph for frequency response will move to the left as shown in Figure 4-2. A simple way to remember this is that toward the left of the graph are the lower frequencies which are larger in wavelength.</p>
+
+       <div class="basicconcept">
+       		<div class="basicconcept_header">When Inductance Changes</div>
+            <div class="basicconcept_body">Inductance value increased = curve moves to the left. <br>Inductance value decreased = curve moves to the right. </div>
+       </div> <!-- end of basicconcept div -->
+       
+       <p><strong>Larger inductance = Lower Frequencies.</strong></p>
+       
+        <div class="interactive_FRC_right">
+       		<div class="media_holder">
+  				<div class="image_holder">
+                	<img src='../img/unit03/figure3-8.png' width='300'>
+                </div> <!-- end of image_holder div -->
+            	<div class="audio_holder"></div> <!-- end of audio_holder div -->
+            </div> <!-- end of media_holder div --> 
+            <div id="LP_dec" class="audio_button">Inductance Decreased</div>
+            <div id="LP_dec_orig" class="audio_button">Original Low Pass</div>
+         </div> <!-- end of interactive_FRC div -->
+            
+       <p>If we decrease the value of the inductance, either by adding inductors in parallel with the first inductor, or using a smaller inductor, the graph for the frequency response will move to the right as shown in Figure 4-3. Again the higher frequencies have a smaller wavelength so making the inductance smaller will move the curve to the right, toward the smaller (higher) frequencies. </p>
+       
+       <p>This idea that the frequency response curve will move to the left for an increase in value (of inductance in this case), or to the right for a decrease in value, ends up being very useful. It works for Inductors in series or parallel and it also works for capacitors which we will discuss in Chapter 4.</p>
+
+		<div class="basicconcept">
+       		<div class="basicconcept_header">Basic Inductor Rules</div>
+            <div class="basicconcept_body" style="text-align: left;">
+            	<p>1) Inductors allow lower frequencies to pass easier than high frequencies. <br>
+              	<em>or</em> The higher the frequency, the larger the reactance ($X_L$ ) of an inductor. (larger $X_L$ = larger $V$ drop)</p>
+				<p>2) The larger the inductance/the larger the wavelength (lower the Frequency) that will be passed.</p>
+            </div> <!-- end of basicconcept_body div -->
+       </div> <!-- end of basicconcept div -->
+       
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

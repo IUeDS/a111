@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="tag:adobe.com,2012-03:edge:oam:compid:EDGE-14567786" name="U01Pg02_A1" version="1">
+
+  <description type="text/html"><![CDATA[Widget Exported from Adobe Edge]]></description>
+  <category name="Adobe Edge Animation"/>
+
+  <remarks>Compatible with: InDesign CS6, Dreamweaver</remarks>
+
+  <icon src="images/Poster.png" width="630" height="250" />
+
+  <require type="other" src="U01Pg02_A1.html" />
+
+  <require type="javascript" src="U01Pg02_A1_edge.js" />
+  <require type="javascript" src="U01Pg02_A1_edgeActions.js" />
+  <require type="javascript" src="U01Pg02_A1_edgePreload.js" />
+  <require type="javascript" src="edge_includes/edge.3.0.0.min.js" />
+  <require type="javascript" src="edge_includes/jquery-2.0.3.min.js" />
+
+  <require type="image" src="images/chrome_square_blue.png" />
+  <require type="image" src="images/chrome_square_green.png" />
+  <require type="image" src="images/chrome_square_red.png" />
+  <require type="image" src="images/chrome_square_silver.png" />
+  <require type="image" src="images/Claw.jpg" />
+  <require type="image" src="images/Claw.png" />
+  <require type="image" src="images/ClawClosed.png" />
+  <require type="image" src="images/clawphoto.jpg" />
+  <require type="image" src="images/Electron.png" />
+  <require type="image" src="images/ends.png" />
+  <require type="image" src="images/ends2.png" />
+  <require type="image" src="images/lag_bolt_head.jpg" />
+  <require type="image" src="images/light_bulb_OFF.png" />
+  <require type="image" src="images/light_bulb_ON.png" />
+  <require type="image" src="images/Poster.png" />
+  <require type="image" src="images/Rod-Seal-Boot.jpg" />
+  <require type="image" src="images/tubemiddle.png" />
+  <require type="image" src="images/tubemiddle2.png" />
+  <require type="image" src="images/tubemiddle22.png" />
+  <require type="image" src="images/tubemiddle222.png" />
+  <require type="image" src="images/TubeV3.png" />
+
+  <require type="folder" src="edge_includes" />
+  <require type="folder" src="images" />
+
+
+  <content><![CDATA[
+    <div class="EDGE-14567786"></div>
+  ]]></content>
+   
+  <properties name="Properties">
+    <property name="default-width" defaultValue="630" hidden="true"/>
+    <property name="default-height" defaultValue="250" hidden="true"/>
+    <property name="resizable" defaultValue="true" hidden="true"/>
+    <property name="use-chrome-frame" defaultValue="false" hidden="true"/>
+    <property name="chrome-frame-installer" defaultValue="" hidden="true"/>				
+		<property name="centering" defaultValue="none" hidden="true"/>				
+		<property name="scaling" defaultValue="both" hidden="true"/>
+    <property name="html-page" defaultValue="U01Pg02_A1.html" hidden="true"/>
+  </properties>
+
+</widget>

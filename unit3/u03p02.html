@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts -->
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content">
+        <!-- InstanceBeginEditable name="content" -->
+
+       <p>Resistors have resistance. That resistance is the same for any frequency and even for both AC and DC. <br>
+        For DC an inductor is simply a piece of wire and only useful in creating a concentrated magnetic field.</p>
+
+       <p>If we run an AC signal through an inductor we will get a magnetic field that varies in polarity with the polarity of the AC signal. Remember though that it also lags behind the electrical current. When the <span style="color: #A72022">positive</span> half of the AC waveform flows through the inductor, a magnetic field is created. For our example, let’s say it has a <span style="color: #A72022">positive</span> polarity. That <span style="color: #A72022">positive</span> polarity magnetic field is still hanging around when the electrical signal moves to the <span style="color: #2756C4">negative</span> half of the waveform. The <span style="color: #A72022">positive</span> polarity magnetic field will try to create current in the inductor going the opposite wave of the, now <span style="color: #2756C4">negative</span>, AC signal. When this happens the two forces cancel each other out creating less current flow. The faster the changes try to happen the more this cancelation will occur.</p>
+
+       <p>An AC signal that changes quickly is called high frequency and it is more difficult for high frequencies to move through an inductor than it is for low frequencies. </p>
+
+       <p>We can think of the inductor as having a value that is the equivalent of resistance but varies with frequency. The term we use for this is <span class="term">reactance</span>. In the case of an inductor we call it <span class="term">inductive reactance</span> and designate it with the symbol $X_L$. Because we have already used I for current we use $L$ for inductance. Reactance is measured in Ohms ($\Omega$).</p>
+
+       <div class="basicconcept">
+       	 <div class="basicconcept_header">Inductive Reactance:</div>
+                <div class="basicconcept_body">$ X_L = 2 \pi fL $ <span class="tab">$f$ = frequency (in hertz)</span> <span class="tab">$L$ = inductance (in henries)</span></div>
+      </div> <!-- end of basicconcept div -->
+
+       <p>The formula for inductive reactance is $ X_L = 2 \pi fL $. </p>
+
+
+       <div class="line_break"></div>
+
+       <h2>What it means</h2>
+
+       <p>A <em>high frequency</em> ($f$) will mean that there is a <em>high reactance</em> (as if there were a larger resistor) while a <em>low frequency</em> creates a <em>low reactance</em> (like a smaller resistor). This formula allows you to find the reactance of an inductor. Just as important is the relationship, which is shown in Figure 2-1, and listed below.</p>
+
+
+       <div class="image_left">
+       		<img src="../img/unit03/figure2-1.gif">
+       </div>
+
+       <p>The inductive reactance relationship:
+       <ul>
+       		<li>When frequency increases, reactance increases</li><br>
+            <li>When inductance increases, reactance increases</li><br>
+            <li>When frequency decreases, reactance decreases</li><br>
+            <li>When inductance decreases, reactance decreases</li>
+       </ul>
+       </p>
+
+
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div -->
+  	</div>  <!-- end of content_wrapper div -->
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div -->
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a>
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169;
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span>
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span>
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

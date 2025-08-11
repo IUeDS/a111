@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div --> 
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        <p>What is the relationship between voltage sources and loads in a circuit?</p>
+        
+		<p>Voltage sources provide the voltage that moves the electrons while the load uses up that voltage. Typically, there is just a single voltage source but there can be more than one load. A load is said to <span class="term">drop</span> the voltage that it uses. The load(s) and voltage source have a very simple relationship: the total voltage of the source must equal the total of the voltage drops. This relationship is described in the second of <a href="http://en.wikipedia.org/wiki/Kirchhoff's_circuit_laws" target="new">Kirchoff’s circuit laws</a> if you would like to investigate it in more detail.</p>
+                
+		<p>So far we have only discussed voltage sources. There are, in actuality, two types of sources, voltage sources and current sources. For this text we will just focus on the most common, which is the voltage source.</p>
+        
+        
+        <div class="line_break"></div>
+        
+        <p>A voltage source will be defined at a particular voltage. A 9V battery, for instance, is a voltage source that puts out 9 volts. How much current this creates is dependent upon the load. Let’s look at the circuit shown in Figure 8-1 for example, where there is a 9W light bulb. If we connect that to our 9V battery, we know that the voltage source (9V) must equal the voltage drops. Since the light bulb makes up the entire load it must drop all 9V.</p>
+        
+
+        
+        <div class="image_right ipad_center">
+            <div class="current_display"><img src="../img/unit01/howmuchcurrent_static.gif"></div>
+            <div class="hidden_image image_border no_caption"><img class="image image_border" src="../img/unit01/howmuchcurrent_static.gif"></div>
+            <div class="hidden_animation no_caption">
+                <img class="animation image_border" src="../media/Unit 1/howmuchcurrent_slow.gif" />
+            </div>
+            <div class="animation_button">Start Animation</div>
+            <div class="caption">Figure 8-1</div>
+      </div> <!-- end of image_right div -->
+      
+        <p class="ipad_clear">So, how much current is flowing in the circuit shown in figure 8-1?</p>
+        <div class="tab">
+        	<p>
+               ${P} = {V}*{I} $ <br> 
+                <span class="tab">so</span> <br> 
+                $ {9W} = {9V} \times {?A} $ <br>
+                <span class="tab">so</span> <br> 
+                $ {I} = {1A} $
+            </p>
+        </div>
+              
+        <p class="ipad_clear">If we used an 18W light bulb instead then there would be 2A of current. The load, which in this case is the light bulb, determines how much current is flowing. Remember that the load could be something as simple as a single light bulb or an incredibly complex circuit. In extremes, and all cases in between (with a voltage source), the load determines how much current will flow from the source into the load.</p>
+        
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

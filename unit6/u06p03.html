@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        
+        <p>In the bottom right corner of the full schematic shown in Figure 2-1 you will see the power supply. Figure 3-1 focuses on this section.</p>
+        
+        <div class="image_right ipad_center">
+            <img src="../img/unit06/figure6-3.png" width="413" height="279" class="image_border">
+        </div>
+         
+         <p>The components in this section are (in order from AC input to DC output:
+             <ul>
+                <li><b>AC switch</b></li>
+                    <ul>
+                        <li>Purpose: allow user to turn unit on or off.</li><br>
+                    </ul>    
+                <li><b>Fuse</b></li>
+                    <ul>
+                        <li>Purpose: prevent damage by stopping current flow if maximum is exceeded.</li><br>
+                    </ul> 
+                <li><b>0.047uF capacitor</b></li>
+                    <ul>
+                        <li>Purpose: remove noise from AC power line.</li><br>
+                        <li>How? A capacitor in parallel creates a low pass filter. This allows the AC power line 60Hz (or 50Hz) to pass but cuts higher frequencies, where noise is contained.</li><br>
+                    </ul> 
+                <li><b>TR1 transformer</b></li>
+                    <ul>
+                        <li>Purpose: Converts power line voltage (~120$V$ in U.S.) to voltages needed by circuit. In this case the secondary voltages are:</li><br>
+                        <ul>
+                        	<li>$320V_{RMS}$: Supplies large voltage to anodes.</li><br>
+                            <li>$5V_{RMS}$: Supplies heater voltage to full wave rectifier</li><br>
+                            <li>$6.3V_{RMS}$: Supplies heater voltage to other tubes</li><br>	
+                        </ul>
+                    </ul> 
+                <li><b>5y3GT full wave rectifier tube:</b></li>
+                    <ul>
+                        <li>Purpose = convert AC into DC</li><br>
+                        <li>Coverts $320V_{RMS}$ to $+360V_{DC}$</li><br>
+                    </ul> 
+                <li><b>20µF capacitors</b> (all three)</li>
+                    <ul>
+                        <li>Purpose = &quot;flatten&quot; rectified AC into DC</li><br>
+                        <li>How? A capacitor in parallel creates a low pass filter. The varying portion of the voltage (AC) is sent through the capacitor with a low reactance. This leaves only flat DC for the circuit.</li><br>
+                    </ul> 
+                <li><b>1kΩ and 10kΩ resistors</b></li>
+                    <ul>
+                        <li>Purpose = Reduce voltage for preamplifier and driver sections.</li><br>
+                        <li>How? A resistor in series creates a voltage drop.</li><br>
+                    </ul>                     
+             </ul>
+         </p>
+
+       
+       
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

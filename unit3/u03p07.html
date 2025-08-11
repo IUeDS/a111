@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+       		<div class="image_right">
+            	<img src="../img/unit03/figure3-15.png" width="330" height="206" class="image_border">
+            </div>
+       
+       		<p>In the examples of inductor filters so far we have been using a generic speaker to represent the load. Now let’s replace that generic speaker with a resistor as shown in Figure 7-1. We now have an <span class="term">RL filter</span> (resistor and inductor). </p>
+            
+            <p>We have already seen how changing the value of L1 would change the frequency response. Changing the resistor would also change the frequency response. Think of this circuit as a voltage divider. In that case if the value of either L1 or $R_L$ were to change then the relationship of voltage drops of L1 and $R_L$ would also change. </p>
+            
+            <p>To define the frequency response of an RL filter we first need to define two things: 
+            	<ol>
+                	<li>The slope of the filter </li><br>
+                    <li>At what frequency the filter begins to affect the signal.</li>
+                </ol>
+            </p>
+            
+            <div class="line_break"></div> 
+            
+            <h2>Filter Slope</h2>
+            
+            <p>The filters we have looked at so far are all <span class="term">first order</span> filters. This simply means that they have one reactive component in the circuit. So far this means one inductor, though we will add another component in chapter 4. <em>Note that if we use multiple inductors in parallel or series with each other, we are simply making a smaller or larger value inductor. It would still be a first order filter. </em></p>
+            
+            <p>All first order filters have a slope of $6dB/8_{VA}$. That means six decibels per octave.</p>
+            
+            <ul>
+            	<li>	Decibel ($dB$): A logarithmic way to define values. This is used a great deal with audio as it emulates the way that human beings hear. The math is actually not too complex. To find a $dB$ value you need to compare two things. Often that is a set reference value but in this case we are just comparing two values. To find the slope of a filter you would compare the voltage at a frequency with the voltage at a different frequency. We will be using two frequencies that are an octave (see below) apart. The formula when you are starting with voltage is $dB = 20 log⁡(\frac{V1}{V2})$ </li><br>
+                <li>Octave ($8_{VA}$): An octave is a musical interval that equates to a doubling of frequency. A frequency that is an octave above would be twice the frequency.</li>
+            </ul>
+  
+  		    <div class="line_break"></div> 
+            
+            <h2>Cutoff Frequency</h2>
+            
+            <div class="image_left">
+            	<img class="image_border" src="../img/unit03/figure3-14.png" width="300">
+            </div>
+            
+            <p>It is useful to know at what frequency a filter will start to have an effect.  For audio we find that a noticeable change in volume happens when the signal changes by $3dB$. The frequency where there is $3dB$ of difference between the original and filtered signals is called the <span class="term">cutoff frequency</span>. Cutoff frequency is typically indicated as $f_C$. </p>
+            
+            
+            <div style="clear:both">
+            <div class="aside_RightWrap">
+            		<div class="imgText"><em>$-3dB$ is also the point where the filtered power (for the first order low pass filter given here) is half of the original. </em></div>
+        	  </div> <!-- end of aside_LeftWrap div -->
+
+            
+            <p>The formula for cutoff frequency in a passive first order inductor filter is $f_C = \frac{R}{2\pi L}$. This same formula is used for either high pass or low pass. Resistance must be in Ohms and inductance in Henries, using $k\Omega$ and/or $mH$ will not work.</p> <br>
+            </div>
+            
+            <div class="basicconcept">
+            		<div class="basicconcept_header">Passive Inductor Cutoff Frequency</div>
+               	<div class="basicconcept_body">$f_C = \frac{R}{2\pi L}$</div>
+      		</div> <!-- end of basicconcept div -->     
+
+            <p>Now let’s work through finding the cutoff frequency.</p><br>
+            
+            <div class="content_table_title">Figure 7-2: Cutoff Frequency Solution</div>
+       			<table class="content_table table_striped middle_border_table">
+           			<tr>
+                		<td>Step 1: Choose the correct formula.</td>
+                		<td>$f_C = \frac{R}{2\pi L}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 2: Convert mH and $K\Omega$</td>
+                        <td>$ 159mH = 0.159H $ <br> $ 1k\Omega = 1000\Omega $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 3: Enter known values.</td>
+                        <td>$ f_C = \frac{1000\Omega}{2\pi 0.159H} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 4: Solve the denominator.</td>
+                        <td>$ f_C = \frac{1000\Omega}{0.999} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 5: <b>Solve it!</b></td>
+                        <td><b>$ f_C = 1000.97Hz $ </b></td>
+                    </tr>
+               </table>
+       
+      	 <p>Now let’s see what happens if we increase the inductance. We know that it should shift the curve to the left, making the cutoff frequency lower. Let’s see if the math agrees. We will increase the inductance by 10x to $1.59H (1,519mH)$.</p><br>
+         
+         <div class="content_table_title">Increased Inductance Cutoff Frequency Solution</div>
+       			<table class="content_table table_striped middle_border_table">
+           			<tr>
+                		<td>Step 1: Choose the correct formula.</td>
+                		<td>$ f_C = \frac{R}{2\pi L}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 2: Convert $K\Omega$</td>
+                        <td>$ 1k\Omega = 1000\Omega $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 3: Enter known values.</td>
+                        <td>$ f_C = \frac{1000\Omega}{2\pi 1.59H} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 4: Solve the denominator.</td>
+                        <td>$ f_C = \frac{1000\Omega}{9.99} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 5: <b>Solve it!</b></td>
+                        <td><b>$ f_C = 100.1Hz $ </b></td>
+                    </tr>
+               </table>
+               
+               <p>Nice to see that the math agrees! Now let’s try reducing that original $159mH$ inductor to $15.9mH$. In the last example we increased the inductance by 10X and the frequency was reduced by 10x, this relationship will still hold. Reducing the inductance by 10x (from our original 159mH) will increase $f_C$ by 10x, so it should move our roughly $1kHz$ fc to roughly $10kHz$.</p><br>
+               
+               <div class="content_table_title">Reduced Inductance Cutoff Frequency Solution</div>
+       			<table class="content_table table_striped middle_border_table">
+           			<tr>
+                		<td>Step 1: Choose the correct formula.</td>
+                		<td>$ f_C = \frac{R}{2\pi L}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 2: Convert Convert mH and $K\Omega$</td>
+                        <td>$ 15.9mH = 0.0159H $ <br> $ 1k\Omega = 1000\Omega $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 3: Enter known values.</td>
+                        <td>$ f_C = \frac{1000\Omega}{2\pi  0.0159H} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 4: Solve the denominator.</td>
+                        <td>$ f_C = \frac{1000\Omega}{0.0999} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 5: <b>Solve it!</b></td>
+                        <td><b>$ f_C = 10,001Hz $ </b></td>
+                    </tr>
+               </table>
+               
+               <p>To review, our cutoff frequency (rounded) is:
+               		<ul>
+                    	<li>$15.9mH: f_C=10kHz$</li><br>
+                        <li>$159mH: f_C=1kHz$</li><br>
+                        <li>$1.59H: f_C=100Hz$</li>
+               		</ul>
+               </p>
+               
+               <div class="line_break"></div> 
+            
+           	   <h2>Relationships</h2>
+               
+               <div class="image_left">
+            	<img class="image_border" src="../img/unit03/figure3-16.png" width="200">
+            	</div>
+               
+			   <p>Notice that $f_C$ and inductance have an inverse relationship, as shown in Figure 7-3. As inductance is increased, $f_C$ is decreased. </p>
+               
+               <div class="line_break"></div> 
+            
+           	   <h2>Changing the Resistor</h2>
+               
+               <div class="image_right">
+            	<img class="image_border" src="../img/unit03/figure3-17.png" width="330">
+           		</div>
+                
+                <p>Changing the value of the resistor in our circuit, shown again in Figure 7-4, will also change the cutoff frequency. With the circuit as shown we had a cutoff frequency or roughly $1kHz$. Given the cutoff frequency formula of $f_C = \frac{R}{2\pi L}$, consider what will happen to the cutoff frequency if we were to increase the value or $R1$ by 10x. </p><br><br>
+                
+                <div style="clear:both">
+                <div class="image_left">
+            	<img class="image_border" src="../img/unit03/figure3-18.png" width="200">
+           		</div>
+                
+                <p>Since the $R$ value in the cutoff frequency formula is on the top of the fraction, $R$ and $f_C$ are going to have a direct relationship, as shown in Figure 7-5. This is the opposite of the inverse relationship that $L$ and $f_C$ have. That means that increasing the value of $R$ will increase the value of $f_C$.</p><br>
+                </div>
+                
+                <div class="content_table_title" style="clear:both">Increased Resistance Cutoff Frequency Solution</div>
+       			<table class="content_table table_striped middle_border_table">
+           			<tr>
+                		<td>Step 1: Choose the correct formula.</td>
+                		<td>$ f_C = \frac{R}{2\pi L}$</td>
+                    </tr>
+                    <tr>
+                        <td>Step 2: Convert Convert mH and $K\Omega$</td>
+                        <td>$ 159mH = 0.159H $ <br> $ 10k\Omega = 10,000\Omega $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 3: Enter known values.</td>
+                        <td>$ f_C = \frac{10,000\Omega}{2\pi 0.159H} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 4: Solve the denominator.</td>
+                        <td>$ f_C = \frac{10,000\Omega}{0.999} $ </td>
+                    </tr>
+                    <tr>
+                        <td>Step 5: <b>Solve it!</b></td>
+                        <td><b>$ f_C = 10,010kHz $ </b></td>
+                    </tr>
+               </table>
+               
+               <div class="image_right">
+            	<img class="image_border" src="../img/unit03/figure3-19.png" width="330">
+           		</div>
+               
+               <p>Changing the value of an inductor can be difficult, or at least expensive. Potentiometers are a very inexpensive way to change resistance, however, so a filter with a variable cutoff frequency can be created by using a fixed value inductor and a potentiometer. A simple version of this is shown in Figure 7-6. Here we add a potentiometer to adjust the $R$ value (which is now $VR1$ + $R1$) and affect the cutoff frequency.</p>
+               
+               
+            
+            
+       <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

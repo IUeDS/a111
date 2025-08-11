@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+
+		 <div class="image_center ipad_center">
+        	<img src="../img/unit02/figure8-1.png" class="image_border" width="700">
+        </div> <!-- end of image_left div -->
+
+       <p>Back on page 5 we discussed a few tricks for making parallel circuits easier to solve. Now we are going to take that approach to more complex circuits. Let’s take the example circuit in Figure 10-1. This circuit has a combination of series and parallel connections between components. </p>
+       <p>The process is described in steps using short videos. Move through the step by step videos by clicking on the buttons below the video.</p>
+       
+       <div class="walkthrough">
+       		<div class="media_holder">
+       			<div class="step_header"></div> <!-- end of step_header div -->
+  				<div class="video_holder"></div> <!-- end of image_holder div -->
+            	<div class="audio_holder"></div> <!-- end of audio_holder div -->
+            </div> <!-- end of media_holder div -->
+            <div class="step_buttons_holder">
+            	<div id="previous" class="step_button">Previous</div>
+                <div id="step1" class="step_button">Step 1</div>
+                <div id="step2" class="step_button">Step 2</div>
+                <div id="step3" class="step_button">Step 3</div>
+                <div id="step4" class="step_button">Step 4</div>
+                <div id="step5" class="step_button">Step 5</div>
+                <div id="step6" class="step_button">Step 6</div>
+                <div id="next" class="step_button">Next</div>
+            </div> <!-- end of step_buttons_holder div -->
+       </div> <!-- end of walkthrough div -->
+       
+       <script>
+	   
+	   		var current_number = 0;
+			
+			$(document).ready(function() {
+				swap_out_walkthrough(1);
+			});
+	   
+	   		$("#step1").click(function() {
+				swap_out_walkthrough(1);
+			});
+			
+			$("#step2").click(function() {
+				swap_out_walkthrough(2);
+			});
+			
+			$("#step3").click(function() {
+				swap_out_walkthrough(3);
+			});
+			
+			$("#step4").click(function() {
+				swap_out_walkthrough(4);
+			});
+			
+			$("#step5").click(function() {
+				swap_out_walkthrough(5);
+			});
+			
+			$("#step6").click(function() {
+				swap_out_walkthrough(6);
+			});
+			
+			
+			$("#previous").click(function() {
+				if (current_number <= 1) {
+					//do nothing
+				}
+				else {
+					swap_out_walkthrough(current_number - 1)
+				};
+			});
+			
+			$("#next").click(function() {
+				if (current_number >= 6) {
+					//do nothing
+				}
+				else {
+					swap_out_walkthrough(current_number + 1);
+				}
+				
+			});
+			
+			function swap_out_walkthrough(number) {
+				/* get ensemble video codes based on number */
+				var video_code = "";
+				if (number == 1) {
+					video_code = "1_3fraxvsi";
+				}
+				else if (number == 2) {
+					video_code = "1_0ssrraxt";
+				}
+				else if (number == 3) {
+					video_code = "1_ryytj7vv";
+				}
+				else if (number == 4) {
+					video_code = "1_aalzon4l";
+				}
+				else if (number == 5) {
+					video_code = "1_0k96sy6d";
+				}
+				else if (number == 6) {
+					video_code = "1_s8qxbfgw";
+				}				
+				
+				$(".video_holder").empty();
+				//flash version
+				//$(".video_holder").append('<div id="kaltura_player_1425588286" style="width: 400px; height: 333px;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject"><span itemprop="name" content="ThermalRunaway"></span><span itemprop="description" content="A demonstration of the&amp;amp;nbsp;positive thermal coefficient that creates thermal runaway in a bipolar transistor."></span><span itemprop="duration" content="130"></span><span itemprop="thumbnail" content="http://cdnbakmi.kaltura.com/p/1751071/sp/175107100/thumbnail/entry_id/' + video_code + '/version/100000/acv/151"></span><span itemprop="width" content="400"></span><span itemprop="height" content="333"></span></div><script src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/28529602/partner_id/1751071?autoembed=true&amp;entry_id=' + video_code + '&amp;playerId=kaltura_player_1425588286&amp;cache_st=1425588286&amp;width=400&amp;height=333"><\/script>');
+				//html5 version
+				$(".video_holder").append('<iframe src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player_1466450677&entry_id=' + video_code + '&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>');
+				$(".step_header").empty();
+				$(".step_header").append("Step " + number);
+				current_number = number;
+			}
+       </script>
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

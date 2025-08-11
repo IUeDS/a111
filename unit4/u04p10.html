@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+       
+       <p>If we connect capacitors and inductors together both in series with the load, the inductor will create a low pass filter and the capacitor will create a high pass filter. How they interact will depend on whether the capacitor and inductor are connected in series or in parallel.</p>
+       
+       <div class="line_break"></div>
+               
+               
+         <h2>Band pass filter</h2>
+         
+         <div class="interactive_FRC_right">
+       		<div class="media_holder">
+  				<div class="image_schematic_holder">
+                	<img src='../img/unit04/figure4-25.png' width='300'>
+                </div> <!-- end of image_schematic_holder div -->
+            	<div class="audio_holder">
+                </div> <!-- end of audio_holder div -->
+            </div> <!-- end of media_holder div --> 
+            <div id="figure8-1_8-2_filter" class="audio_button">Filter</div>
+            <div id="figure8-1_8-2_flat" class="audio_button">Flat</div>
+         </div> <!-- end of interactive_FRC div -->
+         
+         <p>If we connect the capacitor in series and inductor in series with each other as well as in series with the load (as shown in Figure 10-1) we get a <span class="term">band pass filter</span> with the frequency response shown in Figure 10-1. If you remember we were also able to create that filter with 2 inductors: one in series and one in parallel with the load. It wasn’t discussed but you could also create one with two capacitors: one in series and one in parallel with the load. This filter is a first order filter as there is only one reactive component creating the high pass and one creating the low pass. That means the slope on this circuit, for both the high pass and the low pass, will be $ \frac {6dB}{8_{VA}}$.</p>
+       
+       <p>Let’s analyze what is happening in this circuit. One way that works well with audio circuits is to think about what will happen to high, midrange, and low frequencies as they flow through the circuit.</p>
+       
+       <ol style="clear:both">
+       		<li>First they reach the capacitor</li><br>
+       			<ul>
+       				<li>Low frequencies: They get to the capacitor, see a high reactance and much of their voltage is dropped by the capacitor meaning that little gets to the speaker. </li><br>
+            		<li>Midrange frequencies: They see a reactance that is not as high as the low frequencies see, but not as low as the high frequencies. Some of their voltage is lost but not as much as with the low frequencies.</li><br>
+            		<li>High frequencies: They see a low reactance so most of their voltage makes it to the speaker.</li><br>
+       			</ul>
+       
+       		<li>Then they reach the inductor</li><br>
+      			<ul>
+       				<li>Low frequencies: They were gone after the capacitor so, even though they see a low reactance through the inductor, there is not much of them left to pass.</li><br>
+            		<li>Midrange frequencies: They see a reactance that is not as high as the low frequencies see, but not as low as the high frequencies. Some of their voltage is lost but not as much as with the high frequencies.</li><br>
+            		<li>High frequencies: They will see a high reactance so a lot of their voltage will be dropped.</li><br>
+       			</ul>
+       </ol>
+       
+       <p>All of the frequencies lose some voltage through the filter, but less for the midrange. That &quot;band&quot; of midrange frequencies is &quot;passed&quot; making this a band pass filter.</p>
+       
+       
+       <div class="line_break"></div>
+               
+               
+         <h2>Band cut filter</h2>
+
+     	 <div class="interactive_FRC_right">
+       		<div class="media_holder">
+  				<div class="image_schematic_holder">
+                	<img src='../img/unit04/figure4-26.png' width='300'>
+                </div> <!-- end of image_schematic_holder div -->
+            	<div class="audio_holder">
+                </div> <!-- end of audio_holder div -->
+            </div> <!-- end of media_holder div --> 
+            <div id="figure8-3_8-4_filter" class="audio_button">Filter</div>
+            <div id="figure8-3_8-4_flat" class="audio_button">Flat</div>
+         </div> <!-- end of interactive_FRC div -->
+         
+         <p>If we keep the inductor and capacitor in series with the load but now connect them in parallel with each other as shown in Figure 10-2 we get a <span class="term">band cut filter</span> with the frequency response shown in Figure 10-2.</p>
+         
+         <p>Once again we will analyze the circuit by looking at what happens as frequencies pass through. In this instance however, the capacitor and inductor are reached at the same time and the audio has a choice to go through the inductor or capacitor. The easier path (lower reactance) will be chosen. </p>
+         
+         <ul>
+       		<li>Low frequencies: They will see a high reactance through the capacitor and a low reactance through the inductor. Flowing through the inductor very little of their voltage will be lost because of the low reactance of the inductor.</li><br>
+            <li>High frequencies: They will see a high reactance through the inductor and a low reactance through the capacitor. Flowing through the capacitor very little of their voltage will be lost because of the low reactance of the capacitor.</li><br>
+            <li>Midrange frequencies: They will see a medium value reactance through either the capacitor or inductor. In either case some of their voltage will be lost.</li>
+         </ul>
+    
+    	 <p>That leaves us with the frequency response shown in Figure 10-2, a band cut filter.</p>
+       
+       
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

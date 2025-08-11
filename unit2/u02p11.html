@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        
+        <div class="col2">
+          <div class="image_left">
+              <img class="image_border" src="../img/unit02/figure10-1.png">
+          </div> <!-- end of image_left div -->
+		</div> <!-- end of col2 div -->
+       
+       <div class="col10">                
+           <p>There is a special type of resistor used a great deal in audio called a potentiometer. <span class="term">Potentiometers</span> have a post that the user can turn and affect the electronic circuit. The most common example would be a volume control. It is common to refer to a potentiometer as a “pot”.</p>
+           
+           <p>Various potentiometers are shown in Figure 11-1. <br>
+            The schematic symbol for a potentiometer is shown in Figure 11-2.</p>      
+        </div> <!-- end of col10 div -->
+       
+       <div class="col8">
+           <p>Volume controls (at least in analog electronics) are potentiometers. Typically turning the control down (counter-clockwise) decreases the volume, while turning it up (clockwise) increases the volume. </p> 
+           
+           <p>A potentiometer (pot) has 3 connections: <em>(only the wiper is differentiated in the schematic symbol)</em></p>
+           
+           <ul>
+                <li><span class="term">Wiper</span> - connection that moves and increases resistance to one of the other connections while reducing resistance to the other.</li><br>
+                <li><span class="term">CW</span> (clockwise) - connection that has a decreased resistance to the wiper as the potentiometer is turned clockwise when looking at top of potentiometer.</li><br>
+                <li><span class="term">CCW</span> (counter-clockwise) - connection that has a decreased resistance to the wiper as the potentiometer is turned counter-clockwise when looking at top of pot.</li><br>
+           </ul>
+       </div> <!-- end of col8 div -->
+       
+       <div class="col4">
+            <div class="image_left">
+                <img src="../img/unit02/figure11-2.png" class="image_border" width="300" height="143" >
+            </div> <!-- end of image_left div -->
+        </div> <!-- end of col4 div -->
+       
+       <div class="image_right">
+       		<img src="../img/unit02/PotentiometerSchem.png" class="image_border" width="300" height="297">
+       </div> <!-- end of image_right div -->
+             
+       <p>Figure 11-3 shows a  potentiometer drawn as two resistors.  This is a good way to think of how a potentiometer works. One resistor is from the CW connection to the wiper and the second resistor is from the wiper to the CCW connection. These two resistors have values that always add up to the total value of the potentiometer. </p>
+       
+       <p>The example in Figure 11-3 shows a 10KΩ potentiometer with the equivalent two resistors next to it.  If the potentiometer was turned to the halfway point then the equivalent resistors would both measure 5KΩ.</p>
+       
+       <p>If the potentiometer were turned clockwise then R1 would be reduced in value while R2 is increased. In all situations they would add up to be 10kΩ. </p>
+       
+       <p>When you look at the equivalent circuit of R1 and R2 you should recognize it as a voltage divider. With R1 and R2 at equal values as shown half of the source voltage would get to the wiper as shown in Figure 11-4. This would be the typical way to connect a potentiometer as a volume control.</p> <br>
+       
+       <div class="image_center">
+       		<img src="../img/unit02/Potentiometer_circuit.png" class="image_border" width="800">
+       </div> <!-- end of image_center div -->
+       
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

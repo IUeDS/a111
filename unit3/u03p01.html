@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        
+        <p>One of the things we like to do in audio circuits is affect different frequencies in different ways. If you have adjusted a bass or treble control or any kind of equalizer you have experienced this (or a digital re-creation of it). Inductors are our first component that affects different frequencies in different ways. </p>
+        
+        <div class="image_right"> <a href="../img/unit03/figure1-1.png" target="new"><img src="../img/unit03/figure1-1.png" alt="" width="200" height="90" class="image_border"></a>
+        </div>
+        
+        <p>If you have ever made an electromagnet you have experimented with the basic concept that is utilized in our second passive component, the Inductor. An <span class="term">inductor</span>, like the simple electromagnet you may have made, is a coil of wire. Two different schematic symbols for inductors are shown in Figure 1-1. The two images in Figure 1-1 are simply different ways of drawing inductors, there is no meaning in the differences. Figure 1-2 shows some actual inductors</p>
+        
+        <div class="image_left">
+       		<img class="image_border" src="../img/unit03/figure1-2.png">
+       </div>
+       
+        <p>An inductor is a device that resists changes in current through it. How well it does this is measured in units called <span class="term">henries</span>. The letter &quot;$L$&quot; is used to represent inductors, as &quot;$I$&quot; was already used to represent current. </p>
+              
+       <p>Commonly used for inductors:
+      		 <ul>
+       			<li>1 Henry = $1H$</li><br>
+           		<li>1 Millihenry = $1mH$ = 10<sup>-3</sup> Henries</li><br>
+           		<li>1 Microhenry = $1µH$ = 10<sup>-6</sup> Henries</li>
+       		</ul>
+       </p>
+              
+       <p style="clear:both">Inductors can simply be coils of wire or they can have a metal, such as iron, at their center (or core). What they have in the center changes how much inductance the coil of wire creates. There are even variable inductors where the amount of the core inside the coil can be changed, thereby changing the inductance.</p>
+       
+       
+       <div class="line_break"></div>
+
+	   <h2>How Inductors Work</h2>	
+       <p>Any time that current passes through a wire, a magnetic field is created. When that wire is coiled, the magnetic field is concentrated into the center of the coil. When you make an electromagnet you put a piece of metal (often a nail) inside that coil and it becomes magnetized.</p>
+       
+    
+       <p>It turns out that the magnetic field created by the electrical current takes a little bit of time to be created. We say that the magnetic field lags behind the electrical current. It is not only delayed a little after the electrical current but it is still there after the current flow has stopped or changed. This is because it lasts for the same length of time as the current flow, but starts later.</p>
+       
+        <p>The magnetic field is stronger for higher current. It also varies in polarity with the direction of current flow. For instance, if the positive half of the waveform creates a positive magnetic field then the negative half of the waveform would create a negative magnetic field. If you have ever played with magnets you know that like magnetic fields repel and opposite magnetic fields attract.</p>
+       
+        <p>The opposite effect also happens. If we have a coil of wire and place it near a magnetic field an electrical current will be induced in the wire. The direction of current flow is dependent on the polarity of the magnetic field. The amount of current is also directly proportional to the intensity of the magnetic field. </p>
+        
+         <div class="video_center ipad_center">
+         	<!--<div id="kaltura_player_1425588286" style="width: 400px; height: 333px;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+              <span itemprop="name" content="ThermalRunaway"></span>
+              <span itemprop="description" content="A demonstration of the&amp;amp;nbsp;positive thermal coefficient that creates thermal runaway in a bipolar transistor."></span>
+              <span itemprop="duration" content="130"></span>
+              <span itemprop="thumbnail" content="http://cdnbakmi.kaltura.com/p/1751071/sp/175107100/thumbnail/entry_id/1_3gxr09bd/version/100000/acv/151"></span>
+              <span itemprop="width" content="400"></span>
+              <span itemprop="height" content="333"></span>
+        	</div>
+        	<script src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/28529602/partner_id/1751071?autoembed=true&amp;entry_id=1_3gxr09bd&amp;playerId=kaltura_player_1425588286&amp;cache_st=1425588286&amp;width=400&amp;height=333"></script>-->
+            <iframe src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player_1466452153&entry_id=1_3gxr09bd&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+            <br>
+            <a href="http://www.kaltura.com/tiny/ur84d" target="_blank">View video in a new tab (option for full screen)</a>
+          </div> 
+ 
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

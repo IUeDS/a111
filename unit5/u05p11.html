@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+       <p>It turns out that when  the cathode connected to ground, 0V at the control grid places current through  the tube at slightly closer to saturation than it is to cutoff. This means that  the control grid is too positive compared to the cathode. There are two ways to  fix this problem so that 0V at the control grid sets current half way between  saturation and cutoff:</p>
+       <ol>
+         <li>We could  add a negative DC voltage to the AC on the control grid. <br>
+           This is sometimes done with other tube types, that we will discuss later, when  used in high power situations. It is not typical, however, for most triode  circuits. This is because it requires a separate negative DC voltage, which  would not be needed otherwise. This negative DC voltage would be called the <span class="term">bias voltage</span>. A circuit utilizing this would be said to have an <span class="term">external bias</span>.</li>
+         <li>Figure 11-1  shows the other method of solving this, called <span class="term">self-bias</span> or <span class="term">cathode-bias</span>.  Instead of making the control grid more negative, this method makes the cathode  more positive. This is easily done with a resistor connected between ground and  the cathode. This resistor drops voltage moving the cathode more positive than  ground. The electrons moving from the cathode only know the voltage difference  between where they started (the cathode) and the control grid, so making the  cathode more positive has the same effect as making the control grid more  negative. It is, however, much easier. </li>
+       </ol>
+       <h2>We have a problem</h2>
+       <p>Adding a resistor (R2  in figure 11-1) allows 0V on the control grid to produce current through the  tube that is halfway between saturation and cutoff. However, when the control  grid voltage is changed (say with audio) the voltage drop of R2 also changes.  This causes the cathode voltage to change along with the control grid voltage.  Current flow through the tube is controlled by the difference between the  cathode and the control grid. If the cathode becomes more positive at the same  time that the control grid is becoming more positive the difference between the  two does not change as desired and we end up with a smaller AC voltage at the  output.</p>
+       <h2>A Solution</h2>
+       <div class="image_right"> <a href="../img/unit05/figure5-16.png" target="new"><img class="image_border" src="../img/unit05/figure5-16.png"  alt="" width="305" height="355"/></a></div>
+       <p>The signal flowing  between ground and the cathode is all moving one direction but it varies in  voltage in response to the voltage at the control grid. If the signal on the  control grid is AC, as it would be for audio, then the signal flowing from  ground to the cathode would be AC + DC.</p>
+       <ul>
+         <li>The DC portion sets current (with 0V at control  grid) halfway between saturation and cutoff.</li>
+         <li>The AC portion creates a varying voltage drop  across R2 that changes the cathode voltage and reduces output voltage.</li>
+       </ul>
+       <p>What we need is a way  to separate the AC and DC portions of the signal. Hopefully you remember that  we investigated such a circuit in the Chapter 4 investigation. The circuit in  the Chapter 4 investigation utilized a resistor and capacitor in parallel to  give separate paths for AC and DC. We can utilize that here as well.<br>
+         If we place a  capacitor in parallel with R2 (C3 in figure 5-16) that will become a low  reactance path for AC while the DC will have to flow through R2.</p>
+       <ul>
+         <li>AC will flow through AC as it is the easier  path:</li>
+         <ul>
+           <li>Low  reactance means a low voltage drop for AC. </li>
+           <li>Low  voltage drop for AC means that the cathode voltage will not change with control  grid voltage changes.</li>
+         </ul>
+         <li>DC will flow through R2 as it cannot flow  through C3:</li>
+         <ul>
+           <li>Voltage  drop created by R2 sets cathode voltage so that 0V on control grid creates  current through tube that is halfway between saturation and cutoff.</li>
+         </ul>
+       </ul>
+       <h2>Common  Cathode Component Functions</h2>
+       <ul>
+         <li>R1: Converts changing current through tube into  a changing voltage.</li>
+         <li>R2: Moves cathode above ground to center  current (with no Grid voltage) halfway between saturation and cutoff.</li>
+         <li>C1: Block DC from input so that it does not  affect bias.</li>
+         <li>C2: Block DC from getting to/from next  components.</li>
+         <li>C3: Provides low reactance path for AC so that  amplification is not decreased by voltage change of cathode.</li>
+       </ul>
+       <p>&nbsp;</p>
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

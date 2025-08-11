@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+         
+         <div class="image_right">
+        	<img src="../img/unit06/figure6-10.png" width="400" class="image_border">
+       </div>
+       
+       <p>After the preamplifier the signal flows into the equalizer section of the circuit. I will give a quick overview of this circuit as I feel a more in-depth discussion would not serve you well at this stage. The equalizer section is show in Figure 6-1. </p>
+       
+       <p>We know this is the equalizer section by the potentiometers marked &quot;TREBLE&quot; and &quot;BASS&quot;. Equalizers allow the user to adjust the balance of the different frequency bands. A good way to investigate this circuit is to image what each frequency band would do as it went into the circuit. Which path would the high frequencies choose, how would that be different for low frequencies?</p>
+       
+       
+       <div class="line_break"></div>
+       
+       <h2>High frequencies</h2>
+       
+       <p>The high frequencies have a choice to go through the $250pF$ capacitor or the $100k\Omega$ resistor. The position of the &quot;TREBLE&quot; potentiometer will determine which path they choose.</p>
+      
+       <ul>
+       		<li><b>Treble pot turned up</b> &#40;wiper toward top&#41;: The majority of the high frequencies will pass through the $250pF$ capacitor and out to the driver tube.
+            	<br> <em>High frequencies are louder at the output</em>
+			</li><br>
+            <li><b>Treble pot turned down</b> &#40;wiper toward bottom&#41;: the majority of high frequencies will pass through the $100k\Omega$ resistor, to the $0.047µF$ capacitor, then through the $15k\Omega$ resistor to ground. 
+            	<br> <em>High frequencies are softer at the output</em>
+			</li><br>	    
+       </ul>
+        
+        
+		<div class="line_break"></div>
+
+
+		<h2>Low frequencies</h2>
+       
+       <p>The low frequencies will see the $250pF$ capacitor as a large reactance &#40;$6.366M\Omega$ at $100Hz$&#41; so they will flow through the $100k\Omega$ resistor and the $0.1µF$ capacitor. Added together the $0.1µF$ capacitor and $100k\Omega$ resistor represent $115.916k\Omega$ at $100Hz$. At that point they have a choice to go through the &quot;BASS&quot; potentiometer to ground &#40;not getting to the output&#41; or going through the &quot;TREBLE&quot; potentiometer to the output. First let’s see how the Bass control affects them. Note that the potentiometer is represented as a variable resistor in the schematic. This means that we are only using two connections, the wiper and one of the ends.</p>
+      
+       <ul>
+       		<li><b>Bass pot turned up</b> &#40;highest resistance between two ends&#41;: The majority of low frequencies will go toward the treble potentiometer to get to the output as that is easier than the path to ground.
+            	<br> <em>Low frequencies will be more loud at the output.</em>
+			</li><br>
+            <li><b>Bass pot turned down</b> &#40;lowest resistance between the two ends&#41;): The majority of low frequencies will go to ground and not get to the output.
+            	<br> <em>Low frequencies will be less loud at the output.</em>
+			</li><br>	    
+       </ul>
+       
+       <p>Notice, though, that the low frequencies have to flow through the treble potentiometer to get to the output. Where that treble potentiometer is set will affect how much resistance they low frequencies have to pass through. </p>
+       
+       <ul>
+       		<li><b>Treble pot turned up</b> &#40;wiper closest to the top&#41;: This will create the largest resistance for the low frequencies to the output. This means that turning the treble up reduces the low frequencies.
+            	<br> <em>Low frequencies will be less loud at the output.</em>
+			</li><br>
+            <li><b>Treble pot turned down</b> &#40;wiper closest to bottom&#41;: This would provide the easiest path for low frequencies to get to the output. This means that turning down the treble increases the low frequencies.
+            	<br> <em>Low frequencies will be more loud at the output.</em>
+			</li><br>	    
+       </ul>
+       
+       
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

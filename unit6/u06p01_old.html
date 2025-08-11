@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        <!-- update to two_tone_table, which makes the first cell in a row gray; it will not work when rowspan is set, and there is no existing workaround in css for this case --> 
+        <style>
+			.two_tone_table_left tr td:first-child {
+				background-color: white;
+				min-width: 0px;
+			}
+		</style>
+       <h1>What do all these components do?</h1>
+        <div class="image_center">
+        	<img class="image_border" src="../img/unit06/Champ.png"  alt="champ schematic" width="800" height="484"/>
+        </div>
+        
+        <p><table width="100%" border="1" class="two_tone_table_left">
+         <thead>
+              <tr>
+                <th width="16%">Sub-circuit</th>
+                <th width="18%">Component</th>
+                <th width="66%">Function</th>
+             </tr>
+           </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5" valign="middle" style="background-color: #E8E8E8;">Input</td>
+      <td>J1</td>
+      <td>Jack to connect guitar</td>
+    </tr>
+    <tr>
+      <td>J2</td>
+      <td>Jack to connect guitar</td>
+    </tr>
+    <tr>
+      <td>R11</td>
+      <td>Sets input voltage to control grid of V1</td>
+    </tr>
+    <tr>
+      <td>R12</td>
+      <td>Sets input voltage to control grid of V1</td>
+    </tr>
+    <tr>
+      <td>R13</td>
+      <td>Sets input impedance of V1</td>
+    </tr>
+    <tr>
+      <td rowspan="4" style="background-color: #E8E8E8;">V1</td>
+      <td>V1</td>
+      <td>Amplifies audio, set up as common cathode amplifier.</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>Sets cathode voltage to be more positive than ground so that current flow through the tube, when the control grid is at 0V, is halfway between saturation and cutoff.</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>Converts changing current through the tube into a changing voltage.</td>
+    </tr>
+    <tr>
+      <td>C1</td>
+      <td>Provides a low reactance path (for AC) around R1 so that cathode voltage is not changed by varying current through tube. Without this capacitor gain of the circuit is reduced.</td>
+    </tr>
+    <tr>
+      <td rowspan="7" style="background-color: #E8E8E8;">Equalizer</td>
+      <td>R14</td>
+      <td>Sets series resistance for C6 and C7 paths.</td>
+    </tr>
+    <tr>
+      <td>R15</td>
+      <td>Controls balance of High to Low/Mid audio.</td>
+    </tr>
+    <tr>
+      <td>R16</td>
+      <td>Controls amount of low frequency audio buy adjusting path to R15 (output) or GND.</td>
+    </tr>
+    <tr>
+      <td>R17</td>
+      <td>Sets resistance of EQ path to ground for midrange</td>
+    </tr>
+    <tr>
+      <td>C5</td>
+      <td>Isolates high frequencies to their own path to allow control. Also blocks DC form output of V1 from getting to control grid of V2.</td>
+    </tr>
+    <tr>
+      <td>C6</td>
+      <td>Isolates low frequencies to their own path to allow control. Also blocks DC form output of V1 from getting to control grid of V2.</td>
+    </tr>
+    <tr>
+      <td>C6</td>
+      <td>Isolates midrange frequencies to their own path to allow control. Also blocks DC form output of V1 from getting to control grid of V2.</td>
+    </tr>
+    <tr>
+      <td style="background-color: #E8E8E8;">Volume</td>
+      <td>R18</td>
+      <td>Controls volume by creating an adjustable voltage divider.</td>
+    </tr>
+    <tr>
+      <td rowspan="7" style="background-color: #E8E8E8;">V2</td>
+      <td>V2</td>
+      <td>Amplifies audio, set up as common cathode amplifier.</td>
+      </tr>
+    <tr>
+      <td>R3</td>
+      <td>Sets cathode voltage to be more positive than ground so that current flow through the tube, when the control grid is at 0V, is halfway between saturation and cutoff.</td>
+      </tr>
+    <tr>
+      <td>R4</td>
+      <td>Allows changing voltage to be created by changing current through V2 so that negative feedback can be added. </td>
+      </tr>
+    <tr>
+      <td>R5</td>
+      <td>Converts changing current through the tube into a changing voltage.</td>
+      </tr>
+    <tr>
+      <td>C2</td>
+      <td>Provides a low reactance path (for AC) around R3 so that cathode voltage is not changed by varying current through tube. Without this capacitor gain of the circuit is reduced.</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td>Blocks DC from V2 from getting to control grid of V3.</td>
+    </tr>
+    <tr>
+      <td>R8</td>
+      <td>Provides path for negative feedback to cathode of V2 and determines amount of negative feedback.</td>
+      </tr>
+    <tr>
+      <td rowspan="5" style="background-color: #E8E8E8;">V3</td>
+      <td>V3</td>
+      <td>Amplifies audio, set up as common cathode amplifier.</td>
+      </tr>
+    <tr>
+      <td>R6</td>
+      <td>Sets the control grid of V3 to GND potential when audio is not passing. An unintended charge can develop on the control grid that causes distortion and tube damage without this resistor. <em>We need a large value so that audio is not attenuated. For DC, there is no current flow here (the cap blocks the path) so the resistor should drop no voltage, holding the control grid at 0V. The large value allows AC, however, to have a large voltage drop. </em>Also sets the input impedance of the V3 circuit.</td>
+      </tr>
+    <tr>
+      <td>R7</td>
+      <td>Sets cathode voltage to be more positive than ground so that current flow through the tube, when the control grid is at 0V, is halfway between saturation and cutoff.</td>
+      </tr>
+    <tr>
+      <td>C4</td>
+      <td>Provides a low reactance path (for AC) around R7 so that cathode voltage is not changed by varying current through tube. Without this capacitor gain of the circuit is reduced.</td>
+      </tr>
+    <tr>
+      <td>TR2</td>
+      <td>Converts changing current through tube into magnetic field and then changing current (of lower voltage and higher current) for speaker.</td>
+      </tr>
+    <tr>
+      <td rowspan="10" style="background-color: #E8E8E8;">Power Supply</td>
+      <td>TR1</td>
+      <td>Converts wall AC voltage (120V in US) to voltages needed for circuit (320VAC, 5VAC, and 6.3VAC). Also provides isolation from power line for protection of user.</td>
+    </tr>
+    <tr>
+      <td>V4</td>
+      <td>Full wave rectifier converts AC to DC.</td>
+    </tr>
+    <tr>
+      <td>C8</td>
+      <td>Filters AC from AC+DC output of full wave rectifier.</td>
+    </tr>
+    <tr>
+      <td>R9</td>
+      <td>Drops voltage so that V3 screen grid is less positive than anode.</td>
+    </tr>
+    <tr>
+      <td>C9</td>
+      <td>Filters AC from AC+DC output of full wave rectifier.</td>
+    </tr>
+    <tr>
+      <td>R10</td>
+      <td>Drops voltage so that V2 anode is less positive than V3 anode.</td>
+    </tr>
+    <tr>
+      <td>C10</td>
+      <td>Filters AC from AC+DC output of full wave rectifier.</td>
+    </tr>
+    <tr>
+      <td>SW1</td>
+      <td>Turns amplifier on and off by connecting or disconnecting AC power input.</td>
+    </tr>
+    <tr>
+      <td>F1</td>
+      <td>Disconnects AC power path if too much current flows to protect circuit components.</td>
+    </tr>
+    <tr>
+      <td>C11</td>
+      <td>Filters out &quot;high frequency&quot; caused by turning on and off switch that can create an arc and damage the power switch.</td>
+    </tr>
+    
+  </tbody>
+</table>
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

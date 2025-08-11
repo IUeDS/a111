@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="tag:adobe.com,2012-03:edge:oam:compid:EDGE-111851780" name="Mod01GE01_demo" version="1">
+
+  <description type="text/html"><![CDATA[Widget Exported from Adobe Edge]]></description>
+  <category name="Adobe Edge Animation"/>
+
+  <remarks>Compatible with: InDesign CS6, Dreamweaver</remarks>
+
+  <icon src="images/Poster.png" width="600" height="350" />
+
+  <require type="other" src="Mod01GE01_demo.html" />
+
+  <require type="javascript" src="Mod01GE01_demo_edge.js" />
+  <require type="javascript" src="Mod01GE01_demo_edgeActions.js" />
+  <require type="javascript" src="Mod01GE01_demo_edgePreload.js" />
+  <require type="javascript" src="edge_includes/edge.2.0.1.min.js" />
+  <require type="javascript" src="edge_includes/jquery-1.7.1.min.js" />
+
+  <require type="image" src="images/Claw.png" />
+  <require type="image" src="images/Electron.png" />
+  <require type="image" src="images/ends2.png" />
+  <require type="image" src="images/Poster.png" />
+  <require type="image" src="images/tubemiddle22.png" />
+  <require type="image" src="images/tubemiddle222.png" />
+
+  <require type="folder" src="edge_includes" />
+  <require type="folder" src="images" />
+
+
+  <content><![CDATA[
+    <div class="EDGE-111851780"></div>
+  ]]></content>
+   
+  <properties name="Properties">
+    <property name="default-width" defaultValue="600" hidden="true"/>
+    <property name="default-height" defaultValue="350" hidden="true"/>
+    <property name="resizable" defaultValue="false" hidden="true"/>
+    <property name="use-chrome-frame" defaultValue="false" hidden="true"/>
+    <property name="chrome-frame-installer" defaultValue="" hidden="true"/>
+    
+    
+    <property name="html-page" defaultValue="Mod01GE01_demo.html" hidden="true"/>
+  </properties>
+
+</widget>

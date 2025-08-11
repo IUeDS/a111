@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="tag:adobe.com,2012-03:edge:oam:compid:EDGE-153592568" name="U01GE02" version="1">
+
+  <description type="text/html"><![CDATA[Widget Exported from Adobe Edge]]></description>
+  <category name="Adobe Edge Animation"/>
+
+  <remarks>Compatible with: InDesign CS6, Dreamweaver</remarks>
+
+  <icon src="images/Poster.png" width="550" height="450" />
+
+  <require type="other" src="U01GE02.html" />
+  <require type="other" src="media/applause.mp3" />
+  <require type="other" src="media/applause.ogg" />
+  <require type="other" src="media/buttonclick.mp3" />
+  <require type="other" src="media/buttonclick.ogg" />
+  <require type="other" src="media/failure1.mp3" />
+  <require type="other" src="media/failure1.ogg" />
+  <require type="other" src="media/success1.mp3" />
+  <require type="other" src="media/success1.ogg" />
+
+  <require type="javascript" src="U01GE02_edge.js" />
+  <require type="javascript" src="U01GE02_edgeActions.js" />
+  <require type="javascript" src="U01GE02_edgePreload.js" />
+  <require type="javascript" src="edge_includes/edge.3.0.0.min.js" />
+  <require type="javascript" src="edge_includes/jquery-2.0.3.min.js" />
+
+  <require type="image" src="images/answer_bottom_down_state.png" />
+  <require type="image" src="images/answer_bottom_neutral_state.png" />
+  <require type="image" src="images/answer_bottom_over_state.png" />
+  <require type="image" src="images/answer_mid_down_state.png" />
+  <require type="image" src="images/answer_mid_neutral_state.png" />
+  <require type="image" src="images/answer_mid_over_state.png" />
+  <require type="image" src="images/answer_top_down_state.png" />
+  <require type="image" src="images/answer_top_neutral_state.png" />
+  <require type="image" src="images/answer_top_over_state.png" />
+  <require type="image" src="images/battery_black_1.png" />
+  <require type="image" src="images/battery_black_2.png" />
+  <require type="image" src="images/battery_black_blank_1.png" />
+  <require type="image" src="images/battery_black_blank_2.png" />
+  <require type="image" src="images/battery_pos_down.png" />
+  <require type="image" src="images/battery_pos_up.png" />
+  <require type="image" src="images/Blue_Electron_60x602.png" />
+  <require type="image" src="images/Blue_Electron_60x602_old.png" />
+  <require type="image" src="images/Blue_Electron_Face2.png" />
+  <require type="image" src="images/bulb_off.png" />
+  <require type="image" src="images/bulb_on.png" />
+  <require type="image" src="images/button_down_103x67.png" />
+  <require type="image" src="images/button_down_206x134(2).png" />
+  <require type="image" src="images/button_down_208x134.png" />
+  <require type="image" src="images/check_correct.png" />
+  <require type="image" src="images/Electron.png" />
+  <require type="image" src="images/Electron2.png" />
+  <require type="image" src="images/Electron3.png" />
+  <require type="image" src="images/Electron4.png" />
+  <require type="image" src="images/Electron5.png" />
+  <require type="image" src="images/Electron6.png" />
+  <require type="image" src="images/Electron_plain8.png" />
+  <require type="image" src="images/Green_Face_Smile_A11_Game2.png" />
+  <require type="image" src="images/open_circuit_bl.png" />
+  <require type="image" src="images/open_circuit_green.png" />
+  <require type="image" src="images/open_circuit_red.png" />
+  <require type="image" src="images/Poster.png" />
+  <require type="image" src="images/Schematic_Light_Off.png" />
+  <require type="image" src="images/Schematic_Light_On.png" />
+  <require type="image" src="images/Schematic_Stage4_1.png" />
+  <require type="image" src="images/Schematic_Stage4_12.png" />
+  <require type="image" src="images/Schematic_Stage4_13.png" />
+  <require type="image" src="images/Schematic_Stage4_14.png" />
+  <require type="image" src="images/Schematic_Stage4_15.png" />
+  <require type="image" src="images/Schematic_Stage4_16.png" />
+  <require type="image" src="images/Schematic_Stage4_2.png" />
+  <require type="image" src="images/Schematic_Stage4_22.png" />
+  <require type="image" src="images/Schematic_Stage4_23.png" />
+  <require type="image" src="images/Schematic_Stage4_24.png" />
+  <require type="image" src="images/Schematic_Stage4_25.png" />
+  <require type="image" src="images/Schematic_Stage4_26.png" />
+  <require type="image" src="images/Schematic_Stage4_3.png" />
+  <require type="image" src="images/Schematic_Stage4_32.png" />
+  <require type="image" src="images/Schematic_Stage4_33.png" />
+  <require type="image" src="images/Schematic_Stage4_34.png" />
+  <require type="image" src="images/Schematic_Stage4_35.png" />
+  <require type="image" src="images/Schematic_Stage4_36.png" />
+  <require type="image" src="images/Schematic_Stage4_4.png" />
+  <require type="image" src="images/Schematic_Stage4_42.png" />
+  <require type="image" src="images/Schematic_Stage4_43.png" />
+  <require type="image" src="images/Schematic_Stage4_44.png" />
+  <require type="image" src="images/Schematic_Stage4_45.png" />
+  <require type="image" src="images/Schematic_Stage4_46.png" />
+  <require type="image" src="images/tube_closed.png" />
+  <require type="image" src="images/tube_closed2.png" />
+  <require type="image" src="images/tube_closed3.png" />
+  <require type="image" src="images/tube_closed4.png" />
+  <require type="image" src="images/tube_closed5.png" />
+  <require type="image" src="images/tube_closed6.png" />
+  <require type="image" src="images/tube_open.png" />
+  <require type="image" src="images/tube_open2.png" />
+  <require type="image" src="images/tube_open3.png" />
+  <require type="image" src="images/tube_open4.png" />
+  <require type="image" src="images/tube_open5.png" />
+  <require type="image" src="images/tube_open6.png" />
+  <require type="image" src="images/x_incorrect.png" />
+
+  <require type="folder" src="edge_includes" />
+  <require type="folder" src="images" />
+  <require type="folder" src="media" />
+
+
+  <content><![CDATA[
+    <div class="EDGE-153592568"></div>
+  ]]></content>
+   
+  <properties name="Properties">
+    <property name="default-width" defaultValue="550" hidden="true"/>
+    <property name="default-height" defaultValue="450" hidden="true"/>
+    <property name="resizable" defaultValue="false" hidden="true"/>
+    <property name="use-chrome-frame" defaultValue="false" hidden="true"/>
+    <property name="chrome-frame-installer" defaultValue="" hidden="true"/>				
+		<property name="centering" defaultValue="none" hidden="true"/>				
+		<property name="scaling" defaultValue="none" hidden="true"/>
+    <property name="html-page" defaultValue="U01GE02.html" hidden="true"/>
+  </properties>
+
+</widget>

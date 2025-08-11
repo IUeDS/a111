@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>A111 U02P06</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        
+        <div class="image_right">
+        	<img src="../img/unit02/VDiv1.png" class="image_border" height="550">
+        </div> <!-- end of image_right div -->
+       
+       <p>One of the ways to make complex circuits easier to understand is to divide them up into smaller sub-circuits. The first sub-circuit we will look at is the <span class="term">voltage divider</span>.</p>
+ 	   
+       <p>When multiple resistors are connected in series with a voltage at one end (either positive or negative, AC or DC) and a different voltage at the other end (often ground) you have a voltage divider.</p>
+
+       <p>Let’s take a simple example with four resistors of the same value with $ +40VDC $ at the top and ground (0 volts) at the bottom as shown in Figure 6-1.</p>
+       
+       <ul>
+       		<li>Since this is a series circuit we know that current is the same through all four resistors. </li><br>
+            <li>The resistors have the same resistance and the same current, so Ohm’s law tells us that they will have the same voltage drop. </li><br>
+            <li>We also know that the sum of the voltage drops must equal the voltage source ($40V$ in this case). </li>
+       </ul>
+       
+       <p>The four equal voltage drops across each resistor in Figure 6-1 add up to $40V$ total. <br><br> $ \frac {40V}{4} = 10V $ </p>
+       <p>That means that each resistor drops $ 10V $. <br>
+        $ V_{R1} = 10V,  V_{R2} = 10V,  V_{R3} = 10V,  V_{R4} = 10V $       </p>            
+       <div class="question_and_answer_full" style="clear:both;">
+           <div class="question_button">
+                <div class="question_button_header">Question:</div>
+                Click here if you don't think figure 6-1 shows a complete circuit.
+           </div> <!-- end of question_button div -->
+           <div class="revealed_answer">
+                <div class="revealed_answer_header">Answer: </div>
+                You may think that Figure 6-1 is not a complete circuit. It is, even though there you may not see a complete circuit drawn. <br> <br>
+				In order to reduce clutter in schematics it is common to not draw the voltage source as having two connections in the same place. Instead the positive (+40V in this case) and the negative (GND in this case) are added as connection points wherever needed. The electrons still start at the negative lead of the voltage source and get back to the positive lead but the voltage source is not shown at a single place on the schematic. <br> <br>
+				There could even be multiple points around a schematic labeled +40 and GND. They would all be connected to the voltage source. This allows for the reduction of clutter in the schematic.
+           </div> <!-- end of revealed_answer div -->
+       </div> <!-- end of question_and_answer_left div -->
+       
+       
+       <div class="line_break"></div>
+
+
+       <div class="image_left">
+        	<img src="../img/unit02/VDiv2.png" class="image_border" height="550">
+       </div> <!-- end of image_left div -->
+       
+       <div class="aside_RightWrap">
+       		We can use the shorthand $V_{R1}$ for &quot;voltage drop of $R1$&quot;.
+       </div>  <!-- end of aside_RightWrap div -->
+       
+       
+       <p>In Figure 6-2 you see that a voltmeter connected across each resistor agrees with our math above to show that each resistor is dropping $10V$. Figure 6-1 and 6-2 are very simple versions of voltage dividers with all the resistors having the same value. No matter what the values of the resistors though, there is always a direct relationship between resistance and voltage drop in a series circuit. We know that by putting together Ohm’s law and the fact that current is the same for all resistors in a series circuit.</p>
+
+        <div class="line_break"></div>
+        
+        
+       <p>Remember from Chapter 1 that we can describe the voltage across something, like R2, or we can describe the voltage at a point, such as the connection between R1 and R2. The voltage at that point, between R1 and R2, would be measured compared to GND (at the bottom of R4). We can think of that voltage two ways:</p>
+       
+       <div class="tab">
+       <ol type="a">
+       	<li>It is $V_{R1}$, or $10V$ toward GND from $40V$ which means $40V - 10V = 30V$<br><br> <span class="tab">or</span></li><br>
+        <li>	It is $V_{R2} + V_{R3} + V_{R4}$, which we would describe as $30V$ from GND or just $30V$.</li><br>
+       </ol>
+       </div>
+       
+       
+       <div class="image_left">
+        	<img src="../img/unit02/VDiv3.png" class="image_border" height="500">
+       </div> <!-- end of image_left div -->
+       
+       <div class="image_right">
+        	<img src="../img/unit02/VDiv4.png" class="image_border" height="500">
+       </div> <!-- end of image_right div -->
+              
+       <p>Figure 6-3 and 6-4 show a software simulation which confirms our calculations.</p>
+       
+       <p>Figure 6-3 has voltmeters with the positive end connected to the point at which we want to test and the negative end connected to GND.</p>
+       
+       <p>Figure 6-4 shows test points (TP#) indicate the voltage compared to GND.</p> 
+       
+       <p>[Note that even if you do not have GND shown in a Circuit Wizard it will decide where GND should be.]</p> 
+       <div class="line_break"></div>
+       <h2>Example Problems</h2>
+       <p>This first video finds current and voltage drop for each resistor in the circuit shown in figure 6-1 through 6-4.</p>
+    	<iframe width="560" height="315" src="https://www.youtube.com/embed/eYMXwAU0FRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	<p><a href="https://youtu.be/eYMXwAU0FRM" target="new">Watch full screen by opening in a new window by clicking here</a>.</p>
+    	<p><br>
+    	  
+    	  
+  	  </p>
+    	<p>This second video finds current and voltage drop for each resistor in a more complex circuit.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MOHFTmdzL30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+		  <p><a href="https://youtu.be/eYMXwAU0FRM" target="new">Watch full screen by opening in a new window by clicking here.</a></p>
+            <!-- InstanceEndEditable -->
+  		</div> 
+      <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

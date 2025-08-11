@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title></title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        <div class="image_left">
+       		<img src="../img/unit02/figure2-20.png" class="image_border">
+        </div> 
+         
+        <p class= "ipad_clear">Our next sub-circuit is a current divider. When resistors are connected in parallel we know that the voltage across each resistor is the same. However, the current through each parallel resistor adds up to make the total current from the voltage source. In Figure 7-1 you see four $4K\Omega$ resistors in parallel. From the discussion in section 2.4 you know that the total resistance of Figure 7-1 is $1K\Omega$, but we will review the math here.</p>
+      
+         <div class="content_table_title" style="clear:both">Figure 7-1: Total Resistance Solution</div>
+         <table class="content_table table_striped middle_border_table">
+            <tr>
+                <td>Step 1: Identify that the resistors are in parallel.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Step 2: Choose the correct formula for parallel resistors, the inverse rule:</td>
+                <td>$ \frac {1}{R_{total}} = \frac {1}{R_1} + \frac {1}{R_2} + \frac {1}{R_3} ..... $ </td>
+            </tr>
+            <tr>
+                <td>Step 3: Enter the known values into the formula.</td>
+                <td>$ \frac {1}{R_{total}} = \frac {1}{4000\Omega} + \frac {1}{4000\Omega} + \frac {1}{4000\Omega} + \frac {1}{4000\Omega} $ </td>
+            </tr>
+            <tr>
+                <td>Step 4: Add the fractions.</td>
+                <td>$ \frac {1}{R_{total}} = \frac {4}{4000\Omega} $ </td>
+            </tr>
+            <tr>
+                <td>Step 5: Invert both sides.</td>
+                <td>$ {R_{total}} = \frac {4000\Omega}{4} $ </td>
+            </tr>
+            <tr>
+                <td>Step 6: <b>Solve it!</b></td>
+                <td><b>$ {R_{total}} = 1000Ω$ or $1K\Omega$ </b></td>
+            </tr>
+         </table>
+         
+         <p>From that we can use Ohm’s law to find total current of the circuit. Here is the process to calculate the total current for Figure 7-1.</p>
+         
+         <div class="content_table_title">Figure 7-1: Total Current Solution</div>
+         <table class="content_table table_striped middle_border_table">
+            <tr>
+                <td>Step 1: Choose the correct formula.</td>
+                <td>$V = I \times R$</td>
+            </tr>
+            <tr>
+                <td>Step 2: Define known values.</td>
+                <td>$ V = 40V, R = 1000\Omega $ </td>
+            </tr>
+            <tr>
+                <td>Step 3: Enter the known values into the formula.</td>
+                <td>$ 40V = I \times 1000\Omega $ </td>
+            </tr>
+            <tr>
+                <td>Step 4: Divide both sides by 1000.</td>
+                <td>$ \frac {40}{1000} = I $ </td>
+            </tr>
+            <tr>
+                <td>Step 5: <b>Solve it!</b></td>
+                <td><b>$I = 0.04A$ or $40mA$ </b></td>
+            </tr>
+         </table>
+         
+         <p>We can make the equation a little easier by using a trick you hopefully remember from algebra. It would be easier, at least for me, to divide 40 by 1 instead of by 1000. We can make that change by using $K\Omega$ instead of $\Omega$. </p>
+         
+         <p>In order to use $1K\Omega$ instead of $1000\Omega$ we will also need to divide $A$ by 1000. <em>This is the algebra trick of doing the inverse to the same side of the equation. </em></p>
+         
+         <div class="content_table_title">Figure 7-1: Easier Total Current Solution</div>
+         <table class="content_table table_striped middle_border_table">
+            <tr>
+                <td>Step 1: Convert $\Omega$ to $K\Omega$ by dividing by 1000.</td>
+                <td>$1000\Omega$ becomes $1K\Omega$</td>
+            </tr>
+            <tr>
+                <td>Step 2: Your answer for $I$ will now be in $mA$ instead of $A$. (no math needed ☺)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Step 3: Plug the known values into Ohm’s Law.</td>
+                <td>$ 40 = Itotal \times 1 $ </td>
+            </tr>
+            <tr>
+                <td>Step 4: Multiply $I$ times 1.</td>
+                <td>$ \frac {40}{1000} = I $ </td>
+            </tr>
+            <tr>
+                <td>Step 5: <b>Solve it!</b></td>
+                <td><b>$Itotal = 40mA$</b></td>
+            </tr>
+         </table>
+         
+         <div class="line_break"></div>
+
+
+      	 <div class="image_left">
+        	<img src="../img/unit02/figure2-21.png" class="image_border" width="413">
+      	 </div> <!-- end of image_left div -->
+         
+         <p>You can see in Figure 7-2 that the current meters connected to the circuit show that same value.</p>
+         <p>You may think that trick didn’t make much difference here but it will really aid you on more complex problems. It also turns out that, in audio electronics at least, we are usually working with $K\Omega$ and $mA$.</p>
+         <p>Each branch of a parallel circuit can be seen as a circuit on its own. In the case of Figure 7-2 the four branches are the same, each has a $4K\Omega$ resistor with $40V$ across it. Ohm’s law $(V=IR)$ tells us that the current through the resistor, in any of the four branches, is 10mA.  The formula for this is $40V = 4K\Omega × 10mA$.</p>
+         <p>Since we also know that the current in the branches of a parallel circuit add up to the total current for the circuit we can calculate that the total current for the circuit is $10mA + 10mA + 10mA + 10mA = 40mA$. Notice that we got the same total current adding each branch up as we did finding total resistance and finding current from that. Either way yields a correct result so you can stick with one strategy or double check your results by figuring the total with both methods.</p>
+         
+       <h2>Example Problems</h2>
+       <p>This first video finds total current and current  for each resistor in a simple current divider circuit..</p>
+       <iframe src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player_1466450645&entry_id=1_7ja19hth&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+       <br>
+       <a href="http://www.kaltura.com/tiny/ijlkz" target="_blank">View video in a new tab (option for full screen)</a>
+       <p>&nbsp;</p>
+       <p>This second video finds total current and current for each resistor in a more complex circuit.</p>
+    	<iframe src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player_1466450677&entry_id=1_z756519n&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+        <br>
+        <a href="http://www.kaltura.com/tiny/o9rg9" target="_blank">View video in a new tab (option for full screen)</a>
+
+        
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Dreamweaver Template</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../main/index.html">Index</a></li>
+            <li><a href="../main/glossary.html">Glossary</a></li>
+            <li><a href="../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+         
+         <div class="image_right">
+        	<img src="../img/unit06/figure6-11.png" width="400" class="image_border">
+       </div>
+       
+       <p>The second triode is actually the second half of a dual triode tube, the 12AX7. As shown in Figure 7-1, signal first flows through the volume potentiometer and then to the control grid of the second triode. This is called the driver tube or phase inverter. It sends the signal from the preamp and EQ into the power amplifier tube.</p>
+       
+       <p>Looking at Figure 7-1 we see another common cathode amplifier. We know this because the input &#40;from the EQ&#41; is at the control grid and the output &#40;to the beam power tube&#41; is at the anode. We see a circuit that is almost identical to the preamplifier and our typical common cathode circuit.</p>
+       
+       
+       <div class="line_break"></div>
+       
+       <h2>What’s the same as a Typical common cathode amplifier?</h2>
+             
+       <ul>
+       		<li><b>$1500\Omega$ resistor</b> connected to cathode at one end.</li><br>
+            	<ul>
+                	<li>Purpose = set $0V$ at grid halfway between saturation and cutoff.</li><br>
+                </ul>
+            <li><b>$2µF$ capacitor</b> connected in parallel with the $1500\Omega$ resistor.</li><br>
+            	<ul>
+                	<li>Purpose = provide low reactance path for $AC$ so that cathode voltage remains stable.</li><br>
+                    <li>The value has changed from the $25µF$ in the preamp circuit.</li><br>
+                </ul>
+            <li><b>$100k\Omega$ resistor</b> connected from anode to $+V$.</li><br>
+            	<ul>
+                	<li>Purpose = convert changing current into changing voltage.</li><br>
+                </ul>   	 
+            <li><b>$0.02µF$ capacitor</b> connected between anode of this tube and the control grid of the power amplifier tube.</li><br>
+            	<ul>
+                	<li>Purpose = blocks $DC$ from getting to control grid of next tube.</li><br>
+                </ul>       
+       </ul>
+        
+        
+		<div class="line_break"></div>
+
+
+		<h2>What’s different?</h2>
+      
+       <ul>
+       		<li><b>$1500\Omega$ resistor and $2µF$ capacitor</b>: These should connect to ground but, in this case: </li><br>
+            	<ul>
+                	<li>They connect to a $47\Omega$ resistor which then connects to ground.</li><br>
+                    <li>There is also connection to the output through a $2700\Omega$ resistor.</li><br>
+                </ul>
+       </ul>
+       
+       <p>Let’s consider what the addition of the $47\Omega$ resistor could do. We know that there is $AC+DC$ flowing through it because it is flowing through the $2µF$ cap and $1500\Omega$ resistor. That $AC+DC$ flowing through the $47\Omega$ resistor will create a varying voltage at the bottom of the $1500\Omega$ resistor. That will cause the cathode to have a varying voltage. This is the same thing that happened and created the need to add a capacitor in parallel with the $1500\Omega$ resistor. On its own, it does not seem useful, it would just reduce the output level a small amount.</p>
+       
+       <p>What about the $2700\Omega$ resistor coming from the output of the entire circuit? This is negative feedback. The output is sent back into an earlier part of the circuit to cancel out distortion. When we add the output signal back in at this point in the circuit it cancels out some of the audio. Remember that the signal from the output has the same polatiry as the signal at the top of the $47\Omega$ resistor. By adding more of that same polarity sign, the cathode is moving in voltage along with the control grid. This reduces the gain of the circuit. If there is distortion between this tube and the output, that distortion is canceled out even more than the audio signal. This reduced overall distortion in the circuit. The $2700\Omega$ resistor is setting the amount of negative feedback for the circuit. 
+</p>
+       
+       <p>Other Fender amplifiers would add a filter to this negative feedback with a potentiometer to allow user adjustment of the amount of high frequency negative feedback. When this adjustment is turned up &#40;less negative feedback for high frequencies&#41; there is an increase is distortion for high frequencies as well as increase in the level of high frequencies. This control is called &quot;presence&quot;.</p>
+       
+       
+            <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">&gt;</span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow">&lt;</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>
