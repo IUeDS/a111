@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Lab 5-1</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../../main/index.html">Index</a></li>
+            <li><a href="../../main/glossary.html">Glossary</a></li>
+            <li><a href="../../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+          <h1>Tubes!</h1>
+          <p><strong>You can start by plugging your lab kit into the wall for power (it will turn on) or wait until the lab instructions tell you to. It will not affect your results or safety.</strong></p>
+          <div class='image_right'> <a href="../../img/unit05/labs/lab7-10.jpg" target="new"></a> <a href="../../img/unit05/labs/lab7-10.jpg" target="new"> <img src='../../img/unit05/labs/lab7-10.jpg' width='228' height='300' class="image_border"></a></div>
+          <p><strong>7-1.</strong> Start by finding the 12AX7 twin triode vacuum tube in your parts kit. It is in a brown box inside the parts kit.</p>
+          <p><strong>7-2.</strong> Plug this into the socket in your lab kit. The pins do not make a complete circle, so make sure to line the pins on the tube up with the holes in the socket. If it is hard to get in, check that all of the pins line up with the holes, some may need to be bent a bit.</p>
+          <p><strong>7-3.</strong> Below the tube socket are connections for the 9 pins on the tube. We will only be using the first five for this lab.</p> 
+          <p><strong>7-4.</strong> Figure 1-2 shows a schematic for the circuit we will be building. We will be adjusting the "Var +/-" voltage connected to the tube.</p>
+          <div class='image_center'><a href="../../img/unit05/labs/lab7-10.jpg" target="new"></a><a href="../../img/unit05/labs/Lab7_schem1.png" target="new"><img src='../../img/unit05/labs/Lab7_schem1.png' width='300' height='375'></a></a></div>
+          <p><strong>Question #1: What element of the tube is the &quot;Var +/-&quot; connected to?</strong></p>
+          <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Anode</div>
+            <div class="lab_question_feedback" id="lab_q1">Incorrect</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Control grid</div>
+            <div class="lab_question_feedback" id="lab_q1">Correct</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Cathode</div>
+            <div class="lab_question_feedback" id="lab_q1">Incorrect</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Plate</div>
+            <div class="lab_question_feedback" id="lab_q1">Incorrect</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q1">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p>It is important when building a circuit on the breadboard to pick a point to start at and then move around the circuit in a logical manner. In this case we will start at the top and move down.</p>
+        <div class='image_right'><a href="../../img/unit05/labs/lab7-8.jpg" target="new"><img src='../../img/unit05/labs/lab7-8.jpg' width='200' height='150' class="image_border"></a></div>
+        <p><strong>7-5.</strong> The first connection is from "+15V" to the red lead of your digital multi-meter. Use a red jumper wire for this.</p>
+        <ul>
+            <li>connect one end to "+15V" (any of the three holes)</li>
+            <li>connect the other end to the red lead of your multimeter <em>(pinch near the end and the "alligator clip" will open, you can then clamp it on the end of the jumper wire).</em>
+            <br>
+            </li>
+        </ul>
+        <p><strong>7-6.</strong> You will be using your digital multi-meter to measure current in this lab. You should remember from the game in Unit 1 that we have to set the meter to measure DC current and move the red lead to the current connector. You will also need to turn on your digital multimeter <em>(after a time your meter may power down to save batteries, simply turn it off and back on if this happens)</em>.</p>
+          <ul>
+            <li>set the meter to the 20m (20mA) setting for DC current <em>(this means that the maximum current that the meter can read in this setting is 20mA)</em></li>
+            <li>make sure the red lead is connected to the "A" jack on the meter            </li>
+          </ul>
+          <div class='image_right'><a href="../../img/unit05/labs/lab7-7.jpg" target="new"><img src='../../img/unit05/labs/lab7-7.jpg' alt="" width='200' height='406' class="image_border"></a></div>
+          <p><strong>7-7.</strong> The black lead from your meter needs to connect to the Anode of the vacuum tube.
+This is on pin #1 of the tube. We will use a black jumper wire for this.</p>
+          <ul>
+            <li>connect one end of the black jumper wire to the black lead on your digital multi-meter</li>
+            <li>connect the other end of the black jumper to the pin #1 connection of the tube <em>(the numbered holes below the tube socket</em>).</li>
+          </ul>
+          <div class='image_center'> <a href="../../img/unit05/labs/lab7-2.jpg" target="new"><img src='../../img/unit05/labs/lab7-2.jpg' width='480' height='360' class="image_border"></a>
+          </div>
+          <p><strong>Question #2: Based on the schematic above (figure 1-2), what is the voltage on the Anode?</strong> <br> 
+          <em>(you are not measuring to answer this question, you are just looking at the schematic and thinking:-P )</em></p>
+          <div class="lab_question clearfix">
+            <input type="text" class="lab_numeric_input">
+V            
+<div class="lab_question_option_numeric" data-low="15" data-high="15">
+              <div class="lab_question_feedback" id="lab_q2">CORRECT! Move On</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_question_option_numeric" data-low="0" data-high="14.99">
+              <div class="lab_question_feedback" id="lab_q2">That is not the correct answer (it is low).</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_question_option_numeric" data-low="15.01" data-high="10000">
+              <div class="lab_question_feedback" id="lab_q2">That is not the correct answer (it is high).</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_submit_button_numeric">Submit</div>
+            <div class="lab_answer_feedback lab_answer_feedback_table">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q2">Click submit to get feedback!</div>
+            </div><!-- end of lab_answer_feedback div --> 
+          </div>
+          <div class="line_break"></div>
+          <h1>Light er Up!</h1>
+          <div class='image_right'> <a href="../../img/unit05/labs/lab7-3.jpg" target="new"><img src='../../img/unit05/labs/lab7-3.jpg' alt="" width='300' height='201' class="image_border"></a>
+            <br>
+            <a href="../../img/unit05/labs/lab7-4.jpg" target="new"><img src='../../img/unit05/labs/lab7-4.jpg' alt="" width='300' height='223' class="image_border"></a>
+          </div>
+          <p><strong>7-8.</strong> We will now connect a variable voltage to the control grid of the tube. This will allow us to change the voltage on the control grid. You will use (if possible) a yellow jumper wire for this.</p>
+          <ul>
+            <li>move the switch below the meter built into your kit to the right so that is displays the voltage of the "Var +/-" output</li>
+            <li>set the control above the "Var +/-" connections so that the meter (set above) reads 0V.</li>
+            <li>connect one end of the yellow jumper wire to the "Var +/-" connection.</li>
+            <li>connect the other end  of the yellow jumper to pin #2 of the tube.</li>
+          </ul>
+          <p><strong>7-9.</strong> Now we need to connect the cathode to ground. We will use a green jumper wire for this <em>(again if you don't have a green wire long enough, another color is fine)</em>.</p>
+          <ul>
+            <li>connect one end of the green jumper wire to "GND"</li>
+            <li>connect the other end of the green jumper wire to pin #3 (the cathode) of the tube</li>
+          </ul>
+          <div class='image_center'> <a href="../../img/unit05/labs/Lab7_schem1.png" target="new"><img src='../../img/unit05/labs/Lab7_schem1.png' width='300' height='375'></a>
+          </div>
+          <p><strong>Question #3: What is the voltage at the cathode now?</strong></p>
+          
+          <div class="lab_question clearfix">
+            <input type="text" class="lab_numeric_input">
+V            
+<div class="lab_question_option_numeric" data-low="0" data-high="0">
+              <div class="lab_question_feedback" id="lab_q3">CORRECT! Move On</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_question_option_numeric" data-low="-1000" data-high="-0.01">
+              <div class="lab_question_feedback" id="lab_q3">That is not the correct answer (it is low).</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_question_option_numeric" data-low="0.01" data-high="10000">
+              <div class="lab_question_feedback" id="lab_q3">That is not the correct answer (it is high).</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_submit_button_numeric">Submit</div>
+            <div class="lab_answer_feedback lab_answer_feedback_table">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q3">Click submit to get feedback!</div>
+            </div><!-- end of lab_answer_feedback div --> 
+          </div>
+          <p>&nbsp;</p>
+          <p><strong>Question #4: You now have an anode that is more positive than the cathode, what else is required to have current flow in a tube?</strong></p>
+          <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">A pony</div>
+            <div class="lab_question_feedback" id="lab_q4">I'd like a pony too, but it won't help current flow.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">A heated cathode</div>
+            <div class="lab_question_feedback" id="lab_q4">Correct</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">A chocolate bar</div>
+            <div class="lab_question_feedback" id="lab_q4">Great, now I'm hungry.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">A heated control grid</div>
+            <div class="lab_question_feedback" id="lab_q4">Incorrect</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">A heated anode</div>
+            <div class="lab_question_feedback" id="lab_q4">Incorrect</div>
+          </div> <!-- end of lab_question_option div -->  
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q4">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+          <div class="line_break"></div>
+          <h1>Your tube is cold</h1>
+          <ol>
+            <div class='image_right'><a href="../../img/unit05/labs/lab7-5.jpg" target="new"><img src='../../img/unit05/labs/lab7-5.jpg' width='300' height='223' class="image_border"></a><br>
+              <a href="../../img/unit05/labs/lab7-6.jpg" target="new"><img src='../../img/unit05/labs/lab7-6.jpg' width='300' height='223' class="image_border"></a></div>
+          </ol>
+          <p><strong>7-10.</strong> Now you need to connect a voltage source to the heater so that the cathode can be heated. We will use the "12V" AC source (to the right of your tube socket) for this.</p>
+          <ol>
+            <li>connect one end of an orange jumper wire to the &quot;+&quot; connection under "12V" to the right of your tube socket</li>
+            <li>connect the other end of the orange jumper wire to pin#4 <em>(this is the first connection to the heater)</em><br>
+            <em>See figure 1-9 </em></li>
+            <li>connect one end of a new orange jumper wire to the &quot;G&quot; connection under "12V" to the right of your tube socket<br>
+              <em>See figure 1-10</em>
+            </li>
+            <li>connect the other end of this second jumper wire to pin#5 <em>(this is the other connection to the heater)<br>
+              note 
+            </em><em> that since this is AC is does not matter if you reverse whether + goes to pin 4 or 5 as long as the other pin goes to G</em></li>
+          </ol>
+          <div class='image_center'> <img src='../../img/unit05/labs/Lab7_schem1.png' width='300' height='375'> </div>
+          <p><strong>7-11.</strong> If you did not do so earlier, plug your lab kit into the wall for power. You should see the meter and voltage indicator lights turn on. Also turn on your digital multimeter if it is not already on.</p>
+		<p>Check that you still have 0V on the control grid. <i>This will typically change after the tube warms up.</i></p>
+		<ul>
+            <li>move the switch below the meter built into your kit to the right so that is displays the voltage of the "Var +/-" output</li>
+            <li>set the control above the "Var +/-" connections so that the meter (set above) reads 0V.</li>
+          </ul>
+		
+          <p><strong>7-12.</strong> You should now have some current flowing. </p>
+          <p><strong>Question #5: How much current (in mA) does the meter indicate is flowing?</strong></p>
+          <div class="lab_question clearfix">
+            <input type="text" class="lab_numeric_input">
+mA            
+<div class="lab_question_option_numeric" data-low="0.1" data-high="0.8">
+              <div class="lab_question_feedback" id="lab_q5">CORRECT! Move On</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_question_option_numeric" data-low="0" data-high="0.099">
+              <div class="lab_question_feedback" id="lab_q5">You should have more current than that. Check yoru circuit and voltages. If you are still not getting more current please check with your instructor.</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_question_option_numeric" data-low="0.8" data-high="10000">
+              <div class="lab_question_feedback" id="lab_q5">You should have less current than that. Check your circuit and voltages. If you are still not getting less current please check with your instructor.</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_question_option_numeric" data-low="-1000" data-high="0">
+              <div class="lab_question_feedback" id="lab_q5">If you are seeing a negative number then you have the current meter connected backwards. Check your meter connections and measure again.</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_submit_button_numeric">Submit</div>
+            <div class="lab_answer_feedback lab_answer_feedback_table">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q5">Click submit to get feedback!</div>
+            </div><!-- end of lab_answer_feedback div --> 
+          </div>
+          <p>&nbsp;</p>
+          <p><strong>7-13.</strong> <strong>Do NOT proceed</strong> until you are getting current  (with 0V at the control grid) that gives you the feedback that you are correct. <em>Try wiggling all of the wires, sometimes a simple bad connection can cause all sorts of problems.</em></p>
+          <p>Contact your instructor if you can't find the problem after going back through the steps of the lab.</p>
+          <div class="line_break"></div>
+          <h1>Tell those electrons what to do!</h1>
+          <h2>What will happen?</h2>
+          <p><strong>Question #6: You are about to adjust the voltage on the control grid so that it is more positive. How will that affect current through the tube?</strong> <br> <em>(if you did not yet plug your kit in to power, assume that you did before answering.....I'm not trying to trick you)</em></p>
+          <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Current will increase</div>
+            <div class="lab_question_feedback" id="lab_q6">Correct</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Current will decrease</div>
+            <div class="lab_question_feedback" id="lab_q6">Incorrect</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Current will stay the same</div>
+            <div class="lab_question_feedback" id="lab_q6">Incorrect</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q6">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <h2>Experiment time, be <span class="red">positive</span>.</h2>
+        <p><strong>7-14.</strong> Slowly adjust the "Var +/-" control right. This will make the current flow increase.
+Stop when  you get to 3.00V.</p>
+          <p><strong>Before finishing, you need to take a photo to upload as proof that you did the lab. This photo should be taken with +3.00V on the control grid and current flowing through the tube so do it now!</strong></p>
+          <p><strong>Question #7: How much current is flowing in your circuit with +3.00V on the control grid?</strong></p>
+          <div class="lab_question clearfix">
+            <input type="text" class="lab_numeric_input">
+            mA
+            <div class="lab_question_option_numeric" data-low="3" data-high="7">
+              <div class="lab_question_feedback" id="lab_q7">Good job, move on to the next step.</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_question_option_numeric" data-low="-1000" data-high="2.99">
+              <div class="lab_question_feedback" id="lab_q7">If you are not between 3mA and 7mA you may have an issue with your circuit. As long as you saw the current increase as you made the control grid voltage more positive you are probably OK. You may have a bad tube though so please check with the instructor as your next lab may not work correctly.</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_question_option_numeric" data-low="7.01" data-high="10000">
+              <div class="lab_question_feedback" id="lab_q7">If you are not between 3mA and 7mA you may have an issue with your circuit. As long as you saw the current increase as you made the control grid voltage more positive you are probably OK. You may have a bad tube though so please check with the instructor as your next lab may not work correctly.</div>
+            </div> <!-- end of lab_question_option_numeric div -->
+            <div class="lab_submit_button_numeric">Submit</div>
+            <div class="lab_answer_feedback lab_answer_feedback_table">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q7">Click submit to get feedback!</div>
+            </div><!-- end of lab_answer_feedback div --> 
+          </div>
+          
+          <p>&nbsp;</p>
+          <h2>OK, be <span class="blue">negative</span> &#9785;</h2>
+          <p><strong>Question #8: You are about to change the control grid voltage back to 0 and then move it negative. What will happen to current as the control grid is moved from 0V to a negative voltage?</strong></p>
+          <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Current will increase</div>
+            <div class="lab_question_feedback" id="lab_q8">Incorrect</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Current will decrease</div>
+            <div class="lab_question_feedback" id="lab_q8">Correct</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Current will stay the same</div>
+            <div class="lab_question_feedback" id="lab_q8">Incorrect</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q8">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <h2>Time to try it, frowny face</h2>
+        <p><strong>7-15.</strong> Slowly adjust the "Var +/-" control left until it is back at 0V. Current flow should decrease back to what it was for question #5.</p>
+        <p><strong>7-16.</strong> Now slowly adjust the control farther left until it is at -0.5V, stop there.
+You should have approximately 0mA of current flowing. You have now reached cutoff for the tube.</p>
+        <p><strong>Question #9: How much current is flowing in your circuit with -0.5V on the control grid?</strong></p>
+        <div class="lab_question clearfix">
+          <input type="text" class="lab_numeric_input">
+mA          
+<div class="lab_question_option_numeric" data-low="0" data-high=".05">
+            <div class="lab_question_feedback" id="lab_q9">Good job.</div>
+          </div>
+          <!-- end of lab_question_option_numeric div -->
+          <div class="lab_question_option_numeric" data-low="-1000" data-high="0">
+            <div class="lab_question_feedback" id="lab_q9">You meter is backwards if you are getting a negative number. you should have fixed it earlier in the lab.</div>
+          </div>
+          <!-- end of lab_question_option_numeric div -->
+          <div class="lab_question_option_numeric" data-low=".06" data-high="10000">
+            <div class="lab_question_feedback" id="lab_q9">That current reading is too high, check your circuit and voltages. You should have a current flow around 0mA. If you still don't get a reading that gives a correct answer then contact your instructor.</div>
+          </div>
+          <!-- end of lab_question_option_numeric div -->
+          <div class="lab_submit_button_numeric">Submit</div>
+          <div class="lab_answer_feedback lab_answer_feedback_table">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q9">Click submit to get feedback!</div>
+          </div>
+          <!-- end of lab_answer_feedback div -->
+        </div>
+       <div class="line_break"></div>
+       <h1>Finishing Up</h1>
+        <p><strong>???? HEY <em>(you may ask)!</em>, why isn't there as much room to reduce the current when going negative as there is to increase it by going positive with the grid voltage???????</strong></p>
+        <p>Most tube circuits run with anode voltages of at least 150V, the tube you are using typically has over 200V on the anode. I didn't feel like I should provide you with dangerous voltages in your lab kit.</p>
+        <p>We can make a tube work at these voltages, but not exactly as it does normally. In most situations (<em>when tubes are used at more normal voltages</em>) it is actually the opposite, there is more room to reduce current by making the grid more negative than there is to increase it by making the grid more positive.</p>
+        <p><strong>7-17.</strong> Now if you adjust the "Var +/-" control up and down so that it moves from a positive voltage to a negative voltage (as if you were AC) you should see the current meter changing along with the control grid voltage from "Var +/-" <em>(don't change too fast as the current meter won't show quick changes)</em>. </p>
+        <p><strong>If you are in an online lab or finishing outside of scheduled lab time, you need to take a photo to upload as proof that you did the lab. This photo should be taken with +3.00V on the control grid and current flowing through the tube. Make sure you have done this before putting everything away.</strong></p>
+        <p>For the next lab you will build an amplifier circuit and listen to audio going through it!</p>
+        <p><em>Figure 1-12 is not a photo of your next lab, but of UNIVAC I (actually its memory circuits), one of the very first computers.</em></p>
+        <div class='image_center'> <img src='../../img/unit05/labs/11-Univac-delay-line.gif' width='500' height='338' class="image_border">
+        </div>
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

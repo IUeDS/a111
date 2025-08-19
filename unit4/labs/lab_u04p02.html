@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Lab 4-2</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../../main/index.html">Index</a></li>
+            <li><a href="../../main/glossary.html">Glossary</a></li>
+            <li><a href="../../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+           <H1>Captain Series</H1>
+           <h2>What will happen?</h2>
+           <p><strong>Question #1: You are about to add a capacitor in series with the speaker. What frequency response will this circuit create?</strong></p>        
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bc_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q1">Nope, maybe you should go back over the reading before trying this lab.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q1">Nope, that would require the combination of two filters.......</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/hp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q1">CORRECT!! Now build It.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/lp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q1">Nope, unless you were looking at the answer in a mirror......</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q1">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        
+        <div class="line_break"></div>
+        <div class='image_right'>
+        	<img src='../../img/unit04/labs/Lab6_schematic22uF.png' width='300' height='137'> 
+        </div>
+        <h2>Build It, Hear it, <strike>Blow it up</strike>?</h2>
+        <p><strong>4-4.</strong> For the first filter we are going to insert a 2.2µF capacitor in series with our speaker. In order to make it work with this “real world” example we need to add a resistor (22Ω) in series with the capacitor and speaker. The schematic is shown below. The schematic shows a Voltage source (V1). This is actually: your music player + the audio amplifier in your lab kit.</p>
+        <ol type='a'>
+        	<li>Open the parts kit that came with your lab kit and find the 22Ω resistor (color code Red/Red/Black/Gold) and the 2.2µF NP (non-polar) capacitor.</li>
+            <div class='image_center'>
+        		<img src='../../img/unit04/labs/22uF22ohm.jpg' width='200' height='176'> 
+        	</div>
+            <li>Move the Yellow wire from “g-25” to “f-3”.</li>
+            <li>Connect one end of the resistor (it doesn’t matter which one) to “g-25”.</li>
+            <li>Connect the other end of the resistor to “g-15”.</li>
+            <li>Connect one end of the 2.2µF capacitor (again it doesn’t matter which end) to “h-15”.</li>
+            <li>Connect the other end of the 2.2µf capacitor to “h-3”</li>
+            <div class='image_center'>
+        		<img src='../../img/unit04/labs/BreadboardConnection3.jpg' width='300' height='223'> 
+        	</div>
+            <li>Next add another yellow wire that can (when you want to hear the “flat” audio) connect from “i-15” to “i-3”. <br> <em>(you can leave one end of this connected at all times and only connect the other side to hear “flat” audio)</em></li>
+            <div class='image_center'>
+        		<img src='../../img/unit04/labs/FlatSeries.jpg' width='300' height='223'> 
+        	</div>
+            <li>Play some audio and listen to both “filter” and the “flat” and compare.</li>
+        </ol>
+        <p><strong>Question #2: What do you hear? How is the audio different with the capacitor in series (compared to the "flat" audio)?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The high frequencies were softer in volume.</div>
+            <div class="lab_question_feedback" id="lab_q2">Incorrect, make sure you are identifying the "flat" and "filter" audio correctly.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The low frequencies were softer in volume.</div>
+            <div class="lab_question_feedback" id="lab_q2">Correct</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The high frequencies were louder in volume.</div>
+            <div class="lab_question_feedback" id="lab_q2">Incorrect. Your brain may decide to interpret the change as the high frequencies getting louder but in reality the low frequencies are getting softer. </div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The low frequencies were louder in volume.</div>
+            <div class="lab_question_feedback" id="lab_q2">Incorrect, make sure you are identifying the "flat" and "filter" audio correctly. The low frequencies are louder when it is "flat" (the capacitor shorted with the jumper wire), but softer when the filter is being heard.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q2">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #3: Did it match what you expected for the circuit?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes</div>
+            <div class="lab_question_feedback" id="lab_q3">Good, move ahead.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">No</div>
+            <div class="lab_question_feedback" id="lab_q3">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q3">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h2>Bigger Capacitor = Bigger Bang?</h2>
+        <p>You are about to change the 2.2µF capacitor for a 4.7µF capacitor.</p>
+        <p><strong>Question #4: How will the curve change?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will move to the left</div>
+            <div class="lab_question_feedback" id="lab_q4">Correct! :-)</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will move to the right</div>
+            <div class="lab_question_feedback" id="lab_q4">No, it will not. You will be making the value of the capacitor LARGER, so the curve moves to the LEFT</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will become steeper</div>
+            <div class="lab_question_feedback" id="lab_q4">No, nothing we can do to the value of the capacitor will change how steep the filter is. We need to add a second filter for that.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q4">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #5: How will it sound different?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Low frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q5">Incorrect, you will actually hear the low frequencies louder with the 4.7µF capacitor.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Low frequencies will be louder</div>
+            <div class="lab_question_feedback" id="lab_q5">CORRECT!</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">High frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q5">That is not correct.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">High frequencies will be louder</div>
+            <div class="lab_question_feedback" id="lab_q5">This may be true, at least in some theoretical sense, but you will mostly hear a change in the low frequencies. They were what was cut originally. With the 4.7µF capacitor the low frequencies will not be changed as much as they were with the 2.2µF capacitor.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q5">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h2>Bigger Capacitor = Bigger <strike>Bang?</strike> Bottom!</h2>
+        <p><strong>4-5.</strong> You will now add the 4.7µF capacitor into the circuit so that you can compare the 2.2µF to the 4.7µF capacitors in series.</p>
+        <ol type='a'>
+        	<li>Take the 2.2µF capacitor and move the lead that is connected to “h-15” and move it to “h-11”</li>
+            <li>Remove the extra yellow wire</li>
+            <li>Find the 4.7µF (yellow) capacitor in your parts kit and connect it to the breadboard
+            	<ul>
+                	<li>Connect one end to “i-13”</li>
+                    <li>Connect the other end to “i-3”</li>
+                </ul>
+            </li>
+            <li>Use the extra yellow wire you were using to create a “flat” circuit and connect one end to “h-15”
+            	<ul>
+                	<li>To hear the 2.2µF capacitor, connect the other end to “j-11”</li>
+                    <li>To hear the 4.7µF capacitor, connect the other end to “j-13”</li>
+                    <li>!!don’t worry there is nothing in this circuit that can injure you, feel free to connect and disconnect while it is playing!!</li>
+                </ul>
+            </li>
+        </ol>
+        <div class='image_center'>
+        	<img src='../../img/unit04/labs/47to22.jpg' width='500' height='375'> 
+        </div>
+        <p><strong> Question #6: What do you hear? How is the audio different with the larger capacitor in series (</strong><em>compared to the smaller capacitor</em><strong>)?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Lower frequencies are more audible</div>
+            <div class="lab_question_feedback" id="lab_q6">Correct</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Lower frequencies are less audible</div>
+            <div class="lab_question_feedback" id="lab_q6">That is not what you should have heard, make sure you are correctly identifying when you are hearing the 4.7µF capacitor and when you are hearing the 2.2µF capacitor. If you still have trouble, please contact your instructor.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q6">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #7: Did it match what you expected for the circuit?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes</div>
+            <div class="lab_question_feedback" id="lab_q7">Great! Move ahead.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">No</div>
+            <div class="lab_question_feedback" id="lab_q7">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q7">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <div class="line_break"></div>
+        <h1>Pair of Lil Capacitors?</h1>
+        <h2>What's gonna happen?</h2>
+        <p><strong>Question #8: You are about to connect a capacitor in parallel with the speaker, what frequency response will this create?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bc_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q8">Nope, maybe you should go back over the reading before trying this lab.</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q8">Nope, that would require the combination of two filters.......</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/hp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q8">Nope, unless you were looking at the answer in a mirror......</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/lp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q8">CORRECT!! Now build It.</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q8">Click submit to get feedback!</div>
+          </div>
+          <!-- end of lab_answer_feedback div -->
+        </div>
+        <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h2>Build it and make some noise.</h2>
+        <p>Remove the 4.7µF and 2.2µF capacitors from your breadboard and connect the extra yellow wire from “h-15” to “h-3” so you can hear audio again. Next you will be connecting a capacitor in parallel with the speaker. Figure 2-6 shows the schematic for the capacitor in parallel with the speaker.</p>
+        <div class='image_right'>
+        	<img src='../../img/unit04/labs/Lab6_schematicParallel.png' width='300'> 
+        </div>
+		<p><strong>4-6.</strong> Find the 47µF and 22µF capacitors in your parts kit (the 47µF is the large black one).</p>
+        <div class='image_center'>
+        	<img src='../../img/unit04/labs/4722caps.jpg' width='200'> 
+        </div>
+        <ul>
+        	<li>Connect one end of the 47µF capacitor to”i-15”</li>
+            <li>Connect the other end of the 47µF capacitor to the horizontal row below column 2.</li>
+            <li>To hear the “flat” audio, simply dis-connect one end of the capacitor, do NOT short across it!  <strong><span style="font-weight: 800">&#128163;</span></strong></li>
+        </ul>
+        <div class='image_center'>
+        	<img src='../../img/unit04/labs/Parallel47.jpg' width='300'> 
+        </div>
+        <p><strong>Question #9: What do you hear? How is the audio different with the capacitor in parallel (</strong><em>compared to the "flat" audio</em><strong>)?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The high frequencies were softer in volume.</div>
+            <div class="lab_question_feedback" id="lab_q9">Correct. move ahead.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The low frequencies were softer in volume.</div>
+            <div class="lab_question_feedback" id="lab_q9">That is not correct.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The high frequencies were louder in volume.</div>
+            <div class="lab_question_feedback" id="lab_q9">Incorrect, make sure you are correctly identifying what is the "flat" audio, and what is the "filter".</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The low frequencies were louder in volume.</div>
+            <div class="lab_question_feedback" id="lab_q9">Incorrect. Your brain may decide to interpret the change as the low frequencies getting louder but in reality the high frequencies are getting softer. </div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q9">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #10: Did it match what you expected for the circuit?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes</div>
+            <div class="lab_question_feedback" id="lab_q10">Great, move ahead!</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">No</div>
+            <div class="lab_question_feedback" id="lab_q10">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q10">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h2>Tiny capacitors....... make me..... happy?</h2>
+        <p><strong>Question #11: You are about to decrease the capacitance, how will the curve change?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will move to the left</div>
+            <div class="lab_question_feedback" id="lab_q11">No it won't. You are REDUCING the value of the capacitor, so the curve will move to the RIGHT.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will move to the right</div>
+            <div class="lab_question_feedback" id="lab_q11">CORRECT, now try it!</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will become steeper</div>
+            <div class="lab_question_feedback" id="lab_q11">No, nothing we can do to the value of the capacitor will change how steep the filter is. We need to add a second filter for that.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q11">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #12: How will it sound different?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Low frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q12">This may be true, at least in some theoretical sense, but you will mostly hear a change in the high frequencies. They were what was cut originally, with the 22µF capacitor the high frequencies will not be changed as much as they were with the 47µF capacitor.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Low frequencies will be louder</div>
+            <div class="lab_question_feedback" id="lab_q12">That is not correct.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">High frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q12">That is not correct, in fact it is the opposite of what will happen. </div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">High frequencies will be louder</div>
+            <div class="lab_question_feedback" id="lab_q12">Correct, now try it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q12">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>
+        <div class="line_break"></div>
+        <h2>Build it SMALLER.</h2>
+        4-7.</strong> Now try the 22µF capacitor in place of the 47uF.</p>
+        <ol type='a'>
+        	<li>Connect one end of the capacitor to “j-15”</li>
+            <li>Connect the other end to any hole in the horizontal row with the red line running next to it.</li>
+            <div class='image_center'>
+        		<img src='../../img/unit04/labs/22parallel.jpg' width='300' height='221'> 
+        	</div>
+            <li>Connect either the 47µF (<em>figure 2-10</em>) or the 22µF (<em>figure 2-11</em>) capacitor to the horizontal row to hear how they sound different.</li>
+        </ol>
+        <div class="image_center"><div class='image_left'>
+        	<img src='../../img/unit04/labs/47or22parallel.jpg' width='300' height='225'> 
+        </div>
+        <div class='image_right'>
+        	<img src='../../img/unit04/labs/47or22parallel2.jpg' width='300' height='225'> 
+        </div></div>
+        <p><strong>Question #13: Did the sound change as you expected?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes</div>
+            <div class="lab_question_feedback" id="lab_q13">Fine work, move on to page 3.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">No</div>
+            <div class="lab_question_feedback" id="lab_q13">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q13">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

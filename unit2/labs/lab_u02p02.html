@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Lab 2-2</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../../main/index.html">Index</a></li>
+            <li><a href="../../main/glossary.html">Glossary</a></li>
+            <li><a href="../../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+			<div class="image_right"> <img src="../../img/unit02/labs/idiv.png"  alt="Current Divider" width="280" height="200" class="image_border"/></div>
+			<h1>Circuit #2: Current Divider</h1>
+            <h2>Use your noggin?</h2>
+			<div class='no_caption image_left'><img src="../../img/unit02/labs/brain.jpg" alt="" width="100" height="102"/></div>
+			<p><strong>2-5.</strong> Start by analyzing the circuit in figure 2-1 and determining the values for the table: (just use your BRAIN for this, <strong>DO NOT build the circuit</strong> yet!!!!!!!!!) </p>
+			<table class='two_tone_table multiple_question_table'>
+              <tbody>
+                  <tr>
+                      <td><strong>I<sub>R1</sub></strong></td>
+                      <td class='table-align-left'>
+                          <div class="lab_question clearfix">
+                            <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">mA
+                            <div class="lab_question_option_numeric" data-low=".5" data-high=".5">
+                              <div class="lab_question_feedback" id="lab_q15">CORRECT!</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_question_option_numeric" data-low="0" data-high=".499">
+                              <div class="lab_question_feedback" id="lab_q15">That is not correct. 5V divided by 10k 								ohms wil give you the correct answer in mA.</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_question_option_numeric" data-low=".501" data-high="1000">
+                              <div class="lab_question_feedback" id="lab_q15">That is not correct. 5V divided by 10k 								ohms wil give you the correct answer in mA.</div>
+                            </div> 
+                            <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                            <div class="lab_answer_feedback lab_answer_feedback_table">
+                              <div class="lab_feedback_text" id="lab_q15">Click submit to get feedback!</div>
+                            </div>
+                            <span style="font-weight: 40"></span> <!-- end of lab_answer_feedback div -->
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><strong>I<sub>R2</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">mA
+                        <div class="lab_question_option_numeric" data-low=".5" data-high=".5">
+                          <div class="lab_question_feedback" id="lab_q">CORRECT!</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="0" data-high=".499">
+                          <div class="lab_question_feedback" id="lab_q">That is not correct. 5V divided by 10k 								ohms wil give you the correct answer in mA.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low=".501" data-high="1000">
+                          <div class="lab_question_feedback" id="lab_q">That is not correct. 5V divided by 10k 								ohms wil give you the correct answer in mA.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                        <div class="lab_answer_feedback lab_answer_feedback_table">
+                          <div class="lab_feedback_text" id="lab_q">Click submit to get feedback!</div>
+                        </div>
+                        <span style="font-weight: 40"></span>
+                        <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+                  <tr>	
+                      <td><strong>I<sub>R3</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">mA
+                        <div class="lab_question_option_numeric" data-low=".25" data-high=".25">
+                          <div class="lab_question_feedback" id="lab_q2">CORRECT!</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="0" data-high=".249">
+                          <div class="lab_question_feedback" id="lab_q2">That is not correct. 5V divided by 20k 								ohms wil give you the correct answer in mA.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low=".251" data-high="1000">
+                          <div class="lab_question_feedback" id="lab_q2">That is not correct. 5V divided by 20k 								ohms wil give you the correct answer in mA.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                        <div class="lab_answer_feedback lab_answer_feedback_table">
+                          <div class="lab_feedback_text" id="lab_q2">Click submit to get feedback!</div>
+                        </div>
+                        <span style="font-weight: 40"></span>
+                        <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+                  <tr>	
+                      <td><strong>I<sub>T</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">mA
+                        <div class="lab_question_option_numeric" data-low="1.25" data-high="1.25">
+                          <div class="lab_question_feedback" id="lab_q3">CORRECT!</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="0" data-high="1.249">
+                          <div class="lab_question_feedback" id="lab_q3">That is not correct. (5V divided by 			                            10Kohms) plus (5V divided by 10Kohms) plus (5V divided by 20kohms) will give you the                            correct answer in mA.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="1.251" data-high="1000">
+                          <div class="lab_question_feedback" id="lab_q3">That is not correct. (5V divided by 			                            10Kohms) plus (5V divided by 10Kohms) plus (5V divided by 20kohms) will give you the                            correct answer in mA.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+  <div class="lab_answer_feedback lab_answer_feedback_table">
+    <div class="lab_feedback_text" id="lab_q3">Click submit to get feedback!</div>
+  </div>
+  <span style="font-weight: 40"></span>
+  <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+                  <tr>	
+                      <td><strong>V<sub>R1</sub></strong></td>
+                      <td class='table-align-left'>
+                          <div class="lab_question clearfix">
+                            <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                            V
+                            <div class="lab_question_option_numeric" data-low="5" data-high="5">
+                              <div class="lab_question_feedback" id="lab_q19">CORRECT!</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_question_option_numeric" data-low="0" data-high="4.99">
+                              <div class="lab_question_feedback" id="lab_q19">Each branch of a parallel circuit gets the entire source voltage.</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_question_option_numeric" data-low="5.01" data-high="1000">
+                              <div class="lab_question_feedback" id="lab_q19">Each branch of a parallel circuit gets the entire source voltage.</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                            <div class="lab_answer_feedback lab_answer_feedback_table">
+                              <div class="lab_feedback_text" id="lab_q19">Click submit to get feedback!</div>
+                            </div> <!-- end of lab_answer_feedback div -->
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>	
+                      <td><strong>V<sub>R2</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                        V
+                        <div class="lab_question_option_numeric" data-low="5" data-high="5">
+                          <div class="lab_question_feedback" id="lab_q4">CORRECT</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="0" data-high="4.99">
+                          <div class="lab_question_feedback" id="lab_q4">Each branch of a parallel circuit gets the entire source voltage.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="5.01" data-high="1000">
+                          <div class="lab_question_feedback" id="lab_q4">Each branch of a parallel circuit gets the entire source voltage.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                        <div class="lab_answer_feedback lab_answer_feedback_table">
+                          <div class="lab_feedback_text" id="lab_q4">Click submit to get feedback!</div>
+                        </div>
+                        <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+                  <tr>	
+                      <td><strong>V<sub>R3</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                        V
+                        <div class="lab_question_option_numeric" data-low="5" data-high="5">
+                          <div class="lab_question_feedback" id="lab_q5">CORRECT</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="0" data-high="4.99">
+                          <div class="lab_question_feedback" id="lab_q5">Each branch of a parallel circuit gets the entire source voltage.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="5.01" data-high="1000">
+                          <div class="lab_question_feedback" id="lab_q5">Each branch of a parallel circuit gets the entire source voltage.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                        <div class="lab_answer_feedback lab_answer_feedback_table">
+                          <div class="lab_feedback_text" id="lab_q5">Click submit to get feedback!</div>
+                        </div>
+                        <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+              </tbody>
+       </table>
+        
+        <h2>Build it, test it, blow it up?</h2>
+        <div class="image_left"> <a href="../../img/unit02/labs/parts_lab2-1.png" target="new"><img src="../../img/unit02/labs/parts_lab2-1.png" alt="" width="400" height="232" class="image_border"/></a></div>
+        <p>Materials: 2-10KΩ 1/2watt resistors, 1-20KΩ 1/2watt resistor,  5-volt DC supply </p>
+        <!--<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player&entry_id=1_x0f42q3q&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;&wid=1_64ouos0q" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>-->
+        <div id="kaltura_player_1425588286" style="width: 400px; height: 333px; clear: left;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+          <span itemprop="name" content="ThermalRunaway"></span>
+          <span itemprop="description" content="A demonstration of the&amp;amp;nbsp;positive thermal coefficient that creates thermal runaway in a bipolar transistor."></span>
+          <span itemprop="duration" content="130"></span>
+          <span itemprop="thumbnail" content="http://cdnbakmi.kaltura.com/p/1751071/sp/175107100/thumbnail/entry_id/1_x0f42q3q/version/100000/acv/151"></span>
+          <span itemprop="width" content="400"></span>
+          <span itemprop="height" content="333"></span>
+    </div>
+    <script src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/28529602/partner_id/1751071?autoembed=true&amp;entry_id=1_x0f42q3q&amp;playerId=kaltura_player_1425588286&amp;cache_st=1425588286&amp;width=400&amp;height=333"></script>
+        <div class="image_right"> <img src="../../img/unit02/labs/idiv.png"  alt="Current Divider" width="280" height="200" class="image_border"/></div>
+        <p><strong>2-6.</strong> Construct the circuit from figure 2-3 on your breadboard. </p>
+        <ul>
+          <li>This circuit has only two junction points as shown (<em>without the current meter</em>).
+            <ul>
+              <li>When you add the current meter you will be adding a third junction point.</li>
+            </ul>
+          </li>
+          <li>Make sure the &quot;+Var&quot; voltage supply is attached to the circuit, but with the voltage control turned all the way down. Do not turn the voltage up until you have checked the circuit. </li>
+          <li>Once you are sure the circuit is ready move on to question 2-7.</li>
+        </ul>
+       <p><strong>2-7.</strong> Print out (or draw) a copy of <a href="../../img/unit02/labs/idiv.png" target="new">the schematic in figure 2-2</a> and draw current meters in their correct posistions to measure the values shown in the table. Label each meter with what it will read (for example “I<sub>R1</sub>”).</p>
+       <div class='no_caption image_left'><img src='../../img/unit02/labs/experiment.jpg' width='100' height='100'></div>
+       <p><strong>2-8. </strong>Now, connect the multimeter for your fist reading and turn on the power supply, set the voltage to 5VDC and measure current. Repeat this for each current reading and then for the voltage readings. Remember to set the multimeter correctly for current and voltage measurements.</p>
+       <table class='two_tone_table multiple_question_table'>
+             <tbody>
+                  <tr>
+                      <td><strong>I<sub>R1</sub></strong></td>
+                      <td class='table-align-left'>
+                          <div class="lab_question clearfix">
+                            <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                            mA
+                            <div class="lab_question_option_numeric" data-low=".45" data-high=".55">
+                              <div class="lab_question_feedback" id="lab_q22">CORRECT!</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_question_option_numeric" data-low=".4" data-high=".499">
+                              <div class="lab_question_feedback" id="lab_q22">That seems close enough given some                               differences in the two meters.</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_question_option_numeric" data-low="0" data-high=".399">
+                              <div class="lab_question_feedback" id="lab_q22">That is too low. Check your circuit                                and make sure all of you resistor values are correct. If you are still not getting a                                correct value please contact your instructor.</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                             <div class="lab_question_option_numeric" data-low=".551" data-high=".6">
+                              <div class="lab_question_feedback" id="lab_q22">That seems close enough given some                               differences in the two meters.</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_question_option_numeric" data-low=".601" data-high="1000">
+                              <div class="lab_question_feedback" id="lab_q22">That is too high. Check your circuit                                and make sure all of you resistor values are correct. If you are still not getting a                                correct value please contact your instructor.</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                            <div class="lab_answer_feedback lab_answer_feedback_table">
+                              <div class="lab_feedback_text" id="lab_q22">Click submit to get feedback!</div>
+                            </div> <!-- end of lab_answer_feedback div -->
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><strong>I<sub>R2</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                        mA
+  <div class="lab_question_option_numeric" data-low=".45" data-high=".55">
+    <div class="lab_question_feedback" id="lab_q6">CORRECT!</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low=".4" data-high=".499">
+    <div class="lab_question_feedback" id="lab_q6">That seems close enough given some                               differences in the two meters.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low="0" data-high=".399">
+    <div class="lab_question_feedback" id="lab_q6">That is too low. Check your circuit                                and make sure all of you resistor values are correct. If you are still not getting a                                correct value please contact your instructor.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low=".551" data-high=".6">
+    <div class="lab_question_feedback" id="lab_q6">That seems close enough given some                               differences in the two meters.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low=".601" data-high="1000">
+    <div class="lab_question_feedback" id="lab_q6">That is too high. Check your circuit                                and make sure all of you resistor values are correct. If you are still not getting a                                correct value please contact your instructor.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+  <div class="lab_answer_feedback lab_answer_feedback_table">
+    <div class="lab_feedback_text" id="lab_q6">Click submit to get feedback!</div>
+  </div>
+  <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+                  <tr>	
+                      <td><strong>I<sub>R3</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                        mA
+  <div class="lab_question_option_numeric" data-low=".225" data-high=".275">
+    <div class="lab_question_feedback" id="lab_q7">CORRECT!</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low=".2" data-high=".224">
+    <div class="lab_question_feedback" id="lab_q7">That seems close enough given some                               differences in the two meters.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low="0" data-high=".199">
+    <div class="lab_question_feedback" id="lab_q7">That is too low. Check your circuit                                and make sure all of you resistor values are correct. If you are still not getting a                                correct value please contact your instructor.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low=".276" data-high=".3">
+    <div class="lab_question_feedback" id="lab_q7">That seems close enough given some                               differences in the two meters.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low=".301" data-high="1000">
+    <div class="lab_question_feedback" id="lab_q7">That is too high. Check your circuit                                and make sure all of you resistor values are correct. If you are still not getting a                                correct value please contact your instructor.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+  <div class="lab_answer_feedback lab_answer_feedback_table">
+    <div class="lab_feedback_text" id="lab_q7">Click submit to get feedback!</div>
+  </div>
+  <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+                  <tr>	
+                      <td><strong>I<sub>T</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                        mA
+  <div class="lab_question_option_numeric" data-low="1.125" data-high="1.375">
+    <div class="lab_question_feedback" id="lab_q8">CORRECT!</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low="1" data-high="1.124">
+    <div class="lab_question_feedback" id="lab_q8">That seems close enough given some                               differences in the two meters.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low="0" data-high=".999">
+    <div class="lab_question_feedback" id="lab_q8">That is too low. Check your circuit                                and make sure all of you resistor values are correct. If you are still not getting a                                correct value please contact your instructor.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low="1.125" data-high="1.5">
+    <div class="lab_question_feedback" id="lab_q8">That seems close enough given some                               differences in the two meters.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_question_option_numeric" data-low="1.5" data-high="1000">
+    <div class="lab_question_feedback" id="lab_q8">That is too high. Check your circuit                                and make sure all of you resistor values are correct. If you are still not getting a                                correct value please contact your instructor.</div>
+  </div>
+  <!-- end of lab_question_option_numeric div -->
+  <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+  <div class="lab_answer_feedback lab_answer_feedback_table">
+    <div class="lab_feedback_text" id="lab_q8">Click submit to get feedback!</div>
+  </div>
+  <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+                  <tr>	
+                      <td><strong>V<sub>R1</sub></strong></td>
+                      <td class='table-align-left'>
+                          <div class="lab_question clearfix">
+                            <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+                            <div class="lab_question_option_numeric" data-low="4.5" data-high="5.5">
+                              <div class="lab_question_feedback" id="lab_q26">That is correct!</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_question_option_numeric" data-low="0" data-high="4.49">
+                              <div class="lab_question_feedback" id="lab_q26">That is low, each branch of the circuit should be getting 5V.</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_question_option_numeric" data-low="5.51" data-high="10000">
+                              <div class="lab_question_feedback" id="lab_q26">That is high, each branch of the circuit should be getting 5V.</div>
+                            </div> <!-- end of lab_question_option_numeric div -->
+                            <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                            <div class="lab_answer_feedback lab_answer_feedback_table">
+                              <div class="lab_feedback_text" id="lab_q26">Click submit to get feedback!</div>
+                            </div> <!-- end of lab_answer_feedback div -->
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>	
+                      <td><strong>V<sub>R2</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                        V
+                        <div class="lab_question_option_numeric" data-low="4.5" data-high="5.5">
+                          <div class="lab_question_feedback" id="lab_q9">That is correct!</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="0" data-high="4.49">
+                          <div class="lab_question_feedback" id="lab_q9">That is low, each branch of the circuit should be getting 5V.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="5.51" data-high="10000">
+                          <div class="lab_question_feedback" id="lab_q9">That is high, each branch of the circuit should be getting 5V.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                        <div class="lab_answer_feedback lab_answer_feedback_table">
+                          <div class="lab_feedback_text" id="lab_q9">Click submit to get feedback!</div>
+                        </div>
+                        <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+                  <tr>	
+                      <td><strong>V<sub>R3</sub></strong></td>
+                      <td class='table-align-left'><div class="lab_question clearfix">
+                        <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                        V
+                        <div class="lab_question_option_numeric" data-low="4.5" data-high="5.5">
+                          <div class="lab_question_feedback" id="lab_q10">That is correct!</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="0" data-high="4.49">
+                          <div class="lab_question_feedback" id="lab_q10">That is low, each branch of the circuit should be getting 5V.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_question_option_numeric" data-low="5.51" data-high="10000">
+                          <div class="lab_question_feedback" id="lab_q10">That is high, each branch of the circuit should be getting 5V.</div>
+                        </div>
+                        <!-- end of lab_question_option_numeric div -->
+                        <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                        <div class="lab_answer_feedback lab_answer_feedback_table">
+                          <div class="lab_feedback_text" id="lab_q10">Click submit to get feedback!</div>
+                        </div>
+                        <!-- end of lab_answer_feedback div -->
+                      </div></td>
+                  </tr>
+              </tbody>
+       </table>
+       <p><strong>2-9.</strong> If any of your answers for #2-5 were different from #2-9 describe which were wrong and why.  Store this in some way that you can reference later (paper, word doc, etc). It is incredibly important both that you understand where your original thought process was wrong and that you have a record of that. That way, if you have the same wrong thinking again, you have easy access to the correct answer.</p>
+       <h2> Move on to page 3.</h2>
+		<!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

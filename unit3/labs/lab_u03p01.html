@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Lab 4-1</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../../main/index.html">Index</a></li>
+            <li><a href="../../main/glossary.html">Glossary</a></li>
+            <li><a href="../../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+		   <p>This lab will have you experimenting with  inductor filters and hearing the results.
+	    In addition to your lab kit you will need something to play some music, a phone or mp3 player would be best. There is a short cable to connect this included with your kit. Using a computer to play back the audio is possible but may require a longer cable. These are available at most electronics stores, contact your instructor if you have questions.</p>
+		   <p>Note that the wire colors indicated in the lab instructions are a suggestion. If you have the correct length in those colors it will be helpful to use them. If you do not, just substitute other colors.</p>
+			<h1>Making Noise</h1>
+        <p><strong>3-1.</strong> Let’s start by just getting audio through the speaker in your lab kit.</p>
+            <ol type='a'>
+            	<li>Plug in the power cable for your lab kit and into a working outlet. Your lab kit should light up.</li>
+                <li>Make sure that the “Amp Level” control is turned down all the way (fully counter-clockwise)</li>
+                <li>Find the 1/8” to 1/8” cable included with your lab kit (<em>shown in figure 1-1</em>). 
+                	<ul>
+                    	<li>Connect one end of the 1/8” to 1/8” cable to your audio player headphone output.</li>
+                        <li>Connect the other end to the “External Audio  Input” of the lab kit.</li>
+                        <div class='image_left'>
+                            <a href='../../img/unit04/labs/eighthcable.jpg' target="new">
+                        	    <img src='../../img/unit04/labs/eighthcable.jpg' width='200' height='150'>
+                            </a>
+                        </div>
+                    </ul>
+                </li>
+                <li> Now get a Green jumper wire from the bag of jumper wires that came with your kit (the shortest you can find would be best). 
+                	<ul>	
+                    	<li>Connect one end to the “Aux Audio Out G” connection on your lab kit.</li>
+                        <li>Connect the other end to the “Amp In G” connection on your lab kit.</li>               
+                            <div class='image_left'>
+                                <a href='../../img/unit04/labs/AmpIngnd.jpg' target="new">
+                                    <img src='../../img/unit04/labs/AmpIngnd.jpg' width='300' height='225'>
+                                </a>
+                            </div>
+                    </ul>
+                </li>
+                <li>Next get a White jumper wire from the bag of jumper wires that came with your kit (the shortest you can find would be best). 
+                	<ul>
+                    	<li>Connect one end to the “Aux Audio Out +” connection on your lab kit.</li>
+                        <li>Connect the other end to the “Amp In +” connection on your lab kit.</li>
+                        <div class='image_left'>
+                            <a href="../../img/unit04/labs/AudioPlusconnected.jpg" target="new">
+                        	    <img src='../../img/unit04/labs/AudioPlusconnected.jpg' width='300' height='225'>
+                            </a>
+                        </div>
+                    </ul>
+                </li>
+                <li>Next get an Orange jumper wire from the bag of jumper wires that came with your kit (the longest you can find would be best). 
+                    <ul>
+                        <li>Connect one end to the “Amp Spk Out”  top connection on your lab kit.</li>
+                        <li>Connect the other end to the “Spk In” top connection on your lab kit.</li>
+                        <div class='image_left'>
+                            <a href="../../img/unit04/labs/SPKPlusConnected.jpg" target="new">
+                                <img src='../../img/unit04/labs/SPKPlusConnected.jpg' width='300' height='274'>
+                            </a>
+                        </div>
+                    </ul>
+                </li>
+                <li>Now get a Blue jumper wire from the bag of jumper wires that came with your kit (the longest you can find would be best).
+                	<ul>
+                    	<li>Connect one end to the “Amp Spk Out” bottom connection on your lab kit.</li>
+                        <li>Connect the other end to the “Spk In” bottom connection on your lab kit.</li>
+                        <div class='image_left'>
+                            <a href="../../img/unit04/labs/SPKNegConnected.jpg" target="new">
+                                <img src='../../img/unit04/labs/SPKNegConnected.jpg' width='300' height='225'>
+                            </a>
+                        </div>
+                    </ul>
+                </li>
+                <li>Play some music on your player and turn up the “Amp Level” control. You should hear music!
+                	<ul>
+                    	<li>Note that this is not a great sounding speaker, it is intended to be just good enough to allow you to hear what you need to for the labs.</li>
+                        <li>In order to do what is needed in all version of the labs, this amplifier has a lot of “gain”. This means that it may sound distorted. If it does, try turning down the volume on your MP3 player/phone.</li>
+                        <li>Now you know this is working without any filter, always a good start.</li>
+                    </ul>
+                </li>
+            </ol>
+            <div class='image_right'></div> 
+        <p><strong>3-2.</strong> Now we will build our first filter circuit. To do that we need to connect to our Breadboard. If you have questions about using the breadboard, refer to Lab #1.</p>
+<p><strong>3-3.</strong> The Orange and blue wires that we used to connect “Amp Spk Out” to “Spk In” need to connect to our breadboard.</p>
+<ol type='a'>
+  <div class='image_right'></div>
+</ol>
+            <ol type='a'>
+            	<li>Turn down the “Amp Level” control.</li>
+                <li>Remove the Orange wire connection from the “Spk In” (top) connection and place it on the breadboard in connection point “f-25” (row f, column 25). (<em>as shown in figure 1-6 </em>)<br>
+                  This will become &quot;<em>junction point A</em>&quot; in our first circuit.
+                </li>
+                <li>Remove the Blue wire connection from the “Spk In” (bottom) connection and place it on the breadboard in the connection point below column 25 in the horizontal row with the red line running along it. (<em>as shown in figure 1-7 </em>)<br>
+                  This will become &quot;<em>junction point D</em>&quot; in our circuit.
+                </li>
+                <div class='image_right'>
+                    <a href="../../img/unit03/labs/FlatCircuit.png" target="new">
+                        <img src='../../img/unit03/labs/FlatCircuit.png' alt="schematic" width='300' height='144' class="image_border">
+                    </a>
+                        
+                    <br>
+                    <a href="../../img/unit04/labs/Breadboardconnection1.jpg" target="new">
+                        <div class="image_center">
+                            <img src='../../img/unit04/labs/Breadboardconnection1.jpg' width='108' height='238' class="image_border">
+                        </div>
+                    </a>
+            	</div>
+                <li>Now we have to re-connect to the “Spk In” connections. Get a Yellow jumper wire and:
+                	<ul>
+                    	<li>Connect one end to the breadboard in connection point “g-25” (row g, column 25). <br>
+                   	    (This will connect it to the Orange wire and is shown in figure 1-8. )</li>
+                    	<li>On the next page this wire will connect to &quot;<em>junction point C</em>&quot; when we add the inductor and resistor to our circuit.</li>
+                        <li>Connect the other end to the “Spk In” top connection.</li>
+                    </ul>
+                </li>
+                <li>Get a Black jumper wire and:
+                	<ul>
+                    	<li>Connect one end to the breadboard  in the horizontal row with the red line running along it (this will connect it to the Blue wire).</li>
+                        <li>Connect the other end to the “Spk In” bottom connection.</li>
+                        <li>This wire, and the blue one you already connected, will connect to &quot;<em>junction point D</em>&quot; when we add the inductor and resistor to our circuit.</li>
+                    </ul>
+                </li>
+          <li>Test that you are still hearing sound from your speaker. If not, check that you did everything in #3-3 correctly.</li>
+            </ol>
+        <div class='image_center'> <a href="../../img/unit03/labs/lab3_start.png" target="new"><img src='../../img/unit03/labs/lab3_start.png' alt="" width='600' height='462' class="image_border"></a>
+            </div>
+            <p></p>
+            <h2>Move on to page 2</h2> 
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../../unit4/_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

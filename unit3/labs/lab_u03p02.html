@@ -1,0 +1,563 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Lab 4-2</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../../main/index.html">Index</a></li>
+            <li><a href="../../main/glossary.html">Glossary</a></li>
+            <li><a href="../../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+        <div class="image_left"> <a href="../../img/unit03/labs/lab3_parts.png" target="new"><img src="../../img/unit03/labs/lab3_parts.png" alt="" width="200" height="292" class="image_border"/></a></div>
+      Required materials (<em>as shown in figure 2-1</em>):
+      <ul>
+        <li>sound source (phone or other MP3 player)</li>
+        <li>22Ω resistor</li>
+        <li>0.047mH inductor (473C)</li>
+        <li>0.1mH inductor (104C)</li>
+        <li>1mH inductor (105C)</li>
+        <li>4.7mH inductor (475C)</li>
+        <li>10mH inductor (106C)</li>
+        <li>33mH inductor (336C)<br>
+          <em>click on the image for a larger version</em> </li>
+      </ul>
+           <div class="line_break"></div>
+        <H1>Series Inductance</H1>
+           <h2>What will happen?</h2>
+           <p><strong>Question #1: You are about to add an inductor in series with the speaker. What frequency response will this circuit create?</strong></p>        
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bc_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q1">Nope, maybe you should go back over the reading before trying this lab.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q1">Nope, that would require the combination of two filters.......</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/hp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q1">Nope, unless you were looking at the answer in a mirror......</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/lp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q1">CORRECT!! Now build It.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q1">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        
+        <div class="line_break"></div>
+        <div class='image_right'>
+          <a href="../../img/unit03/labs/IndSer.png" target="new">
+        	  <img src='../../img/unit03/labs/IndSer.png' alt="" width='400' height='198'> 
+          </a>
+        </div>
+        <h2>Build It, Hear it, <strike>Blow it up</strike>?</h2>
+        <p><strong>3-4.</strong> For the first filter we are going to insert a 10mH inductor in series with our speaker as shown in figure 2-2. In order to make it work with this “real world” example we need to add a resistor (22Ω) in series with the inductor and speaker. The schematic shows a Voltage source (V1). This is actually: your music player + the audio amplifier in your lab kit.</p>
+        <ol type='a'>
+        	<li>You should always start by identifying the junction points in the circuit. I have done that for you in this schematic. There are 4 junction points and each has only two things connected to it.</li>
+        	<li>Build the circuit one juction point at a time. Focus on what is connected to each junction point and make sure there are only, in this case, 2 things connected to each junction point.</li>
+        	<li>Open the parts kit that came with your lab kit and find the 22Ω resistor (color code Red/Red/Black/Gold) and the 10mH inductor (it says &quot;106C&quot;)</li>
+        	<li>Build the circuit as shown in figure 2-2. </li>
+        	<li>Play some audio and listen to both “filter” and the “flat” and compare.
+        	  <ul>
+        	    <li><em>To listen to the &quot;flat&quot; audio, use a jumper wire to short the two sides of the inductor (connect junction points B and C).</em></li>
+      	    </ul>
+        	</li>
+       	</ol>
+        <p><strong>Question #2: What do you hear? How is the audio different with the inductor in series (compared to the "flat" audio)?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The low frequencies were softer in volume.</div>
+            <div class="lab_question_feedback" id="lab_q2">Incorrect, make sure you are identifying the "flat" and "filter" audio correctly.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The high frequencies were softer in volume.</div>
+            <div class="lab_question_feedback" id="lab_q2">Correct</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The low frequencies were louder in volume.</div>
+            <div class="lab_question_feedback" id="lab_q2">Incorrect. Your brain may decide to interpret the change as the low frequencies getting louder but in reality the high frequencies are getting softer. </div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The high frequencies were louder in volume.</div>
+            <div class="lab_question_feedback" id="lab_q2">Incorrect, make sure you are identifying the "flat" and "filter" audio correctly. The high frequencies are louder when it is "flat" (the inductor shorted with the jumper wire), but softer when the filter is being heard.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q2">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #3: Did it match what you expected for the circuit?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes</div>
+            <div class="lab_question_feedback" id="lab_q3">Good, move ahead.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">No</div>
+            <div class="lab_question_feedback" id="lab_q3">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q3">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h2>Inductor too small?</h2>
+        <p>You are about to change the 10mH inductor for a 33mH inductor.</p>
+        <p><strong>Question #4: How will the curve change?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will move to the left</div>
+            <div class="lab_question_feedback" id="lab_q4">Correct! :-)<br>
+            You will be making the value of the inductor LARGER, so the curve moves to the LEFT.
+            <br><strong>LARGER=LEFT</strong></div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will move to the right</div>
+            <div class="lab_question_feedback" id="lab_q4">No, it will not.<br>
+            You will be making the value of the inductor LARGER, so the curve moves to the LEFT.
+            <br><strong>LARGER=LEFT</strong></div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will become steeper</div>
+            <div class="lab_question_feedback" id="lab_q4">No, nothing we can do to the value of the inductor will change how steep the filter is. We need to add a second filter for that.<br>
+            In this case you will be making the value of the inductor LARGER, so the curve moves to the LEFT.
+            <br><strong>LARGER=LEFT</strong></div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q4">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #5: How will it sound different?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Low frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q5">That may be correct, at least theoretically, but the main change should be occurring in the high frequencies.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Low frequencies will be louder</div>
+            <div class="lab_question_feedback" id="lab_q5">No, that is not what you should hear.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">High frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q5">CORRECT! move on.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">High frequencies will be louder</div>
+            <div class="lab_question_feedback" id="lab_q5">This is the opposite of what will happen.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q5">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h2>Biggin that inductor</h2>
+        <p><strong>3-5.</strong> You will now add the 33mH inductor into the circuit so that you can compare the 10mH to the 33mH inductor in series.</p>
+        !!don’t worry there is nothing in this circuit that can injure you, feel free to connect and disconnect while it is playing!!
+        <div class='image_center'> <a href="../../img/unit03/labs/10mHor33mH.png" target="new"><img src='../../img/unit03/labs/10mHor33mH.png' alt="photo of lab" width='648' height='200'></a> 
+        </div>
+        <p><strong> Question #6: What do you hear? How is the audio different with the larger inductor in series (</strong><em>compared to the smaller inductor</em><strong>)?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">high frequencies are less audible</div>
+            <div class="lab_question_feedback" id="lab_q6">Correct</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">high frequencies are more audible</div>
+            <div class="lab_question_feedback" id="lab_q6">That is not what you should have heard, make sure you are correctly identifying when you are hearing the 10mH inductor and when you are hearing the 33mH inductor. If you still have trouble, please contact your instructor.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q6">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #7: Did it match what you expected for the circuit?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes</div>
+            <div class="lab_question_feedback" id="lab_q7">Great! move ahead.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">No</div>
+            <div class="lab_question_feedback" id="lab_q7">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q7">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <div class="line_break"></div>
+        <h1>Parallinductogram?</h1>
+        <h2>What's gonna happen?</h2>
+        <p><strong>Question #8: You are about to connect an inductor in parallel with the speaker, what frequency response will this create?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bc_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q8">Nope, maybe you should go back over the reading before trying this lab.</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q8">Nope, that would require the combination of two filters.......</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/hp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q8">CORRECT!! Now build It.</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/lp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q8">Nope, unless you were looking at the answer in a mirror......</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q8">Click submit to get feedback!</div>
+          </div>
+          <!-- end of lab_answer_feedback div -->
+        </div>
+        <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h2>Build it and make some noise.</h2>
+        <div class='image_right'>
+          <a href="../../img/unit03/labs/IndPar.png" target="new">
+            <img src='../../img/unit03/labs/IndPar.png' alt="" width='400' height="192">
+          </a>
+        </div>
+        <p><strong>3-6.</strong> Remove the inductors from your breadboard and connect junction points B and C so you can hear audio again. Next you will be connecting an inductor in parallel with the speaker. Figure 2-4 shows the schematic for the inductor in parallel with the speaker.</p>
+        <ul>
+          <li>First identify the circuit junction points. In this circuit there are now three junction points. Once you have identified them, confirm below.
+          <div class="question_and_answer_full">
+          <div class="question_button">
+            <div class="question_button_header">Click below to confirm the junction points.</div>
+          </div>
+          <!-- end of question_button div -->
+          <div class="revealed_answer">
+            <div class="revealed_answer_header">Answer: </div>
+            <div class="image_holder no_caption"><img src="../../img/unit03/labs/IndPar_junction.png" alt="" width="500" height="240" class="image_center"><p><strong>Junction Point A:</strong> two things connected (V source +, one side of R1)<br>
+              <strong>Junction Point B:</strong> three things connected 
+(one side of R1, one side of L1, one side of speaker)<br>
+<strong>Junction Point C: </strong>three things connected 
+( one side of speaker, one side of L1, V source -)</p></div>
+            <!-- end of revealed_answer div -->
+          </div>
+        </div></li>
+        <li>Find the 0.1mH inductor (104C) and connect it in parallel with the speaker using the schematic and your identification of the junction points.</li>
+            <li>To hear the “flat” audio, simply dis-connect one end of the inductor, do NOT short across it!  <strong><span style="font-weight: 800">&#128163;</span></strong></li>
+        </ul>
+        <div class='image_center'> <a href="../../img/unit03/labs/IndPar_photo.png" target="new"><img src='../../img/unit03/labs/IndPar_photo.png' alt="" width='400' height="192"></a> 
+        </div>
+        <p><strong>Question #9: What do you hear? How is the audio different with the inductor in parallel (</strong><em>compared to the "flat" audio</em><strong>)?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The low frequencies were softer in volume.</div>
+            <div class="lab_question_feedback" id="lab_q9">Correct. move ahead.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The high frequencies were softer in volume.</div>
+            <div class="lab_question_feedback" id="lab_q9">That is not correct.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The low frequencies were louder in volume.</div>
+            <div class="lab_question_feedback" id="lab_q9">Incorrect, make sure you are correctly identifying what is the "flat" audio, and what is the "filter".</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">The high frequencies were louder in volume.</div>
+            <div class="lab_question_feedback" id="lab_q9">Incorrect. Your brain may decide to interpret the change as the high frequencies getting louder but in reality the low frequencies are getting softer. Make sure you are correcctly comparing "flat" (when one side of the indcutor is disconnected) and "filter" (when both sides of the inductor are conected).</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q9">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #10: Did it match what you expected for the circuit?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes</div>
+            <div class="lab_question_feedback" id="lab_q10">Great, move ahead!</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">No</div>
+            <div class="lab_question_feedback" id="lab_q10">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q10">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h2>Shrinking inductors</h2>
+        <p><strong>Question #11: You are about to decrease the inductance, how will the curve change?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will move to the left</div>
+            <div class="lab_question_feedback" id="lab_q11">No it won't.<br>
+            You are REDUCING the value of the inductor, so the curve will move to the RIGHT.<br>
+            <strong>REDUCE = RIGHT</strong></div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will move to the right</div>
+            <div class="lab_question_feedback" id="lab_q11">CORRECT, now try it!</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">It will become steeper</div>
+            <div class="lab_question_feedback" id="lab_q11">No, nothing we can do to the value of the capacitor will change how steep the filter is. We need to add a second filter for that.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q11">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #12: How will it sound different?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">High frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q12">This may be true, at least in some theoretical sense, but you will mostly hear a change in the low frequencies. They were what was cut originally, with the 0.047mH inductor the low frequencies will be changed more than they were with the 1mH inductor.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">High frequencies will be louder</div>
+            <div class="lab_question_feedback" id="lab_q12">That is not correct.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Low frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q12">Correct, now try it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Low frequencies will be louder</div>
+            <div class="lab_question_feedback" id="lab_q12">That is not correct, in fact it is the opposite of what will happen.</div>
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q12">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div --></div>
+        <p><strong>
+        <div class="line_break"></div>
+        <h2>Build it SMALLER.</h2>
+        3-7.</strong> Now try the 0.047mH inductor in place of the 0.1mH.</p>
+        <p><strong>Question #13: Did the sound change as you expected?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes</div>
+            <div class="lab_question_feedback" id="lab_q13">fine work, move on to page 3.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">No</div>
+            <div class="lab_question_feedback" id="lab_q13">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q13">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h1>Double the Filters = Double the Fun</h1>
+        <h2>What are you gonna hear?</h2>
+        <p><strong>Question #13: You are now going to connect an inductor in series AND and inductor in parallel. What frequency response will this create?</strong>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bc_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q14">Nope, maybe you should go back over the reading before trying this lab.</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q14">You are correct and may now proceed to the building of the circuit.</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/hp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q14">Nope, you are adding together a low pass (inductor in series) and a high pass (inductor in parallel). That means they will work together.</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/lp_curve.png' width='200' height='76'></div>
+            <div class="lab_question_feedback" id="lab_q14">Nope, you are adding together a low pass (inductor in series) and a high pass (inductor in parallel). That means they will work together.</div>
+          </div>
+          <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q14">Click submit to get feedback!</div>
+          </div>
+          <!-- end of lab_answer_feedback div -->
+        </div>
+        <div class='image_center'><div class='image_left'><a href="../../img/unit03/labs/IndParSer.png" target="new"><img src='../../img/unit03/labs/IndParSer.png' alt="" width='400' height='192'></a></div> 
+        <div class='image_right'><a href="../../img/unit03/labs/IndParSer_photo.png" target="new"><img src='../../img/unit03/labs/IndParSer_photo.png' alt="" width='400' height='208'></a></div></div>
+        <p><strong>3-8.</strong> Remove the inductors used in the last circuit and build the circuit shown in figure 2-6. 
+        You will be using the 4.7mH (475C) and 1mH (105C) inductors.</p>
+        <p><strong>Question #14: What do you hear? How is the audio different with the two inductors in the circuit?</strong><br>
+        <em>NOTE: to hear the "flat" signal, you will:
+        <ol><li>short across L2</li>
+        <li>disconnect one end of L1</li>
+        </ol></em>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Midrange frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q12">That is not correct:<br>
+            <ul><li>The inductor in series will reduce the volume of the high frequencies.</li>		             <li>the inductor in parallel will reduce the volume of the low frequencies.</li></ul>
+            What will be left (though still cut some) will be the midrange.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">High frequencies and low frequencies will not be as loud</div>
+            <div class="lab_question_feedback" id="lab_q12">Correct! You are done with Lab #3.</div>
+          </div> <!-- end of lab_question_option div --><!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q12">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        
+        <h2><em>Again I highly recommend PLAYING with this! Try things, figure out how it works. The more you work with it beyond the specific lab directions, the more you will get out of the course!<strong><br>
+        </strong></em></h2>
+        <div class="image_left no_caption"> <img src="../../../A112/img/unit07/labs/Camera-icon.png" width="100" height="100"/></div>
+        <h2><em><strong>Remember to take a photo of your lab in progress to upload to Canvas if you are in the online section or did not finish during lab time.</strong></em></h2>
+		
+		<!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../../unit4/_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

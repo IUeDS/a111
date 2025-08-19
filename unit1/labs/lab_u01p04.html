@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Lab 1-4</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <!-- InstanceBeginEditable name="css" -->
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+<!-- InstanceEndEditable -->    
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../../../A112/_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../../../A112/main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span> 
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../../../A112/main/index.html">Index</a></li>
+            <li><a href="../../../A112/main/glossary.html">Glossary</a></li>
+            <li><a href="../../../A112/main/syllabus.html">Syllabus</a></li>
+            <li><a href="../../../A112/main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+       <h1>Oscilloscope: See the Voltage!</h1>
+       <p><em><strong>A note about the oscilloscope:</strong> In order to fit so much into such a small space, the menus may seem difficult to find. It would be worth some time now just pressing the buttons and seeing what menus show up across the bottom of the screen. Taking some time now to get comfortable moving around through the menus will definitely benefit you. <br>
+         If you are someone who finds manuals useful, <a href="../../media/Unit 1/xscopes-manual.pdf" target="new">here is the manual </a>for the oscilloscope in your lab kit.
+        .</em></p>
+       <p><em>Also note that the menus will reset back to the default (nothing shown) after some time with no buttons pressed.</em></p>
+       <div class="image_right"> <a href="../../img/unit01/labs/scopeschematic1.png" target="new"><img src="../../img/unit01/labs/scopeschematic1.png" alt="schematic" width="454" height="250" class="image_border"/></a> 
+       </div>
+       <p><strong>1-10.</strong> Build the circuit shown in figure 4-1. Note that this is very similar to the circuit you built in Lab #1-1.</p>
+       <ol>
+         <li>You are using &quot;Var+/-&quot; instead of &quot;+Var&quot; at junction point &quot;A&quot;.</li>
+         <li> The meter switch needs to be flipped to the right to see the voltage of the &quot;Var+/-&quot; source.</li>
+         <li>Set the multimeter  to measure AC Voltage (<a href="../../img/unit01/labs/ACVmeter.jpg" target="new">use the 20V~ setting</a>)</li>
+         <li>The oscilloscope will be connected later in the page so wait on that for now.</li>
+       </ol>
+       <p><strong>1-11.</strong> We are going to use the oscilloscope to see what happens to the voltage over time.</p>
+       <p><strong>Oscilloscopes are voltmeters, so how should the oscilloscope be connected to measure the voltage across the light bulb?</strong></p>
+       <div class="lab_question clearfix">
+         <div class="lab_question_option">
+           <div class="lab_question_button"></div>
+           <div class="lab_option_text">In parallel</div>
+           <div class="lab_question_feedback" id="lab_q2">Yes, that is correct.</div>
+         </div>
+         <!-- end of lab_question_option div -->
+         <div class="lab_question_option">
+           <div class="lab_question_button"></div>
+           <div class="lab_option_text">In series</div>
+           <div class="lab_question_feedback" id="lab_q2">No, to measure voltage you must connect in parallel.</div>
+         </div>
+         <!-- end of lab_question_option div -->
+         <div class="lab_submit_button">Submit</div>
+         <div class="lab_answer_feedback">
+           <h1>Lab Feedback</h1>
+           <div class="lab_feedback_text" id="lab_q2">Click submit to tell me your results!</div>
+         </div>
+         <!-- end of lab_answer_feedback div -->
+       </div>
+       <p>An Oscilloscope is a voltmeter, so it needs two connections in order to measure. <br>
+        This oscilloscope, like many, has two channels so you can measure two things at once.  <br>
+        Each of those channels has two connections:</p>
+       <ul>
+         <li>Positive connection: Each channel has two possible positive connections. They are &quot;AC&quot; and &quot;DC&quot;.
+           <ul>
+             <li>When connected to &quot;AC&quot; you only see AC, and DC is removed.</li>
+             <li>When connected to &quot;DC&quot; you see AC+DC.</li>
+           </ul>
+         </li>
+         <li>The negative connection is ground for the lab kit, so just make sure ground on your circuit is connected to one of the lab kit &quot;GND&quot; connections.</li>
+        </ul>
+       <p><strong>1-12. </strong>Connect the oscilloscope CH1 in parallel with the light bulb. Ground is already connected to the oscilloscope so you only need to connect the + connection, this should connect to junction point &quot;A&quot;. Use the "DC" connection to the oscilloscope so you can see both AC and DC.</p>
+       <p><strong>1-13.</strong> Make sure that the meter switch is to the right and &quot;Var+/-&quot; is set to 0V.</p>
+       <p><strong>1-14.</strong> The display on an oscilloscope can be set to show any voltage at the top or bottom so first you need to set your oscilloscope so that 0V is in the middle of the screen (from top to bottom).</p>
+       <h3>CONTROLLING WHAT YOU SEE</h3>
+       <ul>
+         <li>To make sure you are starting fresh, reset the oscilloscope (in case the last user left odd settings). 
+           <ul>
+             <li>With the lab kit not plugged in, Hold down &quot;MENU&quot;, and plug in while still holding down &quot;MENU&quot;.</li>
+             <li>Press &quot;<span class="scopefont">RESTORE</span>&quot; (<em>There will be a small flash behind the screen but nothing else will change</em>)</li>
+             <li>Press &quot;MENU&quot; to start the oscilloscope.</li>
+           </ul>
+         </li>
+         <li>Press the &quot;MENU&quot; again button until you see no text displayed at the bottom of the screen.
+           <div class="image_right"> <a href="../../img/unit01/labs/scope1.png"><img src="../../img/unit01/labs/scope1.png" width="250" height="136" class="image_border"/></a>
+           </div>
+         </li>
+         <li>Press either the far right (decrease value) or middle (increase value) buttons until the top of the display shows the time division you want.
+           <ul>
+             <li>This determines how much time is represented by each horizontal division (the small dots).</li>
+             <li>For this lab it should be &quot;<span class="scopefont">0.1S/div</span>&quot;</li>
+             <li>This sets the horizontal divisions on the screen (little dots) to 0.1S.
+             </li>
+           </ul>
+         </li>
+         <li>Press the &quot;MENU&quot; button until you see &quot;<span class="scopefont">CH1&nbsp;&nbsp;&nbsp;&nbsp;CH2&nbsp;&nbsp;&nbsp;&nbsp;LOGIC</span>&quot; displayed at the bottom of the screen.</li>
+         <li>Press the button below &quot;CH1&quot;  and you will see &quot;<span class=scopefont>CH ON&nbsp;&nbsp;&nbsp;&nbsp;GAIN-&nbsp;&nbsp;&nbsp;&nbsp;GAIN+</span>&quot; displayed at the bottom of the screen. Make sure that &quot;<span class="scopefont_highlight">CH ON</span>&quot; is highlighted, if it is not, press the button below it.</li>
+         <li>Press either the button under &quot;<span class="scopefont">GAIN-</span>&quot; or &quot;<span class="scopefont">GAIN+</span>&quot; to change the voltage division (top to bottom).
+           <ul>
+             <li>This determines how much voltage is represented by each vertical division (the small dots).</li>
+             <li>For this lab you want the largest setting (lowest gain) &quot;<span class="scopefont">CH1 5.12V/div</span>&quot;</li>
+             <li>This sets the vertical divisions on the screen (the small dots in the middle) equal to 5.12V.
+             </li>
+           </ul>
+         </li>
+         <li>Press the menu button and you will see &quot;<span class="scopefont">POSITION&nbsp;&nbsp;&nbsp;&nbsp;INVERT&nbsp;&nbsp;&nbsp;&nbsp;MATH</span>&quot; displayed at the bottom of the screen. </li>
+         <li>Press the button under &quot;
+           <spcan class="scopefont">POSITION</spcan>
+         &quot; and you will see &quot;<span class="scopefont">POSITION&nbsp;&nbsp;&nbsp;&nbsp;MOVE-&nbsp;&nbsp;&nbsp;&nbsp;MOVE+</span>&quot; displayed at the bottom of the screen.</li>
+         <li>Press the button under either &quot;<span class ="scopefont">MOVE-</span>&quot; or &quot;<span class="scopefont">MOVE+</span>&quot; as needed to move the line in across the screen so that it is on top of the dot in the middle of the screen. You can also press the button under &quot;
+           <spcan class="scopefont">POSITION</spcan>
+&quot; to cycle through the channel aligning to the top dot, middle dot, or bottom dot. <br>
+<em>The top and bottom positions are useful when you are displaying two channels and want to see both easily.</em>
+         </li>
+         <li>You have now set 0V for channel 1 so that it is in the middle of the screen.</li>
+         <li>Press the &quot;MENU&quot; button until you see &quot;<span class="scopefont">CH1&nbsp;&nbsp;&nbsp;&nbsp;CH2&nbsp;&nbsp;&nbsp;&nbsp;LOGIC</span>&quot; displayed at the bottom of the screen.</li>
+         <li>Press the button below &quot;CH2&quot;  and you will see &quot;<span class=scopefont>CH ON&nbsp;&nbsp;&nbsp;&nbsp;GAIN-&nbsp;&nbsp;&nbsp;&nbsp;GAIN+</span>&quot; displayed at the bottom of the screen. Press the button below &quot;<span class=scopefont>CH ON&nbsp;</span>&quot; to turn off Channel 2, since we won't use it for this lab. Make sure that &quot;<span class=scopefont>CH ON&nbsp;</span>&quot; is not highlighted.<br>
+         </li>
+       </ul>
+       <div class="image_right"> <a href="../../img/unit01/labs/scopeschematic2.png" target="new"></a>
+       </div>
+       <p><strong>1-15.</strong> Adjust the &quot;Var+/-&quot; control. You should see voltage change on the oscilloscope. Adjust it so that it is both positive and negative and see how the oscilloscope reacts. <em>If you move the control fast enough you can make a low frequency waveform.</em> Try this.</p>
+       <div class="line_break"></div>
+       <h1>Audio Anyone?</h1>
+       <p>The ocilloscope in your lab kit also includes a generator that gives you a source of AC waveforms. That generator, which you will use as a voltage source now, is called &quot;AWG&quot; which stands for &quot;Arbitrary Waveform Generator&quot;. </p>
+       <div class="image_right"> <a href="../../img/unit01/labs/scopeschematic2.png" target="new"><img src="../../img/unit01/labs/scopeschematic2.png" alt="schematic" width="400" height="230" class="image_border"/></a> </div>
+       <p><strong>1-16.</strong> Change the your circuit to match the one shown in figure 4-3. </p>
+       <ul>
+         <li>We have removed the light bulb as the AWG is not powerful enough to light the bulb.</li>
+         <li>&quot;AWG&quot; is now connected to junction point &quot;A&quot;, in place of &quot;Var +/-&quot;. 
+           <ul>
+             <li>&quot;AWG&quot; is a connection under the oscilloscope.</li>
+           </ul>
+         </li>
+         <li>The GND connection for the AWG and Oscilloscope are both GND of the lab kit so they are already connected.</li>
+       </ul>
+        <p>&nbsp;</p>
+        <h2>YOUR OWN AUDIO SOURCE</h2>
+        <ul>
+         <li>Press the &quot;MENU&quot; button until you see &quot;<span class="scopefont">CURSORS&nbsp;&nbsp;&nbsp;&nbsp;DISPLAY&nbsp;&nbsp;&nbsp;&nbsp;AWG</span>&quot; at the bottom of the display. (4 times from the default, &quot;nothing shown&quot;)</li>
+         <li>
+           <div class="image_right"> <a href="../../img/unit01/labs/scope1.png"><img src="../../img/unit01/labs/scope1.png" width="250" height="136" class="image_border"/></a></div>
+         Press the button under &quot;<span class="scopefont">&nbsp;AWG</span>&quot; and you will get the menu choices &quot;<span class="scopefont">WAVE TYPE&nbsp;&nbsp;&nbsp;&nbsp;SWEEP&nbsp;&nbsp;&nbsp;&nbsp;FREQUENCY</span>&quot;</li>
+         <li>Press the button under &quot;<span class="scopefont">WAVE TYPE</span>&quot; and you can choose sine, square, or triangle waveforms. Try these out, you should see them on the oscilloscope display. Then set it to a sine wave.<br>
+         <em>Pressing the menu button again gets you a few more options we will use in later courses.</em></li>
+         <li>Press the Menu button twice to move back to the last menu &quot;<span class="scopefont">WAVE TYPE&nbsp;&nbsp;&nbsp;&nbsp;SWEEP&nbsp;&nbsp;&nbsp;&nbsp;FREQUENCY</span>&quot;.</li>
+         <li>Press the button under &quot;<span class="scopefont">&nbsp;FREQUENCY</span>&quot; to see a display of the current frequency and the controls to change the frequency. Try changing this and seeing how it changes on the screen. If you press the far left button the value will cycle through the values:1Hz, 10Hz, 100Hz, 1kHz, and 10kHz each time you press the button. For now set this to 10Hz..</li>
+         <li>Press the &quot;MENU&quot; button once to move back to  &quot;<span class="scopefont">WAVE TYPE&nbsp;&nbsp;&nbsp;&nbsp;SWEEP&nbsp;&nbsp;&nbsp;&nbsp;FREQUENCY</span>&quot; and a second time to move to  &quot;<span class="scopefont">AMPLITUDE&nbsp;&nbsp;&nbsp;&nbsp;DUTY CYCLE&nbsp;&nbsp;&nbsp;&nbsp;OFFSET</span>&quot;.</li>
+         <li>Press the button under &quot;<span class="scopefont">AMPLITUDE</span>&quot; to cycle through values of 0V, 1V, 2V, 3V, and 4V. These values are given in V<sub>PK-PK</sub>. <br>
+         Set this to 4V<sub>PK-PK</sub> for now. </li>
+         <li>The &quot;<span class="scopefont">&nbsp;OFFSET</span>&quot; settings will be useful for us as well as it adds DC to the AC waveform. <br>
+          Set the offset to 0V for now.</li>
+        </ul>
+        <p><strong>1-17.</strong> Make sure you have the oscilloscope Ch1 (DC) connected to junction point &quot;A&quot;.        </p>
+        <div class="question_and_answer_full">
+          <div class="question_button">
+            <div class="question_button_header">You should see a sine wave on your oscilloscope.<br>
+            Click here for an image of what you should see.</div>
+          </div>
+          <!-- end of question_button div -->
+          <div class="revealed_answer">
+            <div class="revealed_answer_header">Answer: </div>
+            <div class="image_holder no_caption"><img src="../../img/unit01/labs/scopeimagelab1.png" alt="" width="500" class="image_center"></div>
+            <!-- end of revealed_answer div -->
+          </div>
+        </div>
+        <p>&nbsp;</p>
+       <h3>GETTING DETAILED READINGS</h3>
+       <p>With larger oscilloscopes you can get precise readings from the screen. Ours is too small for that, however it has a meter included so that you can see some numbers.</p>
+       <ul>
+         <li>Press the &quot;MENU&quot; button until you see &quot;<span class="scopefont">SCOPE&nbsp;&nbsp;&nbsp;&nbsp;METER&nbsp;&nbsp;&nbsp;&nbsp;FFT</span>&quot; displayed at the bottom of the screen.</li>
+         <li>Press the button below &quot;<span class="scopefont">METER</span>&quot; to see a meter for both channels. You will also still see the waveform displayed. Set the meter to show V<sub>PK-PK</sub> by pressing the button under &quot;<span class="scopefont">V P-P</span>&quot;. This should agree (at least pretty close) with the 4V<sub>PK-PK</sub> you set the AWG to. With my kit it was within 0.1V.</li>
+         <li>You can also press the button under &quot;<span class="scopefont">FREQUENCY</span>&quot; to see a numeric display of the frequency. Unfortunately at the low frequency of 1Hz it does not read correctly. It does work well for higher frequencies, however.<br>
+         <em>One of the drawbacks of an inexpensive oscilloscope and generator like this is that their accuracy is not great. They will work fine for what we need though and you will understand how to read a better oscilloscope when you get to use one.</em></li>
+        </ul>
+       <div class="question_and_answer_full">
+         <div class="question_button">
+           <div class="question_button_header">
+             Click here for an image of what you should see. <br>
+             <em>Your value may be slightly different.</em></div>
+         </div>
+         <!-- end of question_button div -->
+         <div class="revealed_answer">
+           <div class="revealed_answer_header">Answer: </div>
+           <div class="image_holder no_caption"><img src="../../img/unit01/labs/scopemeterlab1.png" alt="" width="500" class="image_center"></div>
+           <!-- end of revealed_answer div -->
+         </div>
+       </div>
+       <p>&nbsp;</p>
+       <h2><em>Again I highly recommend PLAYING with this! Try things, figure out how it works. The more you work with it beyond the specific lab directions, the more you will get out of the course!<strong><br>
+     </strong></em></h2>
+       <div class="image_left no_caption">
+       		<img src="../../../A112/img/unit07/labs/Camera-icon.png" width="100" height="100"/>
+       </div>
+       <h2><em><strong>Remember to take a photo of your lab in progress to upload to Canvas if you are in the online section or did not finish during lab time.</strong></em></h2>
+     <!-- InstanceEndEditable -->
+	  </div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../../../A112/_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

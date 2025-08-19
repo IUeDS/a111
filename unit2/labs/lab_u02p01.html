@@ -1,0 +1,555 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Lab 2-1</title>
+<!-- InstanceEndEditable -->
+<!--favicons -->
+<link href="https://www.iu.edu/favicon.ico" rel="icon" />
+<link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+<!-- imported fonts -->
+<script src="//use.typekit.net/ayq1mtq.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+<!-- css style sheets -->
+<link href="../../css/styles.css" rel="stylesheet" type="text/css">
+<link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+<!-- script library imports -->
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div id="branding-bar">
+  <p class="campus"> <a href="http://www.iub.edu/"> <img src="../../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" /> <span id="campus_name">Indiana University Bloomington </span> </a> </p>
+</div>
+<!-- end of branding-bar div -->
+<header>
+  <div class="titles">
+    <h1 class="title"><a href="../../main/index.html">A111: Electronics I</a></h1>
+    <div class="subtitle">
+      <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+    </div>
+    <!-- end of subtitle div --> 
+  </div>
+  <!-- end of titles div --> 
+  <!-- InstanceBeginEditable name="header" -->
+  <div class="page_header"> <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span> <span class="center header_unit title_header"></span> <span class="right header_unit"></span> </div>
+  <!-- end of page_header div --> 
+  <!-- InstanceEndEditable --> </header>
+<nav>
+  <ul>
+    <li><a href="../../main/index.html">Index</a></li>
+    <li><a href="../../main/glossary.html">Glossary</a></li>
+    <li><a href="../../main/syllabus.html">Syllabus</a></li>
+    <li><a href="../../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+  </ul>
+</nav>
+<main>
+  <div class="content_wrapper">
+    <div class="content"> <!-- InstanceBeginEditable name="content" -->
+      <div class="image_left"> <a href="../../img/unit02/labs/parts_lab2.png" target="new"><img src="../../img/unit02/labs/parts_lab2.png" alt="" width="200" height="237" class="image_border"/></a></div>
+      <p>Required materials (<em>as shown in figure 1-1</em>):  4-1KΩ resistors<br>
+        <em>click on the image for a larger version</em> </p>
+      <h2 style="clear:both;">Measuring Resistance</h2>
+       <!--<div id="kaltura_player_1425588286" style="width: 400px; height: 333px;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+          <span itemprop="name" content="ThermalRunaway"></span>
+          <span itemprop="description" content="A demonstration of the&amp;amp;nbsp;positive thermal coefficient that creates thermal runaway in a bipolar transistor."></span>
+          <span itemprop="duration" content="130"></span>
+          <span itemprop="thumbnail" content="http://cdnbakmi.kaltura.com/p/1751071/sp/175107100/thumbnail/entry_id/1_h0amip34/version/100000/acv/151"></span>
+          <span itemprop="width" content="400"></span>
+          <span itemprop="height" content="333"></span>
+    </div>
+    <script src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/28529602/partner_id/1751071?autoembed=true&amp;entry_id=1_h0amip34&amp;playerId=kaltura_player_1425588286&amp;cache_st=1425588286&amp;width=400&amp;height=333"></script>-->
+    	<iframe src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player_1466451322&entry_id=1_h0amip34&flashvars[streamerType]=auto" width="400" height="333" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+        <br>
+        <a href="http://www.kaltura.com/tiny/kfemh" target="_blank">View video in a new tab (option for full screen)</a>
+      <p> To start, let's measure the resistance of your resistors. This will both ensure that you have the correct resistors and give you practice measuring resistance.
+      <p><strong>2-1.</strong> Set your multimeter to measure resistance and on the 2KΩ setting. <br>
+        (<em>The 2KΩ setting means that the highest the largest value the meter can read is 2KΩ. You want to set your meter to the lowest setting that is above what you need to measure. Setting it too high will give you less resolution and setting it too low will not give you any reading</em>.)<br>
+        Make sure that the meter leads are connected as described below and shown in figure 1-2.</p>
+      <div class="image_right"> <a href="../../img/unit02/labs/meter_lab2.png" target="new"><img src="../../img/unit02/labs/meter_lab2.png" alt="" width="197" height="300" class="image_border"/></a></div>
+      <ul>
+        <li>Red Meter Lead to &quot;V Ω &quot; connection on the meter</li>
+        <li>Black meter lead to &quot;COM&quot; connection on the meter </li>
+      </ul>
+      <p><strong>2-2.</strong>Take one of your 1KΩ
+        resistors and connect it to the meter leads as shown in figure 2-2, one lead from the resistor connected to each lead of the meter.
+      <p>Your resistors are 1KΩ with a 1% tolerance. That means that they can be 10Ω less than 1KΩ or 10Ω more than 1KΩ.
+      <p><strong>Question #1: What did your meter show?</strong>
+      <div class="lab_question clearfix">
+        <input type="text" class="lab_numeric_input">
+        KΩ
+        <div class="lab_question_option_numeric" data-low=".9" data-high="1.1">
+          <div class="lab_question_feedback" id="lab_q30">CORRECT! Move On</div>
+        </div>
+        <!-- end of lab_question_option_numeric div -->
+        <div class="lab_question_option_numeric" data-low="0" data-high=".89">
+          <div class="lab_question_feedback" id="lab_q30">That is not the correct answer (it is low), you should have a value between 0.9KΩ and 1.1KΩ.</div>
+        </div>
+        <!-- end of lab_question_option_numeric div -->
+        <div class="lab_question_option_numeric" data-low="1.11" data-high="10000">
+          <div class="lab_question_feedback" id="lab_q30">That is not the correct answer (it is high), you should have a value between 0.9KΩ and 1.1KΩ.</div>
+        </div>
+        <!-- end of lab_question_option_numeric div -->
+        <div class="lab_submit_button_numeric">Submit</div>
+        <div class="lab_answer_feedback lab_answer_feedback_table">
+          <h1>Lab Feedback</h1>
+          <div class="lab_feedback_text" id="lab_q30">Click submit to get feedback!</div>
+        </div>
+        <!-- end of lab_answer_feedback div --> 
+      </div>
+      <div class="line_break"></div>
+      <h1>Measure Measure Voltage Voltage<br>
+<em>(2 different ways</em>)</h1>
+      <p><strong><br>
+      Voltage across a resistor</strong> (a.k.a. <strong>Voltage Drop of the Resistor</strong>) or <strong>V<sub>R?</sub></strong>: This is the difference in voltage between the two ends of the resistor. The Voltmeter leads (Red and Black) must be placed one on either side of the resistor. The Red lead should be on the more positive side and the Black lead on the more negative side. You are measuring the amount of Voltage that is being used up by that resistor.</p>
+      <p><strong>Voltage at a point</strong> (a.k.a. <strong>“the voltage here is____”</strong>): In this case (whether you say it out loud or not) you are identifying the voltage difference between this point and Ground. In our labs the Green wire from the power supply will represent Ground.</p>
+      <p>For each of the following circuits, create the circuit  on the breadboard. You will be asked what you think will happen in a question and then asked to do the experiment and record your results. </p>
+      <h1>Circuit #1: Voltage Divider</h1>
+      <h2>Use your noggin!</h2>
+      <p>Materials: 4-1KΩ 1/2watt resistors, 5-volt DC supply </p>
+      <div class='no_caption image_left'><img src="../../img/unit02/labs/brain.jpg" alt="" width="100" height="102"/></div>
+      <p><strong>2-1.</strong> Start by analyzing the circuit to the right and determining the values for the table. TP1-4 represent “test points” in the circuit where you will measure voltages: <br>
+        (just use your BRAIN for this, <strong><br>
+        DO NOT build the circuit</strong> yet!!!!!!!!!) </p>
+      <table class='two_tone_table multiple_question_table'>
+        <tbody>
+          <tr>
+            <td><strong>V<sub>R4</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+                <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+                V
+                <div class="lab_question_option_numeric" data-low="1.25" data-high="1.25">
+                  <div class="lab_question_feedback" id="lab_q1">CORRECT!</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_question_option_numeric" data-low="0" data-high="1.24">
+                  <div class="lab_question_feedback" id="lab_q1">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V.</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                 <div class="lab_question_option_numeric" data-low="1.26" data-high="1000">
+                  <div class="lab_question_feedback" id="lab_q1">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V.</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                <div class="lab_answer_feedback lab_answer_feedback_table">
+                  <div class="lab_feedback_text" id="lab_q1">Click submit to get feedback!</div>
+                </div>
+                <!-- end of lab_answer_feedback div --> 
+              </div></td>
+            <td rowspan="7" style="min-width: 200px;"><div class='no_caption'><img src='../../img/unit02/labs/vdiv.png' alt="Lab 2 schematic" width="150" height="437"></div></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>R3</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+              V
+              <div class="lab_question_option_numeric" data-low="1.25" data-high="1.25">
+                <div class="lab_question_feedback" id="lab_q2">CORRECT!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="1.24">
+                <div class="lab_question_feedback" id="lab_q2">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.26" data-high="1000">
+                <div class="lab_question_feedback" id="lab_q2">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+              <div class="lab_answer_feedback lab_answer_feedback_table">
+                <div class="lab_feedback_text" id="lab_q2">Click submit to get feedback!</div>
+              </div>
+              <!-- end of lab_answer_feedback div -->
+            </div></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>R2</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">
+              V
+              <div class="lab_question_option_numeric" data-low="1.25" data-high="1.25">
+                <div class="lab_question_feedback" id="lab_q3">CORRECT!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="1.24">
+                <div class="lab_question_feedback" id="lab_q3">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.26" data-high="1000">
+                <div class="lab_question_feedback" id="lab_q3">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+              <div class="lab_answer_feedback lab_answer_feedback_table">
+                <div class="lab_feedback_text" id="lab_q3">Click submit to get feedback!</div>
+              </div>
+              <!-- end of lab_answer_feedback div -->
+            </div></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>R1</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="1.25" data-high="1.25">
+                <div class="lab_question_feedback" id="lab_q4">CORRECT!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="1.24">
+                <div class="lab_question_feedback" id="lab_q4">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.26" data-high="1000">
+                <div class="lab_question_feedback" id="lab_q4">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              
+              <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+              <div class="lab_answer_feedback lab_answer_feedback_table">
+                <div class="lab_feedback_text" id="lab_q4">Click submit to get feedback!</div>
+              </div>
+              <!-- end of lab_answer_feedback div -->
+            </div></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>TP3</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+                <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+                <div class="lab_question_option_numeric" data-low="3.75" data-high="3.75">
+                  <div class="lab_question_feedback" id="lab_q5">Good, that is correct!</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_question_option_numeric" data-low="0" data-high="3.74">
+                  <div class="lab_question_feedback" id="lab_q5">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V. Then you need to add up the voltage drops of R1, R2 and R3 for the voltage at TP3.</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_question_option_numeric" data-low="3.76" data-high="1000">
+                  <div class="lab_question_feedback" id="lab_q5">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V. Then you need to add up the voltage drops of R1, R2 and R3 for the voltage at TP3.</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                <div class="lab_answer_feedback lab_answer_feedback_table">
+                  <div class="lab_feedback_text" id="lab_q5">Click submit to get feedback!</div>
+                </div>
+                <!-- end of lab_answer_feedback div --> 
+              </div></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>TP2</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="2.5" data-high="2.5">
+                <div class="lab_question_feedback" id="lab_q6">Good, that is correct!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="2.49">
+                <div class="lab_question_feedback" id="lab_q6">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V. Then you need to add up the voltage drops of R1 and R2 for the voltage at TP2.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="2.51" data-high="1000">
+                <div class="lab_question_feedback" id="lab_q6">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V. Then you need to add up the voltage drops of R1 and R2 for the voltage at TP2.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+              <div class="lab_answer_feedback lab_answer_feedback_table">
+                <div class="lab_feedback_text" id="lab_q6">Click submit to get feedback!</div>
+              </div>
+              <!-- end of lab_answer_feedback div -->
+            </div></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>TP1</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="1.25" data-high="1.25">
+                <div class="lab_question_feedback" id="lab_q7">Good, that is correct!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="1.24">
+                <div class="lab_question_feedback" id="lab_q7">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V. Then TP1 is just the voltage drop of R1.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.26" data-high="1000">
+                <div class="lab_question_feedback" id="lab_q7">That is not correct. Since there are 4 resistors of the same value, they will each drop 1/4 of the total 5V. Then TP1 is just the voltage drop of R1.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+              <div class="lab_answer_feedback lab_answer_feedback_table">
+                <div class="lab_feedback_text" id="lab_q7">Click submit to get feedback!</div>
+              </div>
+              <!-- end of lab_answer_feedback div -->
+            </div></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Measuring Voltages!</h2>
+	<!--<div id="kaltura_player_1425588287" style="width: 400px; height: 333px;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+          <span itemprop="name" content="ThermalRunaway"></span>
+          <span itemprop="description" content="A demonstration of the&amp;amp;nbsp;positive thermal coefficient that creates thermal runaway in a bipolar transistor."></span>
+          <span itemprop="duration" content="130"></span>
+          <span itemprop="thumbnail" content="http://cdnbakmi.kaltura.com/p/1751071/sp/175107100/thumbnail/entry_id/1_gp4ajqgf/version/100000/acv/151"></span>
+          <span itemprop="width" content="400"></span>
+          <span itemprop="height" content="333"></span>
+    </div>
+    <script src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/28529602/partner_id/1751071?autoembed=true&amp;entry_id=1_gp4ajqgf&amp;playerId=kaltura_player_1425588287&amp;cache_st=1425588287&amp;width=400&amp;height=333"></script>-->
+    	<iframe src="https://cdnapisec.kaltura.com/p/1751071/sp/175107100/embedIframeJs/uiconf_id/26683571/partner_id/1751071?iframeembed=true&playerId=kaltura_player_1466451415&entry_id=1_gp4ajqgf&flashvars[streamerType]=auto" width="400" height="333" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+        <br>
+        <a href="http://www.kaltura.com/tiny/rmmls" target="_blank">View video in a new tab (option for full screen)</a>
+      <p><strong>2-2.</strong> Construct the circuit to the right on a breadboard. TP1-4 represent “test points” in the circuit where you will measure voltages. </p>
+      <ul>
+        <li>This circuit has 5 junction points and there are only 2 things connected to each junction point.
+          <ul>
+            <li>For this circuit we are not counting the multimeter as being connected since you will move it around for the tests. </li>
+          </ul>
+        </li>
+        <li>Make sure the &quot;+Var&quot; variable voltage supply is attached to the circuit, but  with the voltage control turned all the way down until you have checked the circuit. </li>
+        <li>Once you are sure the circuit is ready move on to question 2-3. </li>
+      </ul>
+      <p>&nbsp;</p>
+      <div class='no_caption image_left'><img src='../../img/unit02/labs/experiment.jpg' width='100' height='100'></div>
+      <p><strong>2-3.</strong> turn the voltage for &quot;+Var&quot; up to  5V<sub>DC</sub> and measure the voltages using a Digital Multimeter.</p>
+      <table class='two_tone_table multiple_question_table'>
+        <tbody>
+          <tr>
+            <td><strong>V<sub>R4</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="1.125" data-high="1.375">
+                <div class="lab_question_feedback" id="lab_q8">CORRECT!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1" data-high="1.124">
+                <div class="lab_question_feedback" id="lab_q8">That is a little low but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.376" data-high="1.5">
+                <div class="lab_question_feedback" id="lab_q8">That is a little high but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="0.99">
+                <div class="lab_question_feedback" id="lab_q8">That is too low, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div></div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_question_option_numeric" data-low="1.52" data-high="1000">
+                  <div class="lab_question_feedback" id="lab_q8">That is too high, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                <div class="lab_answer_feedback lab_answer_feedback_table">
+                  <div class="lab_feedback_text" id="lab_q8">Click submit to get feedback!</div>
+                <!-- end of lab_answer_feedback div -->
+              </div>
+            </div></td>
+            <td rowspan="7"><div class='no_caption'><img src='../../img/unit02/labs/vdiv.png' alt="Lab 2 schematic" width="150" height="437"></div></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>R3</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="1.125" data-high="1.375">
+                <div class="lab_question_feedback" id="lab_q9">CORRECT!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1" data-high="1.124">
+                <div class="lab_question_feedback" id="lab_q9">That is a little low but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.376" data-high="1.5">
+                <div class="lab_question_feedback" id="lab_q9">That is a little high but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="0.99">
+                <div class="lab_question_feedback" id="lab_q9">That is too low, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div></div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_question_option_numeric" data-low="1.52" data-high="1000">
+                  <div class="lab_question_feedback" id="lab_q9">That is too high, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                <div class="lab_answer_feedback lab_answer_feedback_table">
+                  <div class="lab_feedback_text" id="lab_q9">Click submit to get feedback!</div>
+                </div>
+                <!-- end of lab_answer_feedback div -->
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>R2</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="1.125" data-high="1.375">
+                <div class="lab_question_feedback" id="lab_q10">CORRECT!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1" data-high="1.124">
+                <div class="lab_question_feedback" id="lab_q10">That is a little low but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.376" data-high="1.5">
+                <div class="lab_question_feedback" id="lab_q10">That is a little high but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="0.99">
+                <div class="lab_question_feedback" id="lab_q10">That is too low, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div></div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_question_option_numeric" data-low="1.52" data-high="1000">
+                  <div class="lab_question_feedback" id="lab_q10">That is too high, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                <div class="lab_answer_feedback lab_answer_feedback_table">
+                  <div class="lab_feedback_text" id="lab_q10">Click submit to get feedback!</div>
+                </div>
+                <!-- end of lab_answer_feedback div -->
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>R1</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="1.125" data-high="1.375">
+                <div class="lab_question_feedback" id="lab_q11">CORRECT!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1" data-high="1.124">
+                <div class="lab_question_feedback" id="lab_q11">That is a little low but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.376" data-high="1.5">
+                <div class="lab_question_feedback" id="lab_q11">That is a little high but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="0.99">
+                <div class="lab_question_feedback" id="lab_q11">That is too low, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div></div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_question_option_numeric" data-low="1.52" data-high="1000">
+                  <div class="lab_question_feedback" id="lab_q11">That is too high, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+                </div>
+                <!-- end of lab_question_option_numeric div -->
+                <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+                <div class="lab_answer_feedback lab_answer_feedback_table">
+                  <div class="lab_feedback_text" id="lab_q11">Click submit to get feedback!</div>
+                </div>
+                <!-- end of lab_answer_feedback div -->
+              </div>
+            </dv></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>TP3</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="3.357" data-high="3.916">
+                <div class="lab_question_feedback" id="lab_q12">Good, that is correct within the tolerances of the resistors.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div --><div class="lab_question_option_numeric" data-low="3" data-high="3.356">
+                <div class="lab_question_feedback" id="lab_q12">That is a little low but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="3.917" data-high="4.512">
+                <div class="lab_question_feedback" id="lab_q12">That is a little high but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="2.99">
+                <div class="lab_question_feedback" id="lab_q12">That is too low, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+                </div><!-- end of lab_question_option_numeric div -->
+                <div class="lab_question_option_numeric" data-low="3.357" data-high="1000">
+                  <div class="lab_question_feedback" id="lab_q12">That is too high, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+                </div> <!-- end of lab_question_option_numeric div -->
+                <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+              <div class="lab_answer_feedback lab_answer_feedback_table">
+                <div class="lab_feedback_text" id="lab_q12">Click submit to get feedback!</div>
+              </div>
+              <!-- end of lab_answer_feedback div -->
+            </div></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>TP2</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="2.25" data-high="2.75">
+                <div class="lab_question_feedback" id="lab_q13">Good, that is correct within the tolerances of the resistors.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="2" data-high="2.249">
+                <div class="lab_question_feedback" id="lab_q13">That is a little low but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="2.759" data-high="3">
+                <div class="lab_question_feedback" id="lab_q13">That is a little high but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="2.99">
+                <div class="lab_question_feedback" id="lab_q13">That is too low, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+                </div><!-- end of lab_question_option_numeric div -->
+                <div class="lab_question_option_numeric" data-low="3.357" data-high="1000">
+                  <div class="lab_question_feedback" id="lab_q13">That is too high, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+                </div> <!-- end of lab_question_option_numeric div -->
+                <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+              <div class="lab_answer_feedback lab_answer_feedback_table">
+                <div class="lab_feedback_text" id="lab_q13">Click submit to get feedback!</div>
+              </div>
+              <!-- end of lab_answer_feedback div -->
+            </div></td>
+          </tr>
+          <tr>
+            <td><strong>V<sub>TP1</sub></strong></td>
+            <td class='table-align-left'><div class="lab_question clearfix">
+              <input type="text" size="7" class="lab_numeric_input lab_numeric_input_table">V
+              <div class="lab_question_option_numeric" data-low="1.125" data-high="1.375">
+                <div class="lab_question_feedback" id="lab_q14">Good, that is correct within the tolerances of the resistors.</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1" data-high="1.124">
+                <div class="lab_question_feedback" id="lab_q14">That is a little low but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.376" data-high="1.5">
+                <div class="lab_question_feedback" id="lab_q14">That is a little high but still within the range of the differences between the meters. Good Job!</div>
+              </div>
+              <!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="0" data-high="1.123">
+                <div class="lab_question_feedback" id="lab_q14">That is too low, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+              </div><!-- end of lab_question_option_numeric div -->
+              <div class="lab_question_option_numeric" data-low="1.501" data-high="1000">
+                  <div class="lab_question_feedback" id="lab_q14">That is too high, make sure that all of your resistors are 1kΩ and that the source voltage is set to 5V. If you are still having trouble contact your instructor.</div>
+              </div> <!-- end of lab_question_option_numeric div -->
+              <div class="lab_submit_button_numeric lab_submit_button_table">Submit</div>
+              <div class="lab_answer_feedback lab_answer_feedback_table">
+                <div class="lab_feedback_text" id="lab_q14">Click submit to get feedback!</div>
+              </div>
+              <!-- end of lab_answer_feedback div -->
+            </div></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>&nbsp;</p>
+      <p><strong>2-4.</strong> If any of your answers for #2-1 were different from #2-3 describe which were wrong and why.  Store this in some way that you can reference later (paper, word doc, etc). It is incredibly important both that you understand where your original thought process was wrong and that you have a record of that. That way, if you have the same wrong thinking again, you have easy access to the correct answer.</p>
+      <h2>Move on to page 2.</h2>
+      <!-- InstanceEndEditable --> </div>
+    <!-- end of content div --> 
+  </div>
+  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer"> <span class="next_arrow">></span><span class="center next_page"> NEXT PAGE</span> <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span> </div>
+  <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable --> </main>
+<footer>
+  <div id="IU_footer" role="contentinfo"> <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a> <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> <span> <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script> 
+    </span> <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span> </div>
+  <!-- end of IU_footer div --> 
+</footer>
+<script src="../../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd -->
+</html>

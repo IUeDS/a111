@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Lab 4-3</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../../main/index.html">Index</a></li>
+            <li><a href="../../main/glossary.html">Glossary</a></li>
+            <li><a href="../../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+           <h1>The talented Dr. Inductor enters the scene.</h1>
+           <h2>What does the Doctor bring to the party?</h2>
+           <p><strong>Question #14: If we swap out the capacitor in parallel, replacing it with an inductor, what kind of filter will we have?</strong></p>
+          <div class="lab_question clearfix">
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bc_curve.png' width='200' height='76'></div>
+              <div class="lab_question_feedback" id="lab_q14">nope &#9785;</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bp_curve.png' width='200' height='76'></div>
+              <div class="lab_question_feedback" id="lab_q14">not this one</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/hp_curve.png' width='200' height='76'></div>
+              <div class="lab_question_feedback" id="lab_q14">CORRECT! When we swap a capacitor for an inductor we get the opposite frequency response.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/lp_curve.png' width='200' height='76'></div>
+              <div class="lab_question_feedback" id="lab_q14">Not even close, <em>well the opposite actually</em>.<br>
+              When we swap a capacitor for an inductor we get the opposite frequency response. With the capacitor in parallel we had a low pass filter, so an inductor in parallel will give us a high pass filter.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_submit_button">Submit</div>
+            <div class="lab_answer_feedback">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q14">Click submit to get feedback!</div>
+            </div> <!-- end of lab_answer_feedback div -->
+          </div> <!-- end of lab_question div -->
+          <div class="line_break"></div>
+          <h2>Bye-bye cap, hello inductor.</h2>
+          <div class='image_right'> <img src='../../img/unit04/labs/IndPar.png' alt="schematic" width='400' height='189'> </div>
+          <p><strong>4-8.</strong> Now let’s swap the capacitor in parallel with an inductor in parallel.</p>
+          <ol type='a'>
+          	<li>Remove the capacitors from the breadboard.</li>
+            <li>Find the 1mH inductor in your parts kit (it is labeled 105C)
+            	<ul>
+                	<li>Connect one end (it doesn’t matter which one) to “j-15”</li>
+                    <li>Connect the other end to any hole in the horizontal row with the red line running next to it.</li>
+                    <li>As with the capacitors, you can simply disconnect one end to hear the "flat" audio.</li>
+                </ul>
+            </li>
+          </ol>
+          <div class='image_center'>
+          	<img src='../../img/unit04/labs/1mHparallel.jpg' width='300' height='225'>
+          </div>
+          <p><strong>Question #15: Did the sound change as you expected?</strong></p>
+          <div class="lab_question clearfix">
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">Yes</div>
+              <div class="lab_question_feedback" id="lab_q15">Fine work, move ahead.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">No</div>
+              <div class="lab_question_feedback" id="lab_q15">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_submit_button">Submit</div>
+            <div class="lab_answer_feedback">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q15">Click submit to get feedback!</div>
+            </div> <!-- end of lab_answer_feedback div -->
+          </div> <!-- end of lab_question div -->
+          <div class="line_break"></div>
+          <h2>Same filters, different components.</h2>
+          <p><strong>Question #16: What will happen if we add a capacitor in series with the speaker while keeping the inductor in parallel with the speaker?</strong></p>
+          <div class="lab_question clearfix">
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">Low frequencies will not be as loud</div>
+              <div class="lab_question_feedback" id="lab_q16">Correct! In this case we are adding two different High Pass filters together. Each on its own has a 6dB per octave slope. when we add them together we get a 12dB per octave slope. The lows are cut more drastically with the high frequencies affected less.</div>
+            </div>
+            <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">Low frequencies will be louder</div>
+              <div class="lab_question_feedback" id="lab_q16">That is not correct. In this case we are adding two different High Pass filters together. Each on its own has a 6dB per octave slope. when we add them together we get a 12dB per octave slope. The lows are cut more drastically with the high frequencies affected less.</div>
+            </div>
+            <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">High frequencies will not be as loud</div>
+              <div class="lab_question_feedback" id="lab_q16">That is not correct. In this case we are adding two different High Pass filters together. Each on its own has a 6dB per octave slope. when we add them together we get a 12dB per octave slope. The lows are cut more drastically with the high frequencies affected less.</div>
+            </div>
+            <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">High frequencies will be louder</div>
+              <div class="lab_question_feedback" id="lab_q16">There may indeed be some increase in the lower high frequencies, but what will really change is that the lows will be cut more, while the highs will be affected less (even though they were already only affected a tiny amount).</div>
+            </div>
+            <!-- end of lab_question_option div -->
+            <div class="lab_submit_button">Submit</div>
+            <div class="lab_answer_feedback">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q16">Click submit to get feedback!</div>
+            </div>
+            <!-- end of lab_answer_feedback div -->
+          </div>
+          <div class="line_break"></div>
+          <div class='image_right'><img src='../../img/unit04/labs/IndPar_CapSer.png' alt="schematic" width='400' height='201'><div class="image_center"><img src='../../img/unit04/labs/IndparCapser.jpg' width='300' height='197'></div></div>
+          <h2>Listening</h2>
+          <p><strong>4-9.</strong> Connect the 22µF capacitor in series with the speaker as shown in the schematic in figure #3-3..</p>
+          <ol type='a'>
+          	<li>Remove the wire that connects “h-15” to “h-3”</li>
+            <li>Connect the 22µF capacitor
+            	<ul>
+                	<li>One end to “h-15”.</li>
+                    <li>The other end to “h-3”.</li>
+                    <li>To listen without the capacitor, connect the extra wire from “i-15” to “i-3”.</li>
+                    <li>This example can be hard to hear.
+                    	<ul>
+                        	<li>Note that low frequencies are reduced more.</li>
+                            <li>If we had simply reduced the inductance and moved the curve to the right we would have heard higher and higher frequencies being but.</li>
+                            <li>In this case we hear the low frequencies cut more while the higher frequencies do not change.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+          </ol>
+          <p><strong>Question #17: Did the sound change as you expected?</strong></p>
+          <div class="lab_question clearfix">
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">Yes</div>
+              <div class="lab_question_feedback" id="lab_q17">Great, move ahead.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">No</div>
+              <div class="lab_question_feedback" id="lab_q17">Go back and figure out where your thinking was flawed. This is a really important part of the learning process so take the time to do it.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_submit_button">Submit</div>
+            <div class="lab_answer_feedback">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q17">Click submit to get feedback!</div>
+            </div> <!-- end of lab_answer_feedback div -->
+          </div> <!-- end of lab_question div -->
+          <div class="line_break"></div>
+          <div class="line_break"></div>
+          <h1>Caps and Inductors together at last!</h1>
+          <h2>What's gonna happen.........<strike>anarchy</strike>?</h2>
+          <p><strong>Question #18: For our next experiment we will connect a capacitor and an inductor both in series with the speaker and in series with each other. What kind of filter will this create?</strong></p>
+          <div class="lab_question clearfix">
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bc_curve.png' width='200' height='76'></div>
+              <div class="lab_question_feedback" id="lab_q18">Nope. All audio has to pass through both the capacitor and the inductor.
+              <br>That means that <strong>ALL</strong> audio will be cut some. 
+              <ul><li>Low frequencies will be cut a lot by the capacitor</li>
+              <li>High frequencies will be cut a lot by the inductor</li>
+              <li>Midrange frequencies will be cut a little by both filters, but less overall than either high or low frequencies.</li></ul>
+              This leaves us with a <strong>Band Pass Filter</strong>.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/bp_curve.png' width='200' height='76'></div>
+              <div class="lab_question_feedback" id="lab_q18">CORRECT! &#9786;<br>
+              All audio has to pass through both the capacitor and the inductor.
+              <br>That means that <strong>ALL</strong> audio will be cut some. 
+              <ul><li>Low frequencies will be cut a lot by the capacitor</li>
+              <li>High frequencies will be cut a lot by the inductor</li>
+              <li>Midrange frequencies will be cut a little by both filters, but less overall than either high or low frequencies.</li></ul>
+              This leaves us with a <strong>Band Pass Filter</strong>.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/hp_curve.png' width='200' height='76'></div>
+              <div class="lab_question_feedback" id="lab_q18">Nope. All audio has to pass through both the capacitor and the inductor.<br>That means that <strong>ALL</strong> audio will be cut some. 
+              <ul><li>Low frequencies will be cut a lot by the capacitor</li>
+              <li>High frequencies will be cut a lot by the inductor</li>
+              <li>Midrange frequencies will be cut a little by both filters, but less overall than either high or low frequencies.</li></ul>
+              This leaves us with a <strong>Band Pass Filter</strong>.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption"><img src='../../img/unit04/labs/lp_curve.png' width='200' height='76'></div>
+              <div class="lab_question_feedback" id="lab_q18">Nope. All audio has to pass through both the capacitor and the inductor.<br>That means that <strong>ALL</strong> audio will be cut some. 
+              <ul><li>Low frequencies will be cut a lot by the capacitor</li>
+              <li>High frequencies will be cut a lot by the inductor</li>
+              <li>Midrange frequencies will b e cut a little by both filters, but less overall than either high or low frequencies.</li></ul>
+              This leaves us with a <strong>Band Pass Filter</strong>.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_submit_button">Submit</div>
+            <div class="lab_answer_feedback">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q18">Click submit to get feedback!</div>
+            </div> <!-- end of lab_answer_feedback div -->
+          </div> <!-- end of lab_question div -->
+          
+          <div class="line_break"></div>
+          <h2>Time to listen.</h2>
+          <div class='image_right'>
+          	<img src='../../img/unit04/labs/Lab6_schematicBP.png' width='400' height='195'>
+          </div>
+          <p><strong>4-10.</strong> Time to build the circuit shown in figure #3-3.. <br>
+          Remove the capacitor and inductor from the circuit.</p>
+          <ol type='a'>
+          	<li>Find the 4.7µF capacitor. 
+            	<ul>
+                	<li>Connect one end to “h-10”.</li>
+                    <li>Connect the other end to “h-15”</li>
+                </ul>
+            </li>
+            <li>Find the 10mH inductor (it says “106C” on top).
+            	<ul>
+                	<li>Connect one end to “i-10”</li>
+                    <li>Connect the other end to “i-3”</li>
+                </ul>
+            </li>
+            <li>Use the extra wire to connect “j-15” to “j-3” to hear “flat” audio.</li>
+          </ol>
+          <div class='image_center'>
+          	<img src='../../img/unit04/labs/BandPassfilt.jpg' width='300' height='222'>
+          </div>
+          <p><strong>Question #19: You should hear both the high and low frequencies cut with this circuit, did you?</strong></p>
+          <div class="lab_question clearfix">
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">Yes</div>
+              <div class="lab_question_feedback" id="lab_q19">Great. move on.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">No</div>
+              <div class="lab_question_feedback" id="lab_q19">Make sure that your circuit is built as shown and that you are correctly identifying "flat" and "fliter" audio. If you are still not hearing both high and low frequencies cut, try some different music. If still no luck, contact your instructor.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_submit_button">Submit</div>
+            <div class="lab_answer_feedback">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q19">Click submit to get feedback!</div>
+            </div> <!-- end of lab_answer_feedback div -->
+          </div> <!-- end of lab_question div -->
+          
+          <div class="line_break"></div>
+          <h2>Same components, different arrangement.</h2>
+          <div class='image_right'>
+          	<img src='../../img/unit04/labs/Lab6_schematicBC.png' width='400'>
+          </div>
+          <p><strong>4-11.</strong> For our last circuit we will build a Band Cut Filter, as shown in figure #3-5..</p>
+          <ol type='a'>
+          	<li>Move the end of the 4.7µF capacitor that is connected to “h-10” to “h-3”.</li>
+            <li>Move the end of the inductor that is connected to “i-10” to “i-15”.</li>
+            <li>Use the extra wire to connect “h-15” to “h-3” to hear “flat” audio.</li>
+          </ol>
+          <div class='image_center'>
+          	<img src='../../img/unit04/labs/BandCutFilt.jpg' width='300' height='186'>
+          </div>
+          <p><strong>Question #20: You should hear the midrange being cut, did you?</strong></p>
+          <div class="lab_question clearfix">
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">Yes</div>
+              <div class="lab_question_feedback" id="lab_q20">Good job. you are done with lab #4.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_question_option">
+              <div class="lab_question_button"></div>
+              <div class="lab_option_text no_caption">No</div>
+              <div class="lab_question_feedback" id="lab_q20">Make sure that your circuit is built as shown and that you are correctly identifying "flat" and "fliter" audio. If you are still not hearing the midrange cut, try some different music. If still no luck, contact your instructor.</div>
+            </div> <!-- end of lab_question_option div -->
+            <div class="lab_submit_button">Submit</div>
+            <div class="lab_answer_feedback">
+              <h1>Lab Feedback</h1>
+              <div class="lab_feedback_text" id="lab_q20">Click submit to get feedback!</div>
+            </div> <!-- end of lab_answer_feedback div -->
+          </div>
+          <div class="line_break"></div>
+          <h2><em>I highly recommend PLAYING with this! Try things, figure out how it works. The more you work with it beyond the specific lab directions, the more you will get out of the course!<strong><br>
+        </strong></em></h2>
+          <div class="image_left no_caption"> <img src="../../../A112/img/unit07/labs/Camera-icon.png" width="100" height="100"/></div>
+          <h2><em><strong>Remember to take a photo of your lab in progress to upload to Canvas if you are in the online section or did not finish during lab time.</strong></em></h2>
+          <p>&nbsp;</p>
+           <!-- end of lab_question div -->
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>

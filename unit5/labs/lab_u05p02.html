@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html lang="en"><!-- InstanceBegin template="/Templates/dreamweaver_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Lab 5-2</title>
+	<!-- InstanceEndEditable -->
+	<!--favicons -->
+    <link href="https://www.iu.edu/favicon.ico" rel="icon" />
+    <link href="https://www.iu.edu/favicon.ico" rel="shortcut icon" />
+    <!-- imported fonts --> 
+    <script src="//use.typekit.net/ayq1mtq.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>    
+    <!-- css style sheets -->
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- script library imports -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+	<div id="branding-bar">
+        <p class="campus">
+            <a href="http://www.iub.edu/">
+                <img src="../../_iu-brand/img/trident-tab.gif" height="73" width="64" alt="IU logo" />
+                <span id="campus_name">Indiana University Bloomington </span>
+            </a>
+        </p>
+    </div> <!-- end of branding-bar div -->
+    <header>
+          <div class="titles">
+            <h1 class="title"><a href="../../main/index.html">A111: Electronics I</a></h1>
+            <div class="subtitle">
+                <p><a href="http://music.indiana.edu/departments/academic/recording-arts/" class="no-wrap">Department of Recording Arts</a> &#124; <a href="http://music.indiana.edu" class="no-wrap">Jacobs School of Music</a></p>
+            </div> <!-- end of subtitle div -->
+          </div> <!-- end of titles div -->
+          <!-- InstanceBeginEditable name="header" -->
+          <div class="page_header">
+            <span class="left header_unit">Unit <span class="unit_number"></span>, Page <span class="page_number"></span> of <span class="last_number"></span></span>
+            <span class="center header_unit title_header"></span>
+            <span class="right header_unit"></span>
+          </div> <!-- end of page_header div -->
+          <!-- InstanceEndEditable -->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="../../main/index.html">Index</a></li>
+            <li><a href="../../main/glossary.html">Glossary</a></li>
+            <li><a href="../../main/syllabus.html">Syllabus</a></li>
+            <li><a href="../../main/tests_and_surveys.html">Tests &amp; Surveys</a></li>
+        </ul>
+      </nav>
+   <main>
+    <div class="content_wrapper">
+      <div class="content"> 
+        <!-- InstanceBeginEditable name="content" -->
+          <p>For this lab you will be building a common cathode amplifier using a triode. You will need to have an audio source (phone or MP3 player) available.Once you are finished you will need to take a photo of your working circuit and upload it to the Lab#5-2 photo upload assignment.</p>
+          <p>Here are the components you will need (besides your tube).</p>
+          <p>The gray band on the 1.8k resistor is very difficult to see. If you are unsure you can use your multimeter to measure the resistors.</p>
+          <div class='image_center'> <img src='../../img/unit05/labs/lab8components.png' alt="" width='800' height='155' class="image_border">
+          </div>
+          <div class="line_break"></div>
+          <h1>Set up your circuit</h1>
+          <div class='image_right'> <a href="../../img/unit05/labs/Lab8Schematic.png" target="new"><img src='../../img/unit05/labs/Lab8Schematic.png' width='500' height='345'></a>
+          </div>
+          <p>First, plug in your lab kit and set the "+Var" to 12V (within 0.1V)</p>
+          <p>Now build the circuit shown here. </p>
+          <ul>
+              <li>I have indicated on the schematic what "connections" on the breadboard I have used to build the circuit. You do not have to use the same ones but it will be easier if you do.</li>
+              <li>I have indicated what color jumper wires I have used, again you do not have to use the same colors.</li>
+              <li>A photo is included as well.<br>
+                <em>Note that the heater connections (pin 4 &amp; 5) are connected differently than shown in the schematic.<br>
+                Follow the schematic and connect the heater as we did in Lab #5-1.</em></li>
+              <li>Not shown in photo or schematic is the connection from the amp in your lab kit to the speaker in your lab kit. Connect both the top connection of the "Amp Spk Out" to the top connection of "Spk In". then do the same for the bottom connections.</li>
+              <li>The order you connect the components is not important.</li>
+          </ul>
+          <div class='image_center'> <a href="../../img/unit05/labs/Lab8_pic.png" target="new"><img src='../../img/unit05/labs/Lab8_pic.png' alt="" width='500' height='317'></a>
+          </div>
+          <h2>Hey! What's with R3?</h2>
+        <p>R3 is not something that we have seen before. It is here to create an appropriate "load" for the "Aux Audio Out" of your lab kit.</p>
+          <p>The other components should be familiar. You should be able to describe the function of each component. If not, go back and review Unit 5.</p>
+          <div class='image_center'> <a href="../../img/unit05/labs/Lab8Schematic_bare.png" target="new"><img src='../../img/unit05/labs/Lab8Schematic_bare.png' width='500' height='391'></a>
+          </div>
+          <div class="line_break"></div>
+          <h1>Crank it UP!</h1>
+        <p>You should now be able to:</p>
+          <ol>
+              <li>connect an audio player to the "External Audio Input"</li>
+              <li>turn up, just a little bit, the "Amp Level"</li>
+              <li>hear audio through the speaker, going through your tube amplifier</li>
+          </ol>
+          <p>** note that you will likely have to turn your audio player volume down, about halfway on an iPhone works well.**</p>
+          <p><strong>Question #1: Are you hearing audio?</strong></p>
+          <p><em>You should be.</em></p>
+          <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes, and it sounds fine</div>
+            <div class="lab_question_feedback" id="lab_q1">Great!, move on......</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes, but it is distorted</div>
+            <div class="lab_question_feedback" id="lab_q1">try turning down the output of your audio source (phone or MP3 player)</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">Yes, but it has a lot of noise</div>
+            <div class="lab_question_feedback" id="lab_q1">This is likely a bad connection on the breadboard. Try twisting the connections a little. If you hear the noise change when you twist a connection, then try unplugging and re-plugging that connection a few times.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">No, I don't hear anything</div>
+            <div class="lab_question_feedback" id="lab_q1">First, check that all connections match the schematic. Second, check that the tube is warm to the touch. If neither of those work, try connection the "Aux Audio Out +" directly to the "Amp In +" to see if you get sound that way. If you do then then problem is with your circuit, if you do not then the problem is either your audio player, cable, or the lab kit. If none of these options help you please contact the instructor.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q1">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #2: There is a component missing from the schematic, compared to what was discussed in the reading, what is it?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">capacitor</div>
+            <div class="lab_question_feedback" id="lab_q2">correct, move on</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">resistor</div>
+            <div class="lab_question_feedback" id="lab_q2">nope...check through the reading</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">inductor</div>
+            <div class="lab_question_feedback" id="lab_q2">nope...check through the reading</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">transformer</div>
+            <div class="lab_question_feedback" id="lab_q2">nope...check through the reading</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q2">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p><strong>Question #3: Where should the missing component be connected?</strong></p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">in parallel with R1</div>
+            <div class="lab_question_feedback" id="lab_q3">nope...check through the reading</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">in series with R1</div>
+            <div class="lab_question_feedback" id="lab_q3">nope...check through the reading</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">in parallel with R2</div>
+            <div class="lab_question_feedback" id="lab_q3">correct, move ahead...</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">in series with R2</div>
+            <div class="lab_question_feedback" id="lab_q3">nope...check through the reading</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q3">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <p>Go ahead and add the 22uF capacitor into the circuit in parallel with R2.</p>
+        <p>Make sure that the negative side of the capacitor is connected toward ground and the positive side is connected toward the cathode.</p>
+        <ul>
+            <li>the positive side had an indentation near it and a black end</li>
+            <li>the negative side has silver end</li>
+            <li>there is an arrow with a "-" printed on the capacitor, the arrow points toward the negative side.</li>
+        </ul>
+        <div class='image_center'> <a href="../../img/unit05/labs/cap.png" target="new"><img src='../../img/unit05/labs/cap.png' alt="" width='300' height='131'></a>
+        </div>
+        <p><strong>Question #4: What happened when you connected the capacitor?</strong></p>
+        <p>**you can dis-connect and re-connect one end of the capacitor to hear with and without it in the circuit**</p>
+        <div class="lab_question clearfix">
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">the volume increased</div>
+            <div class="lab_question_feedback" id="lab_q4">Good job</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">the volume decreased</div>
+            <div class="lab_question_feedback" id="lab_q4">I'm not sure how you made that happen, are you sure you aren't reversing your answers? If not, then contact your instructor.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">nothing changed</div>
+            <div class="lab_question_feedback" id="lab_q4">Make sure you are connecting the capacitor to the correct places on the breadboard. If you set it up to match mine the + end of the capacitor should be in "Row 35, a-e" and the negative side should be in "row 25, a-e". If those are correct, make sure you are using the black 22uF capacitor. If neither of those things help, contact your instructor.</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_question_option">
+            <div class="lab_question_button"></div>
+            <div class="lab_option_text no_caption">the earth imploded</div>
+            <div class="lab_question_feedback" id="lab_q4">hmmmmmm, I didn't think I gave out that lab kit......</div>
+          </div> <!-- end of lab_question_option div -->
+          <div class="lab_submit_button">Submit</div>
+          <div class="lab_answer_feedback">
+            <h1>Lab Feedback</h1>
+            <div class="lab_feedback_text" id="lab_q4">Click submit to get feedback!</div>
+          </div> <!-- end of lab_answer_feedback div -->
+        </div> <!-- end of lab_question div -->
+        <div class="line_break"></div>
+        <h2><em><strong>Feel free to experiment with your circuit. 
+        Make changes and see what happens.
+        </p>
+        <p>There is nothing that I can think of (<em>though please don't consider this a challenge</em>) that will hurt your lab kit or you. The more you work with it beyond the specific lab directions, the more you will get out of the course!<br>
+        </strong></em></h2>
+        <div class="image_left no_caption"> <img src="../../../A112/img/unit07/labs/Camera-icon.png" width="100" height="100"/> </div>
+        <h2><em><strong>Remember to take a photo of your lab in progress to upload to Canvas if you are in the online section or did not finish during lab time.</strong></em></h2>
+        <p>&nbsp;</p>
+        <!-- InstanceEndEditable -->
+  		</div> <!-- end of content div --> 
+  	</div>  <!-- end of content_wrapper div --> 
+  <!-- InstanceBeginEditable name="footer" -->
+  <div class="nav_footer">
+    	<span class="next_arrow">></span><span class="center next_page">  NEXT PAGE</span>
+        <span class="previous_arrow"><</span><span class="center previous"> PREVIOUS</span>
+  </div> <!-- end of nav_footer div --> 
+  <!-- InstanceEndEditable -->
+</main>
+<footer>
+  <div id="IU_footer" role="contentinfo">
+     <a href="https://protect.iu.edu/privacy/policies">Privacy Notice</a>
+     <a href="http://www.iu.edu/"><img src="../_iu-brand/img/block-iu.png" height="26" width="22" alt="Block IU" /></a> 
+     <span>
+    <a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &#169; 
+    <script type="text/javascript">
+          var theDate=new Date()
+          document.write(theDate.getFullYear())
+    </script>
+     </span> 
+     <span>The Trustees of <a href="http://www.iu.edu/">Indiana University</a>,</span> 
+     <span><a href="http://www.iu.edu/copyright/complaints.shtml">Copyright Complaints</a></span>
+</div> <!-- end of IU_footer div -->
+</footer>
+<script src="../../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd --></html>
